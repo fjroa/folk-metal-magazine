@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Folk Metal Magazine · Prensa del Folk Metal Español</title>
+<style>
+:root { scroll-behavior: smooth; }
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: Georgia, 'Times New Roman', serif;
+  background-color: #e8dcc8;
+  background-image:
+    url("data:image/svg+xml,%3Csvg width='60' height='60' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.08'/%3E%3C/svg%3E"),
+    linear-gradient(180deg, #ede4d3 0%, #e0d5c0 50%, #d9ccb5 100%);
+  color: #3d2b1f;
+  line-height: 1.6;
+}
+
+/* Cover */
+.cover {
+  background: linear-gradient(160deg, #2c1810, #4a2820, #3d1f15, #2c1810);
+  color: #b8860b;
+  text-align: center;
+  padding: 80px 20px 60px;
+  position: relative;
+  overflow: hidden;
+}
+.cover::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence baseFrequency='0.7' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.06'/%3E%3C/svg%3E");
+  pointer-events: none;
+}
+.cover h1 {
+  font-size: clamp(36px, 6vw, 64px);
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  position: relative;
+  z-index: 1;
+}
+.cover .subtitle {
+  font-size: clamp(14px, 2vw, 20px);
+  color: #a09080;
+  margin-top: 12px;
+  position: relative;
+  z-index: 1;
+}
+.cover .stats {
+  margin-top: 24px;
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 1;
+}
+.cover .stat {
+  text-align: center;
+  color: #8c7b6b;
+  font-size: 13px;
+}
+.cover .stat strong {
+  display: block;
+  font-size: 28px;
+  color: #b8860b;
+  font-family: Georgia, serif;
+}
+
+/* Container */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 48px 20px;
+}
+
+/* Section divider */
+.section-divider {
+  text-align: center;
+  margin: 40px 0 32px;
+}
+.section-divider h2 {
+  display: inline-block;
+  font: clamp(24px, 3vw, 32px) Georgia, serif;
+  color: #8b2500;
+  padding: 16px 40px;
+  border-top: 2px solid rgba(184,134,11,0.3);
+  border-bottom: 2px solid rgba(184,134,11,0.3);
+}
+
+/* Edition cards */
+.editions {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.edition-card {
+  background: #faf6ef;
+  border: 1px solid #d4c5a9;
+  border-radius: 6px;
+  padding: 28px 32px;
+  transition: transform 0.2s, box-shadow 0.2s;
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+.edition-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 24px rgba(44,24,16,0.12);
+}
+.edition-card .edition-month {
+  font-size: 13px;
+  color: #8c7b6b;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.edition-card .edition-title {
+  font-size: 22px;
+  color: #8b2500;
+  margin: 6px 0 10px;
+  font-family: Georgia, serif;
+}
+.edition-card .edition-desc {
+  font-size: 15px;
+  color: #5a4a3a;
+  line-height: 1.5;
+}
+.edition-card .edition-meta {
+  margin-top: 14px;
+  display: flex;
+  gap: 20px;
+  font-size: 12px;
+  color: #8c7b6b;
+}
+.edition-card .edition-meta span {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+/* Info section */
+.info-box {
+  background: #faf6ef;
+  border: 1px solid #d4c5a9;
+  border-radius: 6px;
+  padding: 24px 32px;
+  margin-top: 48px;
+  font-size: 14px;
+  color: #5a4a3a;
+}
+.info-box h3 {
+  color: #8b2500;
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+.info-box ul {
+  padding-left: 20px;
+}
+.info-box li {
+  margin-bottom: 4px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 48px 20px;
+  font-size: 12px;
+  color: #8c7b6b;
+  border-top: 1px solid rgba(184,134,11,0.2);
+  margin-top: 48px;
+}
+
+@media (max-width: 600px) {
+  .cover { padding: 48px 16px 36px; }
+  .cover .stats { gap: 16px; }
+  .cover .stat strong { font-size: 22px; }
+  .edition-card { padding: 20px; }
+}
+</style>
+</head>
+<body>
+
+<div class="cover">
+  <h1>⚔️ Folk Metal Magazine</h1>
+  <p class="subtitle">Prensa independiente del folk metal español · Fuentes: Instagram (29 bandas), RSS Bridge, Spotify</p>
+  <div class="stats">
+    <div class="stat"><strong>29</strong> Bandas</div>
+    <div class="stat"><strong>134</strong> Publicaciones (Jun-Jul)</div>
+    <div class="stat"><strong>12.6M</strong> Oyentes combinados</div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="section-divider">
+    <h2>📰 Ediciones</h2>
+  </div>
+
+  <div class="editions" id="editions-list">
+    <!-- Dynamically populated by publish script -->
+    <a class="edition-card" href="ediciones/2026-07.html">
+      <div class="edition-month">Junio – Julio 2026</div>
+      <div class="edition-title">Número #1 · Especial Verano</div>
+      <div class="edition-desc">Nidhögg se retira, Argion estrena single, cambios de formación, y el mapa completo de la escena folk metal española con métricas de Spotify.</div>
+      <div class="edition-meta">
+        <span>🎸 27 bandas</span>
+        <span>📸 134 publicaciones</span>
+        <span>📊 Métricas Q2</span>
+      </div>
+    </a>
+  </div>
+
+  <div class="info-box">
+    <h3>📡 Fuentes y metodología</h3>
+    <ul>
+      <li><strong>Instagram</strong> — 29 bandas monitorizadas vía RSS Bridge (Docker local)</li>
+      <li><strong>Spotify</strong> — Métricas de oyentes mensuales por artista</li>
+      <li><strong>RSS Bridge</strong> — Instance local en puerto 3100, cron cada 12h</li>
+      <li><strong>Periodicidad</strong> — Nueva edición el día 1 de cada mes con el resumen del mes anterior</li>
+      <li><strong>Selección editorial</strong> — Basada en publicaciones oficiales de cada banda, verificadas contra URLs de Instagram</li>
+    </ul>
+  </div>
+</div>
+
+<footer>
+  Folk Metal Magazine · Publicado con GitHub Pages · Sin ánimo de lucro · Las imágenes pertenecen a sus respectivos autores
+</footer>
+
+</body>
+</html>

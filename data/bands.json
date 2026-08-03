@@ -1629,12 +1629,12 @@
   "instagram": "@reinodehadesoficial",
   "wiki": "",
   "miembros": [
-   "José \"Joe\" Fernández — voz",
-   "Francisco Javier Roa — guitarra, coros",
-   "Javier Ferrón — guitarra",
-   "Antonio J. Pérez — bajo",
+   "Joe Fernández — voz",
+   "Francisco Javier Roa — guitarras",
+   "Javier Ferrón — guitarras",
+   "Antonio J. Pérez — bajo y coros",
    "Sergio Jiménez — violín",
-   "J. Antonio Valderas — flautas, gaitas",
+   "J. Antonio Valderas — flautas y gaitas",
    "David López — teclados",
    "Fabio Romero — batería"
   ],
@@ -1647,48 +1647,245 @@
   "fuentes": [],
   "discografia": [
    {
-    "titulo": "Leyendas del Aqueronte",
-    "anio": 2012,
-    "nota": "Mitología griega. Voz de Joe."
+    "titulo": "Siete Runas",
+    "anio": 2023,
+    "tipo": "Full-length",
+    "nota": "Maldito Records. 9 canciones. Mitología nórdica; bodhrán y bouzouki. Regreso de Joe."
    },
    {
     "titulo": "Reflejos del Caos",
     "anio": 2019,
-    "nota": "Voz de Rafa Gant. Colabora Miguel Ángel Franco (Saurom) en «Barbanegra»."
+    "tipo": "Full-length",
+    "nota": "Maldito Records. Voz de Rafa Gant; colabora Miguel Ángel Franco (Saurom) en «Barbanegra»."
    },
    {
-    "titulo": "Siete Runas",
-    "anio": 2023,
-    "nota": "Maldito Records. Regreso de Joe. El más maduro según la crítica."
+    "titulo": "Leyendas del Aqueronte",
+    "anio": 2012,
+    "tipo": "Full-length",
+    "nota": "Primer disco. Mitología griega. Voz de Joe."
+   },
+   {
+    "titulo": "Las Puertas del Reino",
+    "anio": 2008,
+    "tipo": "Demo",
+    "nota": "Segunda maqueta."
+   },
+   {
+    "titulo": "Creación",
+    "anio": 2003,
+    "tipo": "Demo",
+    "nota": "Primera maqueta."
    },
    {
     "titulo": "4º disco",
     "anio": null,
+    "tipo": "Full-length",
     "nota": "En fase de nombre y grabación. Adelanto: «Junto a Ti» (2025)."
    }
   ],
   "hitos": [
    {
     "fecha": "2001",
-    "texto": "Formación en Jaén."
+    "texto": "Formación en Jaén a finales de año."
    },
    {
-    "fecha": "2023",
-    "texto": "Fichaje por Maldito Records; publicación de «Siete Runas»."
+    "fecha": "2003",
+    "texto": "Primera maqueta «Creación»."
+   },
+   {
+    "fecha": "2008",
+    "texto": "Segunda maqueta «Las Puertas del Reino»."
+   },
+   {
+    "fecha": "2012",
+    "texto": "Primer disco «Leyendas del Aqueronte»."
+   },
+   {
+    "fecha": "2018",
+    "texto": "Segundo disco «Reflejos del Caos» (Maldito Records)."
+   },
+   {
+    "fecha": "2023-07-26",
+    "texto": "«Siete Runas» (Maldito Records), tercer álbum."
    },
    {
     "fecha": "2025-02-06",
-    "texto": "Incendio destruye el local de ensayo (~15.000€ en pérdidas)."
+    "texto": "Incendio destruye el local de ensayo (~15.000 € en pérdidas). Cobertura de Cadena SER Jaén."
    },
    {
-    "fecha": "2025-04",
-    "texto": "Reino Fest solidario (20 bandas, Jaén) organizado por la comunidad."
+    "fecha": "2025-04-05",
+    "texto": "Reino Fest solidario (20 bandas, Auditorio de la Alameda, Jaén)."
    },
    {
     "fecha": "2025",
     "texto": "Adelanto «Junto a Ti» del 4º disco."
+   },
+   {
+    "fecha": "2025-10-12",
+    "texto": "Feria de San Lucas (Jaén) compartiendo cartel con Mägo de Oz y Megara — portada en Hora Jaén."
    }
-  ]
+  ],
+  "historia": "Banda jiennense de heavy metal/folk melódico nacida a finales de 2001. En 2003 grabaron su primera maqueta, «Creación», y en 2008 la segunda, «Las Puertas del Reino». Tras multitud de conciertos y cambios de formación, en 2012 publicaron su primer disco, «Leyendas del Aqueronte». En 2018 llegó «Reflejos del Caos» y en 2023 «Siete Runas», un viaje épico por la mitología nórdica que consolidó su sonido. El 6 de febrero de 2025 un incendio destruyó su local de ensayo; la comunidad respondió con el Reino Fest solidario. En 2025 publicaron el adelanto «Junto a Ti» del cuarto disco, en fase de grabación.",
+  "sellos": [
+   {
+    "sello": "Maldito Records",
+    "desde": 2019,
+    "hasta": null,
+    "nota": "Reflejos del Caos (2019) y Siete Runas (2023); distribución digital Maldito Digital."
+   },
+   {
+    "sello": "Autoproducción",
+    "desde": 2001,
+    "hasta": 2018,
+    "nota": "Maquetas «Creación» (2003) y «Las Puertas del Reino» (2008); Leyendas del Aqueronte (2012)."
+   }
+  ],
+  "redes": {
+   "web": "https://reinodehades.es",
+   "instagram": "https://www.instagram.com/reinodehadesoficial/",
+   "facebook": "https://www.facebook.com/reinodehadesoficial/",
+   "youtube": "https://www.youtube.com/reinodehades",
+   "spotify": "https://open.spotify.com/artist/2cPuCPULrrKqi5guQ0Que7",
+   "apple_music": "https://music.apple.com/es/artist/reino-de-hades",
+   "tiktok": "https://www.tiktok.com/@reinodehadesoficial"
+  },
+  "equipo": [
+   "Alex Izquierdo — técnico de sonido",
+   "Tomé — técnico de luces",
+   "Mario Valderas — video y percusión",
+   "Jorge — técnico de escenario",
+   "Maribel Erencia — fotografía y redes"
+  ],
+  "conciertos_historicos": [
+   {
+    "fecha": "2025-10-12",
+    "evento": "Feria de San Lucas",
+    "ciudad": "Jaén",
+    "sala": "Auditorio de la Alameda",
+    "compania": "Mägo de Oz y Megara",
+    "fuente": "https://www.horajaen.com/2025/10/13/el-rock-y-el-metal-conquistan-la-alameda-con-reino-de-hades-megara-y-mago-de-oz/"
+   },
+   {
+    "fecha": "2025-09-12",
+    "evento": "III Jaén Rock & Blues Fest",
+    "ciudad": "Jaén",
+    "sala": "Paseo de las Bicicletas",
+    "compania": "",
+    "fuente": "https://reinodehades.es/eventos"
+   },
+   {
+    "fecha": "2025-05-17",
+    "evento": "Málaga",
+    "ciudad": "Málaga",
+    "sala": "Sala Roka",
+    "compania": "Hadadanza",
+    "fuente": "https://reinodehades.es/eventos"
+   },
+   {
+    "fecha": "2025-04-05",
+    "evento": "Reino Fest (benéfico post-incendio)",
+    "ciudad": "Jaén",
+    "sala": "Auditorio de la Alameda",
+    "compania": "20 bandas",
+    "fuente": "https://reinodehades.es/eventos"
+   },
+   {
+    "fecha": "2025-03-29",
+    "evento": "Madrid",
+    "ciudad": "Madrid",
+    "sala": "Sala Revi Live",
+    "compania": "Hadadanza y Profecía",
+    "fuente": "https://reinodehades.es/eventos"
+   },
+   {
+    "fecha": "2025-03-28",
+    "evento": "Ciudad Real",
+    "ciudad": "Puertollano",
+    "sala": "Sala Kráter",
+    "compania": "Hadadanza",
+    "fuente": "https://reinodehades.es/eventos"
+   },
+   {
+    "fecha": "2025-03-01",
+    "evento": "Bilbao",
+    "ciudad": "Bilbao",
+    "sala": "Sala Blue (Santana 27)",
+    "compania": "Ekyrian y Khimaira",
+    "fuente": "https://reinodehades.es/eventos"
+   },
+   {
+    "fecha": "2024-11-30",
+    "evento": "Granada",
+    "ciudad": "Granada",
+    "sala": "Sala El Tren",
+    "compania": "Celtian y Argion",
+    "fuente": "https://reinodehades.es/eventos"
+   },
+   {
+    "fecha": "2024-10-25",
+    "evento": "Jaén",
+    "ciudad": "Jaén",
+    "sala": "Sala Kharma",
+    "compania": "Saurom",
+    "fuente": "https://reinodehades.es/eventos"
+   },
+   {
+    "fecha": "2024-02-03",
+    "evento": "Presentación oficial de Siete Runas",
+    "ciudad": "Jaén",
+    "sala": "Sala Kharma",
+    "compania": "",
+    "fuente": "https://reinodehades.es/eventos"
+   }
+  ],
+  "prensa": [
+   {
+    "medio": "Hora Jaén",
+    "fecha": "2025-10-13",
+    "titulo": "El rock y el metal conquistan La Alameda con Reino de Hades, Megara y Mägo de Oz",
+    "url": "https://www.horajaen.com/2025/10/13/el-rock-y-el-metal-conquistan-la-alameda-con-reino-de-hades-megara-y-mago-de-oz/"
+   },
+   {
+    "medio": "Cadena SER Jaén",
+    "fecha": "2025-02-11",
+    "titulo": "Reino de Hades, tras el incendio de su local de ensayo: \"fue uno de los días más tristes\"",
+    "url": "https://www.facebook.com/reinodehadesband/"
+   },
+   {
+    "medio": "Rock4U",
+    "fecha": "2025-10-12",
+    "titulo": "Mägo de Oz, Megara y Reino de Hades en la Feria de San Lucas",
+    "url": "https://www.rock4u.es/tag/reino-de-hades/"
+   },
+   {
+    "medio": "Diario de un Metalhead",
+    "fecha": "2024-01-01",
+    "titulo": "REINO DE HADES: Siete Runas (Maldito Records, 2023)",
+    "url": "https://www.diariodeunmetalhead.com/2024/01/reino-de-hades-siete-runas-maldito.html"
+   },
+   {
+    "medio": "Maldito Digital",
+    "fecha": "2023-01-01",
+    "titulo": "REINO DE HADES — Siete Runas (2023)",
+    "url": "https://www.malditodigital.com/artista/reino-de-hades"
+   }
+  ],
+  "metricas": {
+   "spotify_oyentes_mes": "2.5K",
+   "spotify_oyentes_nota": "~2.5-2.8K oyentes/mes (ago 2026)",
+   "youtube_suscriptores": null,
+   "youtube_nota": "Canal youtube.com/reinodehades (consent wall impide scrapear suscriptores)",
+   "videoclips": [
+    {
+     "titulo": "Junto a Ti",
+     "fecha": "2025-10-10",
+     "visitas": "25K",
+     "url": "https://www.youtube.com/watch?v=evMHJKRQKX0",
+     "nota": "Primer adelanto del 4º disco; homenaje a la comunidad tras el incendio. Estreno en Maldito Records."
+    }
+   ]
+  },
+  "instagram_seguidores": "1.834 (jun 2026, vault)"
  },
  "Salduie": {
   "origen": "Zaragoza",

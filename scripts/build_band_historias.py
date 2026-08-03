@@ -301,6 +301,7 @@ def main():
                      '<a href="#historia">📜 Historia mes a mes</a><span>·</span>'
                      '<a href="#conciertos">🎸 Conciertos</a><span>·</span>'
                      '<a href="#prensa">📰 Prensa</a><span>·</span>'
+                     '<a href="#fuentes">📚 Fuentes</a><span>·</span>'
                      '<a href="../ediciones/">⬅ Volver a la revista</a></nav>')
         parts.append('<main class="container">')
 
@@ -357,6 +358,88 @@ def main():
 
         if not quick and not prof.get('miembros') and not prof.get('discografia'):
             parts.append('<p class="empty-state">Ficha en construcción: datos pendientes de investigación.</p>')
+
+        # 1b. Historia narrativa (web oficial / biografía curada)
+        if prof.get('historia'):
+            parts.append(f'<div class="card"><h3>🏛️ Historia</h3>'
+                         f'<p style="font-size:15.5px;line-height:1.7;color:#33251c;margin:8px 0">{esc(prof["historia"])}</p></div>')
+
+        # 1c. Sellos / discográficas (histórico)
+        sellos = prof.get('sellos') or []
+        if sellos:
+            parts.append('<div class="card"><h3>🏷️ Sellos y discográficas</h3><ul class="clean">')
+            for s in sellos:
+                periodo = f'{s.get("desde", "?")}–{s.get("hasta") or "actualidad"}'
+                nota = f' — {s["nota"]}' if s.get('nota') else ''
+                parts.append(f'<li><b>{esc(s.get("sello", ""))}</b> <span class="badge badge-past">{esc(periodo)}</span>{esc(nota)}</li>')
+            parts.append('</ul></div>')
+        elif prof.get('sello'):
+            parts.append(f'<div class="card"><h3>🏷️ Sello / Discográfica</h3>'
+                         f'<p style="margin:6px 0">{esc(prof["sello"])}</p></div>')
+
+        # 1d. Redes y enlaces
+        redes = prof.get('redes') or {}
+        if redes or prof.get('web') or prof.get('instagram'):
+            parts.append('<div class="card"><h3>🌐 Redes y enlaces</h3><ul class="clean">')
+            if prof.get('web') or redes.get('web'):
+                u = redes.get('web') or prof['web']
+                parts.append(f'<li>🌍 <a href="{esc(u)}" target="_blank" rel="noopener">Web oficial</a></li>')
+            rmap = [('instagram', '📸 Instagram'), ('facebook', '📘 Facebook'),
+                    ('youtube', '▶️ YouTube'), ('spotify', '🎧 Spotify'),
+                    ('apple_music', '🍎 Apple Music'), ('tiktok', '🎵 TikTok')]
+            for key, label in rmap:
+                u = redes.get(key)
+                if u:
+                    parts.append(f'<li>{label}: <a href="{esc(u)}" target="_blank" rel="noopener">{esc(u.replace("https://", "").rstrip("/"))}</a></li>')
+            if prof.get('instagram_seguidores'):
+                parts.append(f'<li class="tl-tag" style="display:inline-block;margin-top:6px;background:#ead6a2;color:#725100">'
+                             f'📈 {esc(prof["instagram_seguidores"])}</li>')
+            parts.append('</ul></div>')
+
+        # 1e. Métricas Spotify / YouTube / videoclips
+        metricas = prof.get('metricas') or {}
+        if metricas:
+            parts.append('<div class="card"><h3>📊 Métricas</h3>')
+            m_spotify = metricas.get('spotify_oyentes_mes')
+            if m_spotify:
+                parts.append(f'<div class="quick-grid" style="margin:10px 0">'
+                             f'<div class="quick"><b>🎧 Spotify</b><span>{esc(m_spotify)} oyentes/mes</span></div>')
+            m_yt = metricas.get('youtube_suscriptores')
+            if m_yt:
+                parts.append(f'<div class="quick"><b>▶️ YouTube</b><span>{esc(m_yt)} suscriptores</span></div>')
+            if m_spotify or m_yt:
+                parts.append('</div>')
+            for v in (metricas.get('videoclips') or []):
+                vurl = v.get('url') or '#'
+                vvisitas = v.get('visitas') or '—'
+                vnota = f' — {v["nota"]}' if v.get('nota') else ''
+                parts.append(f'<div class="tl-post"><span class="post-date">🎬 {esc(v.get("fecha", ""))}</span>'
+                             f'<b>{esc(v.get("titulo", ""))}</b> · {esc(vvisitas)} visitas · '
+                             f'<a href="{esc(vurl)}" target="_blank" rel="noopener">ver en YouTube 🔗</a>{esc(vnota)}</div>')
+            if metricas.get('spotify_oyentes_nota'):
+                parts.append(f'<p style="font-size:12px;color:var(--muted);margin-top:8px">{esc(metricas["spotify_oyentes_nota"])}</p>')
+            if metricas.get('youtube_nota'):
+                parts.append(f'<p style="font-size:12px;color:var(--muted);margin:4px 0 0">{esc(metricas["youtube_nota"])}</p>')
+            parts.append('</div>')
+
+        # 1f. Equipo técnico (web oficial)
+        if prof.get('equipo'):
+            parts.append('<div class="card"><h3>🛠️ Equipo técnico</h3><ul class="clean">')
+            for e in prof['equipo']:
+                parts.append(f'<li>{esc(e)}</li>')
+            parts.append('</ul></div>')
+
+        # 1g. Prensa destacada (hitos en medios)
+        prensa = prof.get('prensa') or []
+        if prensa:
+            parts.append('<div class="card"><h3>📰 Prensa destacada</h3><ul class="clean">')
+            for pr in sorted(prensa, key=lambda x: str(x.get('fecha') or ''), reverse=True):
+                pdate = str(pr.get('fecha') or '')[:10]
+                parts.append(f'<li><span class="badge badge-news">{esc(pr.get("medio", ""))}</span> '
+                             f'<b>{esc(pdate)}</b> — <a href="{esc(pr.get("url", "#"))}" target="_blank" rel="noopener">'
+                             f'{esc(pr.get("titulo", ""))}</a></li>')
+            parts.append('</ul></div>')
+
         parts.append('</section>')
 
         # 2. Historia mes a mes
@@ -409,20 +492,40 @@ def main():
             parts.append('</div>')
         parts.append('</section>')
 
-        # 3. Todos los conciertos (ordenados)
+        # 3. Todos los conciertos (ordenados) — DB + conciertos históricos del perfil
         parts.append('<section id="conciertos"><div class="section-divider"><h2>🎸 Todos los conciertos</h2></div>')
-        if not concerts_b:
+        hist_concerts = []
+        for hc in (prof.get('conciertos_historicos') or []):
+            hc_date = str(hc.get('fecha') or '')
+            if not hc_date:
+                continue
+            hist_concerts.append({
+                'date': hc_date,
+                'event_name': hc.get('evento') or hc.get('event_name'),
+                'city': hc.get('ciudad') or hc.get('city'),
+                'venue': hc.get('sala') or hc.get('venue'),
+                'event_type': 'concierto',
+                'source_url': hc.get('fuente') or hc.get('source_url'),
+                '_compania': hc.get('compania') or '',
+                '_hist': True,
+            })
+        db_dates = {(c['date'] or '')[:10] for c in concerts_b}
+        merged = [dict(c) for c in concerts_b] + [hc for hc in hist_concerts if (hc['date'] or '')[:10] not in db_dates]
+        if not merged:
             parts.append('<p class="empty-state">Sin conciertos registrados en el histórico.</p>')
         else:
             parts.append('<table class="events"><thead><tr><th>Fecha</th><th>Evento</th><th>Tipo</th><th>Ubicación</th><th>Estado</th></tr></thead><tbody>')
-            all_c = sorted(concerts_b, key=lambda c: c['date'])
+            all_c = sorted(merged, key=lambda c: c['date'])
             for c in all_c:
                 is_future = (c['date'] or '')[:10] >= today.isoformat()
                 icon = {'festival': '🎪', 'gira': '🗺️'}.get(c['event_type'] or '', '🎸')
-                label = ' — '.join(p for p in (c['event_name'],) if p) or '—'
-                loc = ' — '.join(p for p in (c['city'], c['venue']) if p) or '—'
-                link = c['source_url'] or '#'
-                kind = c['event_type'] or 'concierto'
+                label_parts = [c.get('event_name') or '']
+                if c.get('_compania'):
+                    label_parts.append(f'con {c["_compania"]}')
+                label = ' — '.join(p for p in label_parts if p) or '—'
+                loc = ' — '.join(p for p in (c.get('city'), c.get('venue')) if p) or '—'
+                link = c.get('source_url') or '#'
+                kind = c.get('event_type') or 'concierto'
                 state = '<span class="badge badge-future">próximo</span>' if is_future else '<span class="badge badge-past">pasado</span>'
                 row_cls = 'future' if is_future else 'past'
                 parts.append(f'<tr class="{row_cls}"><td>{esc((c["date"] or "")[:10])}</td>'
@@ -431,18 +534,66 @@ def main():
             parts.append('</tbody></table>')
         parts.append('</section>')
 
-        # 4. Prensa
+        # 4. Prensa (medios monitorizados + prensa destacada del perfil)
         parts.append('<section id="prensa"><div class="section-divider"><h2>📰 Prensa y medios</h2></div>')
-        if not news_b:
+        prof_prensa = prof.get('prensa') or []
+        if not news_b and not prof_prensa:
             parts.append('<p class="empty-state">Sin menciones en los medios monitorizados (Hellpress, Metalcry, RafaBasa, The Dark Melody).</p>')
         else:
+            for pr in sorted(prof_prensa, key=lambda x: str(x.get('fecha') or ''), reverse=True):
+                parts.append(f'<div class="news-card"><span class="news-src">{esc(pr.get("medio", ""))} · {esc(str(pr.get("fecha") or "")[:10])}</span><br>'
+                             f'<a href="{esc(pr.get("url", "#"))}" target="_blank" rel="noopener">{esc(pr.get("titulo", ""))}</a></div>')
             for n in news_b[:10]:
                 parts.append(f'<div class="news-card"><span class="news-src">{esc(n["source"])} · {esc((n["published"] or "")[:10])}</span><br>'
                              f'<a href="{esc(n["url"])}" target="_blank" rel="noopener">{esc(clean_caption(n["title"]))}</a></div>')
         parts.append('</section>')
 
+        # 5. Fuentes de verificación (contrastar los datos)
+        parts.append('<section id="fuentes"><div class="section-divider"><h2>📚 Fuentes</h2></div>')
+        fuentes = []
+        seen = set()
+        def add_fuente(label, url):
+            if url and url not in seen and url != '#':
+                seen.add(url)
+                fuentes.append((label, url))
+        # Fuentes del brief (Metal Archives, Wikipedia)
+        for f in (prof.get('fuentes') or []):
+            if ':' in str(f):
+                label, _, url = str(f).partition(': ')
+                add_fuente(label.strip().capitalize(), url.strip())
+        # Prensa destacada
+        for pr in (prof.get('prensa') or []):
+            add_fuente(f'Prensa · {pr.get("medio", "")}', pr.get('url'))
+        # Conciertos históricos
+        for hc in (prof.get('conciertos_historicos') or []):
+            add_fuente(f'Concierto · {hc.get("evento", hc.get("fecha", ""))}', hc.get('fuente') or hc.get('source_url'))
+        # Videoclips
+        for v in ((prof.get('metricas') or {}).get('videoclips') or []):
+            add_fuente(f'Videoclip · {v.get("titulo", "")}', v.get('url'))
+        # Web y redes
+        redes = prof.get('redes') or {}
+        add_fuente('Web oficial', redes.get('web') or prof.get('web'))
+        add_fuente('Spotify', redes.get('spotify'))
+        add_fuente('YouTube', redes.get('youtube'))
+        add_fuente('Instagram', redes.get('instagram'))
+        add_fuente('Facebook', redes.get('facebook'))
+        add_fuente('TikTok', redes.get('tiktok'))
+        # Fuentes de la DB (posts y conciertos)
+        for c in [dict(x) for x in concerts_b][:6]:
+            add_fuente(f'Concierto · {c.get("event_name") or c.get("date", "")}', c.get('source_url'))
+        if fuentes:
+            parts.append('<div class="card"><p style="font-size:13.5px;color:var(--muted);margin:0 0 10px">'
+                         'Enlaces para contrastar los datos de esta ficha. Cada dato curado apunta a su fuente original.</p><ul class="clean">')
+            for label, url in sorted(fuentes, key=lambda x: x[0].casefold()):
+                parts.append(f'<li>🔗 <b>{esc(label)}</b> — <a href="{esc(url)}" target="_blank" rel="noopener">{esc(url)}</a></li>')
+            parts.append('</ul></div>')
+        else:
+            parts.append('<p class="empty-state">Sin fuentes externas registradas; los datos provienen del archivo curado del proyecto.</p>')
+        parts.append('</section>')
+
         parts.append(f'</main><footer><a href="../index.html">⬅ Índice de fichas</a> · '
-                     f'<a href="../ediciones/">Revista mensual</a><br><br>'
+                     f'<a href="../ediciones/">Revista mensual</a> · '
+                     f'<a href="#fuentes">📚 Fuentes</a><br><br>'
                      f'Ficha histórica de {esc(band)} · Folk Metal Magazine · '
                      f'datos verificables desde publicaciones, prensa y archivo curado</footer>')
         parts.append('</body></html>')

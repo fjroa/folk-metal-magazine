@@ -224,7 +224,7 @@ def band_context(band):
     hitos = brief.get('hitos') or []
     if hitos:
         h_lines = []
-        for h in hitos[:8]:
+        for h in hitos[:12]:
             h_lines.append(f'{h.get("fecha", "?")}: {h.get("texto", "")}'.strip())
         lines.append('- Hitos históricos: ' + ' | '.join(h_lines))
     if not lines:

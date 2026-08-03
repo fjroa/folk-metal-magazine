@@ -32,6 +32,12 @@ def main():
     conn = sqlite3.connect(DB)
     rows = conn.execute(
         "SELECT band_name, MAX(post_date) as last FROM posts GROUP BY band_name").fetchall()
+    # Conciertos futuros: actividad real aunque no publique en redes
+    futuros = {}
+    for b, n in conn.execute(
+            "SELECT band_name, COUNT(*) FROM concerts WHERE date >= ? GROUP BY band_name",
+            (ref.strftime('%Y-%m-%d'),)):
+        futuros[b] = n
     conn.close()
 
     status = {}
@@ -52,6 +58,9 @@ def main():
         if anuncio:
             st = 'INACTIVA'
             note = 'anuncio de retirada/parón'
+        elif futuros.get(band, 0) > 0:
+            st = 'ACTIVA'
+            note = f'activa vía conciertos ({futuros[band]} futuros)'
         elif months >= 2:
             st = 'INACTIVA'
             note = f'{months} meses sin publicar'

@@ -58,11 +58,11 @@ footer{margin-top:64px;padding:36px 20px;background:var(--dark);color:#c9a84c}fo
 # Overrides kept separate so the base parchment language remains easy to audit.
 EDITORIAL_CSS = '''
 body{font-variant-numeric:oldstyle-nums} .cover h1{text-shadow:0 4px 18px #160805}
- .gordo-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;margin-top:12px}.gordo-grid .hl-card:first-child{border-top-width:7px}.hl-card{display:flex;flex-direction:column;background:rgba(250,246,239,.94);box-shadow:0 8px 20px rgba(61,43,31,.12)}.hl-card img{width:100%;height:200px;object-fit:cover}.hl-card:hover{transform:translateY(-2px)}.hl-card .hl-band{font-size:17px}.hl-card .hl-text{font-size:15px;line-height:1.55}.hl-card .source-link{display:none}.hl-body{padding:16px}
+ .gordo-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;margin-top:12px}.gordo-grid .hl-card:first-child{border-top-width:7px}.hl-card{display:flex;flex-direction:column;background:rgba(250,246,239,.94);box-shadow:0 8px 20px rgba(61,43,31,.12)}.hl-card img{width:100%;object-fit:cover}.ph-xl{height:300px}.ph-lg{height:240px}.ph-md{height:190px}.hl-card:hover{transform:translateY(-2px)}.hl-card .hl-band{font-size:17px}.hl-card .hl-text{font-size:15px;line-height:1.55}.hl-card .source-link{display:none}.hl-body{padding:16px}
  .tile-a,.tile-b,.tile-c,.tile-d{transition:transform .2s,border-radius .2s}.tile-a{border-radius:24px 6px 24px 6px;transform:rotate(-1deg)}.tile-b{border-radius:6px 24px 6px 24px;transform:rotate(1deg)}.tile-c{border-radius:50% 8px 50% 8px / 30% 8px 30% 8px;transform:rotate(-1deg)}.tile-d{border-radius:12px 40px 12px 40px;transform:rotate(1deg)}.tile-a:hover,.tile-b:hover,.tile-c:hover,.tile-d:hover{transform:rotate(0)}.band-lead{font-size:18px;font-weight:600;color:var(--accent);line-height:1.45}.band-body{font-size:14px;line-height:1.6;margin-top:5px}
 .band-card-wrapper{position:relative}.more-row{cursor:pointer;margin-top:10px;padding:9px;text-align:center;border:1px solid var(--border);border-radius:4px;color:var(--accent);font:700 12px ui-sans-serif,system-ui,sans-serif;background:var(--highlight)}
 .metrics-table{font-variant-numeric:tabular-nums}.metrics-table tbody tr:nth-child(even){background:rgba(237,228,211,.42)}.metrics-table tbody tr:hover{background:var(--highlight)}.metrics-table th{position:sticky;top:49px;z-index:1}.listeners{min-width:180px}.bar-track{height:7px;margin-top:5px;background:#dfd2bd;border-radius:9px;overflow:hidden}.bar{height:100%;background:linear-gradient(90deg,#8b5a13,var(--gold),#d8b84f);border-radius:9px}.medal{font-size:18px;margin-right:5px}
-.band-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:26px}.band-card-wrapper.wide{grid-column:span 2}.band-card{border-radius:2px;border-top:4px solid var(--accent);background:rgba(250,246,239,.94)}.band-header{gap:18px;padding:18px}.band-header img{width:116px;height:116px;border:5px solid var(--cream);outline:1px solid var(--border);box-shadow:0 4px 12px rgba(61,43,31,.18)}.band-header .name,.band-name{font-size:20px;font-weight:bold;line-height:1.2;color:#2f2118}.band-header .metrics,.band-header .count{font-size:12px;color:#4b382b}.band-summary{font-size:15px;line-height:1.6;color:#33251c;padding:0 18px 16px}.post-item{font-size:13.5px;line-height:1.55;color:#3b2a20}.post-date{font-size:11px;color:#594637;font-weight:bold}.more-row{font-size:12px}.band-card-wrapper.reverse .band-header{flex-direction:row-reverse;text-align:right}.band-card-wrapper.reverse .band-header>div{flex:1}.agenda-month{font-size:23px}.cal-cell{min-height:126px;padding:8px}.cal-event{font-size:11px;padding:7px 6px;line-height:1.4}.cal-day{font-size:16px}.event-badge{font-size:10px}.metrics-table th{font-size:13px}.metrics-table td{font-size:14px;padding:12px 10px}.metrics-table .band-name{font-size:15px}.metrics-table .listeners strong{font-size:14px}
+.band-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:26px}.band-card-wrapper.wide{grid-column:span 2}.band-card{border-radius:2px;border-top:4px solid var(--accent);background:rgba(250,246,239,.94)}.band-header{gap:18px;padding:18px}.band-header img{width:140px;height:140px;border:5px solid var(--cream);outline:1px solid var(--border);box-shadow:0 4px 12px rgba(61,43,31,.18)}.band-header .name,.band-name{font-size:20px;font-weight:bold;line-height:1.2;color:#2f2118}.band-header .metrics,.band-header .count{font-size:12px;color:#4b382b}.band-summary{font-size:15px;line-height:1.6;color:#33251c;padding:0 18px 16px}.post-item{font-size:13.5px;line-height:1.55;color:#3b2a20}.post-date{font-size:11px;color:#594637;font-weight:bold}.more-row{font-size:12px}.band-card-wrapper.reverse .band-header{flex-direction:row-reverse;text-align:right}.band-card-wrapper.reverse .band-header>div{flex:1}.agenda-month{font-size:23px}.cal-cell{min-height:126px;padding:8px}.cal-event{font-size:11px;padding:7px 6px;line-height:1.4}.cal-day{font-size:16px}.event-badge{font-size:10px}.metrics-table th{font-size:13px}.metrics-table td{font-size:14px;padding:12px 10px}.metrics-table .band-name{font-size:15px}.metrics-table .listeners strong{font-size:14px}
  @media(max-width:700px){.gordo-grid{grid-template-columns:1fr 1fr;gap:12px}.hl-card img{height:180px}.band-grid{grid-template-columns:1fr}.band-card-wrapper.wide{grid-column:auto}.band-header img{width:110px;height:110px}.band-card-wrapper.reverse .band-header{flex-direction:row;text-align:left}.cal-cell{min-height:96px;padding:5px 3px}.cal-event{font-size:11px;padding:5px 2px}.metrics-table th,.metrics-table td{padding:9px 6px}.listeners{min-width:115px}}
 '''
 
@@ -122,19 +122,44 @@ def logo_b64(band):
     return 'data:image/svg+xml;base64,' + svg_data(band)
 
 
+# Clasificación de fotos (FOTO de la banda vs CARTEL) generada por folk_photo_choice.py
+_photo_choices_path = MEDIA / f'photo_choices_{MONTH}.json'
+photo_choices = {}
+if _photo_choices_path.exists():
+    try:
+        photo_choices = json.loads(_photo_choices_path.read_text(encoding='utf-8'))
+    except Exception:
+        photo_choices = {}
+
+def _rank_for(band, path):
+    """Score de una foto según la clasificación: FOTO=1, DESCONOCIDO=0.5, CARTEL=0, sin dato=0.5."""
+    sc = path.stem.rsplit('_', 1)[1] if '_' in path.stem else ''
+    for item in photo_choices.get(band, []):
+        if item.get('shortcode') == sc or (item.get('shortcode') is None and item.get('file') == path.name):
+            return item.get('score', 0.5)
+    return 0.5
+
+def _photo_candidates(band):
+    return sorted((p for p in PHOTOS.glob(f'{safe(band)}_*.jpg') if p.stat().st_size > 5000),
+                  key=lambda p: p.stat().st_size, reverse=True)
+
 def photo_b64(band, shortcode):
     path = PHOTOS / f'{safe(band)}_{shortcode}.jpg'
     if path.exists() and path.stat().st_size > 5000:
-        return 'data:image/jpeg;base64,' + base64.b64encode(path.read_bytes()).decode()
+        # Si la foto del post es un CARTEL y hay una FOTO de la banda mejor, priorízala.
+        if _rank_for(band, path) >= 0.5:
+            return 'data:image/jpeg;base64,' + base64.b64encode(path.read_bytes()).decode()
+        return best_photo_b64(band)
     return logo_b64(band)
 
 
 def best_photo_b64(band):
-    cands = sorted(PHOTOS.glob(f'{safe(band)}_*.jpg'),
-                   key=lambda p: p.stat().st_size if p.exists() else 0, reverse=True)
-    if cands and cands[0].stat().st_size > 5000:
-        return 'data:image/jpeg;base64,' + base64.b64encode(cands[0].read_bytes()).decode()
-    return logo_b64(band)
+    cands = _photo_candidates(band)
+    if not cands:
+        return logo_b64(band)
+    # Prioridad: fotos clasificadas como FOTO (score 1), luego neutras, luego CARTEL.
+    best = max(cands, key=lambda c: (_rank_for(band, c), c.stat().st_size))
+    return 'data:image/jpeg;base64,' + base64.b64encode(best.read_bytes()).decode()
 
 
 def parse_metric(v):
@@ -332,6 +357,12 @@ if not highlights:
 highlights = [h for h in highlights
               if isinstance(h, dict) and clean_caption(h.get('text')) and
               len(clean_caption(h.get('text'))) >= 40][:6]
+# Lo Gordo: orden conforme a las métricas (oyentes mensuales, M>K>raw).
+# metrics se carga después (load_metrics); se reordena en el punto de render.
+def _hl_metric_key(h, metrics_map):
+    m = metrics_map.get(h.get('band', ''), ('0', '0', '', 'flat'))
+    return parse_metric(m[0])
+_HL_METRIC_SORTED = False
 
 # Agenda: detailed calendar for next month, compact lists for the following
 # three months. Events outside this window were deliberately not queried.
@@ -374,6 +405,8 @@ def month_label(value):
 
 
 metrics = load_metrics(band_names)
+# Lo Gordo: orden conforme a las métricas (oyentes mensuales, M>K>raw).
+highlights.sort(key=lambda h: _hl_metric_key(h, metrics), reverse=True)
 style_text = f'{CSS}{MODERN_CSS}{EDITORIAL_CSS}'.replace('hl-feature', 'legacy-feature').replace('hl-side', 'legacy-side')
 
 parts = ['<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8">',
@@ -427,8 +460,10 @@ if highlights:
         if len(text) > 360:
             text = text[:357].rsplit(' ', 1)[0] + '…'
         tile = ('tile-a', 'tile-b', 'tile-c', 'tile-d')[index % 4]
+        # Alturas de foto variadas (layout revista): patrón rítmico
+        ph = ('ph-xl', 'ph-lg', 'ph-md', 'ph-lg', 'ph-md', 'ph-xl')[index % 6]
         parts.append(
-            f'<article class="hl-card"><img class="{tile}" src="{img}" alt="Foto {esc(h["band"])}">'
+            f'<article class="hl-card"><img class="{tile} {ph}" src="{img}" alt="Foto {esc(h["band"])}">'
             f'<div class="hl-body"><div class="hl-band">{h.get("emoji", "🔥")} {esc(h["band"])}</div>'
             f'<div class="hl-text">{esc(text)}</div></div></article>')
     parts.append('</div>')

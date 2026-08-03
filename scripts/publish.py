@@ -82,6 +82,10 @@ def main():
 
     run(1, ['python3', 'scripts/folk_media_fetch.py', month])
     run(2, ['python3', 'scripts/folk_editorial.py', month])  # puede fallar; sigue igual
+    # 2b) Persistir el editorial mensual en la DB (histórico de fichas).
+    run(2, ['python3', 'scripts/store_monthly_extracts.py', month])
+    # 2c) Regenerar fichas históricas por banda (siempre, aunque el editorial falle).
+    run(2, ['python3', 'scripts/build_band_historias.py'])
     rc = run(3, ['python3', 'scripts/build_v16.py', month])
 
     # Parsear el report final de build_v16 para rellenar la card con stats reales.

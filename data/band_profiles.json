@@ -1,0 +1,419 @@
+{
+  "meta": {
+    "version": 1,
+    "fuente": "Vault Obsidian (entity reino-de-hades + Research/Folk-Metal-Español-Mapa-Completo-2026.md Q2) + noticias prensa verificadas",
+    "nota": "Solo datos verificados. Campos vacios = pendiente de investigar. NO inventar."
+  },
+  "Reino de Hades": {
+    "origen": "Jaén, Andalucía",
+    "formada": 2001,
+    "genero": "Heavy Metal, Folk Metal",
+    "sello": "Maldito Records (desde 2023)",
+    "web": "https://reinodehades.es",
+    "instagram": "@reinodehadesoficial",
+    "miembros": [
+      "José \"Joe\" Fernández — voz",
+      "Francisco Javier Roa — guitarra, coros",
+      "Javier Ferrón — guitarra",
+      "Antonio J. Pérez — bajo",
+      "Sergio Jiménez — violín",
+      "J. Antonio Valderas — flautas, gaitas",
+      "David López — teclados",
+      "Fabio Romero — batería"
+    ],
+    "discografia": [
+      {"titulo": "Leyendas del Aqueronte", "anio": 2012, "nota": "Mitología griega. Voz de Joe."},
+      {"titulo": "Reflejos del Caos", "anio": 2019, "nota": "Voz de Rafa Gant. Colabora Miguel Ángel Franco (Saurom) en «Barbanegra»."},
+      {"titulo": "Siete Runas", "anio": 2023, "nota": "Maldito Records. Regreso de Joe. El más maduro según la crítica."},
+      {"titulo": "4º disco", "anio": null, "nota": "En fase de nombre y grabación. Adelanto: «Junto a Ti» (2025)."}
+    ],
+    "hitos": [
+      {"fecha": "2001", "texto": "Formación en Jaén."},
+      {"fecha": "2023", "texto": "Fichaje por Maldito Records; publicación de «Siete Runas»."},
+      {"fecha": "2025-02-06", "texto": "Incendio destruye el local de ensayo (~15.000€ en pérdidas)."},
+      {"fecha": "2025-04", "texto": "Reino Fest solidario (20 bandas, Jaén) organizado por la comunidad."},
+      {"fecha": "2025", "texto": "Adelanto «Junto a Ti» del 4º disco."}
+    ],
+    "conexiones": [
+      "Saurom — colaboración y conciertos conjuntos",
+      "Mägo de Oz — compartieron Feria San Lucas 2025",
+      "Sonoris Causa — proyecto paralelo de Francisco Javier Roa"
+    ],
+    "estudios": []
+  },
+  "Saurom": {
+    "origen": "San Fernando, Cádiz",
+    "formada": 1996,
+    "genero": "Folk Metal",
+    "sello": "",
+    "web": "",
+    "instagram": "",
+    "miembros": [],
+    "discografia": [
+      {"titulo": "Épica I y II Remastered", "anio": 2026, "nota": "Abril 2026."},
+      {"titulo": "Vida", "anio": 2026, "nota": "Anunciado para diciembre 2026. Concierto-presentación 12 dic 2026, La Nueva Cubierta de Leganés (Madrid)."}
+    ],
+    "hitos": [
+      {"fecha": "2026-07", "texto": "Show 30 aniversario en Leyendas del Rock 2026 con invitados sorpresa."},
+      {"fecha": "2026-07", "texto": "Saurom y Ronnie Romero lideran la sexta edición del Molina Rock City."}
+    ],
+    "conexiones": ["Ronnie Romero — colaboración en Molina Rock City"],
+    "estudios": []
+  },
+  "Celtian": {
+    "origen": "Alcalá de Henares, Madrid",
+    "formada": 2017,
+    "genero": "Folk Metal sinfónico",
+    "sello": "",
+    "web": "",
+    "instagram": "",
+    "miembros": [],
+    "discografia": [
+      {"titulo": "DVD en vivo (La Riviera)", "anio": 2026, "nota": "Grabado en La Riviera (Madrid, 9 mayo 2026)."}
+    ],
+    "hitos": [
+      {"fecha": "2026-10-26", "texto": "Gira LATAM: Argentina."},
+      {"fecha": "2026-07", "texto": "«Maleficio De Sangre», revive la magia de La Riviera."}
+    ],
+    "conexiones": ["Xana Lavey — doble vocalista (Celtian + Mägo de Oz)"],
+    "estudios": []
+  },
+  "Salduie": {
+    "origen": "Zaragoza",
+    "formada": 2010,
+    "genero": "Folk Metal",
+    "sello": "",
+    "web": "",
+    "instagram": "",
+    "miembros": [],
+    "discografia": [
+      {"titulo": "TIERRA", "anio": 2026, "nota": "Single, ~abril 2026."},
+      {"titulo": "Ambaxtos", "anio": null, "nota": "Próximo álbum anunciado."}
+    ],
+    "hitos": [],
+    "conexiones": [],
+    "estudios": []
+  },
+  "Lèpoka": {
+    "origen": "Castellón",
+    "formada": 2010,
+    "genero": "Folk Metal festivo",
+    "sello": "Calaverita Records",
+    "web": "",
+    "instagram": "",
+    "miembros": [],
+    "discografia": [
+      {"titulo": "La Última y A Casa", "anio": 2026, "nota": "Single, marzo 2026."},
+      {"titulo": "Álbum", "anio": 2026, "nota": "Previsto octubre 2026."}
+    ],
+    "hitos": [
+      {"fecha": "2026", "texto": "Fichaje por Calaverita Records."}
+    ],
+    "conexiones": [],
+    "estudios": []
+  },
+  "Mägo de Oz": {
+    "origen": "Madrid",
+    "formada": 1988,
+    "genero": "Folk Metal",
+    "sello": "",
+    "web": "",
+    "instagram": "",
+    "miembros": [],
+    "discografia": [
+      {"titulo": "Malicia", "anio": 2025, "nota": "Primer disco de la etapa con Xana Lavey como vocalista."}
+    ],
+    "hitos": [
+      {"fecha": "2026", "texto": "Gira «La Noche de las Brujas»: España + México (10 fechas, noviembre 2026)."},
+      {"fecha": "2026-11-06", "texto": "«Fiesta Pagana» llega a los cines."},
+      {"fecha": "2023", "texto": "Salidas de Patricia Tapia y Zeta; consolidación de Xana Lavey."}
+    ],
+    "conexiones": ["Xana Lavey — doble vocalista (Celtian + Mägo de Oz)"],
+    "estudios": []
+  },
+  "Lándevir": {
+    "origen": "Elda, Alicante",
+    "formada": 2001,
+    "genero": "Folk Metal",
+    "sello": "",
+    "web": "",
+    "instagram": "",
+    "miembros": [],
+    "discografia": [],
+    "hitos": [
+      {"fecha": "2026", "texto": "25 aniversario con Thomas Vikström y Rosalía Sairem (Therion)."},
+      {"fecha": "2026", "texto": "Gira conjunta con Ars Amandi; confirmados en Leyendas del Rock 2026."}
+    ],
+    "conexiones": ["Therion (Thomas Vikström, Rosalía Sairem) — colaboración 25 aniversario", "Ars Amandi — gira conjunta"],
+    "estudios": []
+  },
+  "Hadadanza": {
+    "origen": "Alicante",
+    "formada": 2017,
+    "genero": "Folk Metal épico",
+    "sello": "",
+    "web": "https://hadadanza.com",
+    "instagram": "",
+    "miembros": [],
+    "discografia": [
+      {"titulo": "Magia", "anio": 2018, "nota": ""},
+      {"titulo": "Juglar", "anio": 2020, "nota": ""},
+      {"titulo": "El Circo de los Muertos", "anio": null, "nota": ""},
+      {"titulo": "Aventura y Leyenda", "anio": 2024, "nota": "Inspirado en El Hobbit de Tolkien."}
+    ],
+    "hitos": [
+      {"fecha": "2026", "texto": "Folkien Tour 2026: Jaén (Kucharock), Sevilla (Sala X), Valencia (Folk & Metal Fest), Leyendas del Rock."},
+      {"fecha": "2026", "texto": "5º álbum previsto finales 2026, «el más ambicioso»."}
+    ],
+    "conexiones": [],
+    "estudios": []
+  },
+  "Celtibeerian": {
+    "origen": "Ciudad Real",
+    "formada": 2011,
+    "genero": "Folk Metal (gaita, zanfoña, bouzouki)",
+    "sello": "",
+    "web": "https://celtibeerian.es",
+    "instagram": "",
+    "miembros": [
+      "Gus — voz, bajo",
+      "Dagda — gaita, whistle, bouzouki, viola, guturales",
+      "Sergio — guitarra",
+      "Clara — zanfoña, whistle, voz",
+      "Ru — batería"
+    ],
+    "discografia": [
+      {"titulo": "Tirikantam", "anio": 2011, "nota": ""},
+      {"titulo": "Keltorevolution", "anio": 2014, "nota": ""},
+      {"titulo": "Deiwos", "anio": 2017, "nota": ""},
+      {"titulo": "Nertos", "anio": 2023, "nota": ""}
+    ],
+    "hitos": [
+      {"fecha": "2026", "texto": "Confirmados en Leyendas del Rock 2026 y Kilkim Žaibu Festival (Lituania)."}
+    ],
+    "conexiones": [],
+    "estudios": []
+  },
+  "Nidhögg": {
+    "origen": "Chiclana de la Frontera, Cádiz",
+    "formada": 2016,
+    "genero": "Power/Heavy Metal con toques folk y thrash",
+    "sello": "",
+    "web": "",
+    "instagram": "",
+    "miembros": [],
+    "discografia": [
+      {"titulo": "El Devorador de Almas", "anio": null, "nota": "3er trabajo."},
+      {"titulo": "El Vuelo del Dragön", "anio": 2026, "nota": "Último disco, publicado como despedida."}
+    ],
+    "hitos": [
+      {"fecha": "2026", "texto": "Anuncio de retirada por motivos internos tras 10 años en los escenarios."}
+    ],
+    "conexiones": [],
+    "estudios": []
+  },
+  "Dark Moor": {
+    "origen": "Madrid",
+    "formada": 1993,
+    "genero": "Power Metal sinfónico",
+    "sello": "",
+    "web": "",
+    "instagram": "",
+    "miembros": [],
+    "discografia": [],
+    "hitos": [
+      {"fecha": "2026", "texto": "25 aniversario con formación especial y doble CD recopilatorio."},
+      {"fecha": "2026-07", "texto": "Entrevista a Enrik García antes de Leyendas del Rock 2026 (RafaBasa)."}
+    ],
+    "conexiones": [],
+    "estudios": []
+  },
+  "Ekyrian": {
+    "origen": "Madrid",
+    "formada": 2013,
+    "genero": "Folk/Power Metal",
+    "sello": "",
+    "web": "",
+    "instagram": "",
+    "miembros": [],
+    "discografia": [],
+    "hitos": [],
+    "conexiones": [],
+    "estudios": []
+  },
+  "Debler": {
+    "origen": "Coslada, Madrid",
+    "formada": 2006,
+    "genero": "Power Metal",
+    "sello": "",
+    "web": "",
+    "instagram": "",
+    "miembros": [],
+    "discografia": [],
+    "hitos": [],
+    "conexiones": [],
+    "estudios": []
+  },
+  "Finnway": {
+    "origen": "La Rioja",
+    "formada": 2024,
+    "genero": "Folk Metal",
+    "sello": "",
+    "web": "",
+    "instagram": "",
+    "miembros": [],
+    "discografia": [],
+    "hitos": [],
+    "conexiones": [],
+    "estudios": []
+  },
+  "Sovengar": {
+    "origen": "España",
+    "formada": 2013,
+    "genero": "Folk Metal",
+    "sello": "",
+    "web": "",
+    "instagram": "",
+    "miembros": [],
+    "discografia": [],
+    "hitos": [],
+    "conexiones": [],
+    "estudios": []
+  },
+  "Triskel": {
+    "origen": "Cartagena, Murcia",
+    "formada": null,
+    "genero": "Folk Metal",
+    "sello": "",
+    "web": "",
+    "instagram": "",
+    "miembros": [],
+    "discografia": [],
+    "hitos": [],
+    "conexiones": [],
+    "estudios": []
+  },
+  "Trovadorum": {
+    "origen": "Cuenca",
+    "formada": null,
+    "genero": "Folk Rock / Rock Celta",
+    "sello": "",
+    "web": "",
+    "instagram": "",
+    "miembros": [
+      "Alicia Valera — voz",
+      "David García — compositor, flauta, acordeón",
+      "Sergio Maseda — violín",
+      "Guille, Josema, Miguel"
+    ],
+    "discografia": [
+      {"titulo": "Somos Más", "anio": 2025, "nota": ""}
+    ],
+    "hitos": [],
+    "conexiones": [],
+    "estudios": []
+  },
+  "Khëlleden": {
+    "origen": "Alicante",
+    "formada": null,
+    "genero": "Folk Metal",
+    "sello": "",
+    "web": "",
+    "instagram": "",
+    "miembros": [],
+    "discografia": [],
+    "hitos": [],
+    "conexiones": [],
+    "estudios": []
+  },
+  "Leyendärian": {
+    "origen": "Barcelona",
+    "formada": null,
+    "genero": "Metal Sinfónico / Power Metal con toques folk",
+    "sello": "",
+    "web": "",
+    "instagram": "",
+    "miembros": [],
+    "discografia": [
+      {"titulo": "La forja de una Leyenda", "anio": 2025, "nota": "17 enero 2025, 11 tracks."}
+    ],
+    "hitos": [],
+    "conexiones": [],
+    "estudios": []
+  },
+  "Legacy of the Seas": {
+    "origen": "País Vasco",
+    "formada": 2010,
+    "genero": "Epic/Symphonic/Folk/Power Metal",
+    "sello": "",
+    "web": "",
+    "instagram": "",
+    "miembros": [],
+    "discografia": [
+      {"titulo": "Leyendas de una Eternidad", "anio": null, "nota": ""}
+    ],
+    "hitos": [],
+    "conexiones": [],
+    "estudios": []
+  },
+  "Kaelis": {
+    "origen": "",
+    "formada": null,
+    "genero": "",
+    "sello": "",
+    "web": "",
+    "instagram": "",
+    "miembros": [],
+    "discografia": [],
+    "hitos": [
+      {"fecha": "2026-07", "texto": "Marcha de Álvaro después de «Stellar Waves» (prensa)."}
+    ],
+    "conexiones": [],
+    "estudios": []
+  },
+  "Argion": {
+    "origen": "",
+    "formada": null,
+    "genero": "",
+    "sello": "",
+    "web": "",
+    "instagram": "",
+    "miembros": [],
+    "discografia": [
+      {"titulo": "VLTREIA", "anio": null, "nota": "Próximo álbum. Adelanto: «Sobre el Mar MMXXVI»."}
+    ],
+    "hitos": [],
+    "conexiones": [],
+    "estudios": []
+  },
+  "Astter": {
+    "origen": "",
+    "formada": null,
+    "genero": "Metal melódico",
+    "sello": "",
+    "web": "",
+    "instagram": "",
+    "miembros": [],
+    "discografia": [],
+    "hitos": [
+      {"fecha": "2026", "texto": "Finalistas nacionales Wacken Metal Battle Spain 2026."}
+    ],
+    "conexiones": [],
+    "estudios": []
+  },
+  "Aljamia": {
+    "origen": "",
+    "formada": null,
+    "genero": "Metal-flamenco fusión",
+    "sello": "",
+    "web": "",
+    "instagram": "",
+    "miembros": [],
+    "discografia": [],
+    "hitos": [
+      {"fecha": "2026", "texto": "Semifinalistas Wacken Metal Battle Spain 2026."}
+    ],
+    "conexiones": [],
+    "estudios": []
+  }
+}

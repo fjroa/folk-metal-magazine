@@ -48,7 +48,7 @@ MODERN_CSS = '''
 .cover:after{content:'✦';position:absolute;inset:18px;border:1px solid rgba(184,134,11,.35);color:rgba(201,168,76,.5);font-size:18px;text-align:left;padding:10px;pointer-events:none}.cover h1{position:relative;font-weight:normal;line-height:.93;text-shadow:0 4px 18px #160805}.cover .sub{letter-spacing:2px}.cover .stats>div{min-width:128px;padding:13px 20px;border:1px solid rgba(184,134,11,.45);border-radius:50px;background:rgba(20,8,5,.35);box-shadow:0 5px 16px rgba(0,0,0,.2)}
 .section-nav{position:sticky;top:0;z-index:5;background:rgba(245,240,232,.94);border-bottom:1px solid var(--border);box-shadow:0 3px 14px rgba(61,43,31,.08);letter-spacing:.4px}.section-nav a{transition:color .2s,transform .2s}.section-nav a:hover{transform:translateY(-1px)}
 .section-divider{padding:58px 0 22px}.section-divider h2{position:relative;border:0;padding:0 0 16px;letter-spacing:3px;text-transform:uppercase}.section-divider h2:after{content:'';display:block;width:100%;height:3px;margin-top:16px;background:linear-gradient(90deg,transparent,var(--gold),transparent);opacity:.7}
-.toc-grid{gap:10px}.toc-card,.band-card,.hl-card,.news-card{box-shadow:0 5px 15px rgba(61,43,31,.08);transition:transform .2s,box-shadow .2s}.toc-card:hover,.band-card:hover,.hl-card:hover,.news-card:hover{transform:translateY(-2px);box-shadow:0 10px 24px rgba(61,43,31,.15)}.toc-card{padding:12px;border-radius:7px}.toc-card a{display:block}.toc-card img{border-radius:50%;object-fit:cover}.lead{max-width:760px;margin:0 auto 24px;text-align:center;font-size:16px;line-height:1.7}.empty-state{padding:28px;text-align:center;color:var(--muted);font-style:italic;background:rgba(250,246,239,.6);border:1px dashed var(--border)}
+.toc-grid{gap:10px}.toc-card,.band-card,.hl-card,.news-card{box-shadow:0 5px 15px rgba(61,43,31,.08);transition:transform .2s,box-shadow .2s}.toc-card:hover,.band-card:hover,.hl-card:hover,.news-card:hover{transform:translateY(-2px);box-shadow:0 10px 24px rgba(61,43,31,.15)}.toc-card{padding:12px;border-radius:7px;position:relative}.toc-card a{display:block}.toc-card img{border-radius:50%;object-fit:cover}.toc-hist{position:absolute;top:6px;right:8px;font-size:13px;text-decoration:none;opacity:.75}.toc-hist:hover{opacity:1}.lead{max-width:760px;margin:0 auto 24px;text-align:center;font-size:16px;line-height:1.7}.empty-state{padding:28px;text-align:center;color:var(--muted);font-style:italic;background:rgba(250,246,239,.6);border:1px dashed var(--border)}
 .hl-feature{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(280px,1fr);margin:0 0 18px;background:var(--card);border-left:5px solid var(--gold);border-radius:8px;overflow:hidden;box-shadow:0 8px 22px rgba(61,43,31,.13);transition:transform .2s,box-shadow .2s}.hl-feature:hover{transform:translateY(-2px);box-shadow:0 12px 28px rgba(61,43,31,.18)}.hl-feature img{width:100%;height:100%;min-height:270px;object-fit:cover}.hl-feature-body{padding:28px 30px;display:flex;flex-direction:column;justify-content:center}.hl-band{font-family:Georgia,serif;color:var(--accent);font-size:18px;font-weight:bold;letter-spacing:.5px}.hl-feature p{font-size:19px;line-height:1.55;margin:14px 0 22px}.source-link{color:var(--accent);font-size:13px;font-weight:bold;text-decoration:none}.source-link:hover{text-decoration:underline}.hl-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}.hl-card{display:grid;grid-template-columns:120px 1fr;overflow:hidden;border-left:4px solid var(--gold);border-radius:7px}.hl-card img{width:120px;height:100%;min-height:150px;object-fit:cover}.hl-body{padding:16px}.hl-text{margin-top:8px;line-height:1.55}.hl-text .source-link{display:block;margin-top:10px}
 .agenda-month{margin:8px 0 12px;text-align:center;color:var(--accent);font-size:22px;letter-spacing:1px}.calendar{border:1px solid var(--border);border-radius:8px;overflow:hidden;box-shadow:0 6px 18px rgba(61,43,31,.08)}.cal-head{background:var(--dark);color:#f5f0e8;font-weight:bold;letter-spacing:1px}.cal-cell{min-height:112px;background:rgba(250,246,239,.72);border-color:var(--border)}.cal-cell:nth-child(odd){background:rgba(237,228,211,.5)}.cal-day{color:var(--accent);font-size:15px;font-weight:bold}.cal-event{margin:5px 2px;padding:6px;border-radius:5px;border-left:3px solid var(--gold);background:#fff8e7;line-height:1.3;font-size:12px}.cal-event strong{display:block;margin-top:3px}.cal-event a{color:var(--text);text-decoration:none}.event-badge{display:inline-block;padding:2px 6px;border-radius:20px;font-size:10px;text-transform:uppercase;letter-spacing:.4px;font-weight:bold}.event-festival .event-badge{background:#f2c6a8;color:#7c2b0a}.event-concierto .event-badge{background:#ead6a2;color:#725100}.event-gira .event-badge{background:#c6d8c2;color:#31553a}.agenda-later{margin-top:24px;padding:0 4px 4px;border-top:2px solid var(--gold)}.agenda-later h3{margin:0 -4px 8px;padding:10px 12px;background:linear-gradient(90deg,rgba(184,134,11,.2),transparent);color:var(--accent);letter-spacing:1px}.agenda-line{display:flex;align-items:center;gap:8px;padding:9px 4px;border-bottom:1px solid rgba(212,197,169,.65);transition:background .2s}.agenda-line:hover{background:rgba(255,248,231,.7)}.agenda-line>a{margin-left:auto;text-decoration:none}.agenda-detail{color:var(--muted)}
 .band-grid{gap:20px}.band-card-wrapper .top-link{opacity:.5;transition:opacity .2s}.band-card-wrapper:hover .top-link{opacity:1}.band-card{border-radius:8px}.band-header img{border-radius:8px;object-fit:cover}.post-item{border-bottom-color:rgba(212,197,169,.65);transition:background .2s;padding:10px 6px}.post-item:hover{background:rgba(255,248,231,.65)}.news-list{gap:10px}.news-card{border-left:4px solid var(--accent);border-radius:6px;transition:transform .2s,box-shadow .2s}.news-card a{color:var(--accent);font-size:16px}.metrics-table{box-shadow:0 6px 18px rgba(61,43,31,.08);overflow:hidden;border-radius:7px}.metrics-table tr{transition:background .2s}.metrics-table tbody tr:hover{background:#fff8e7}.metrics-table th{letter-spacing:1px}
@@ -62,7 +62,8 @@ body{font-variant-numeric:oldstyle-nums} .cover h1{text-shadow:0 4px 18px #16080
  .tile-a,.tile-b,.tile-c,.tile-d{transition:transform .2s,border-radius .2s}.tile-a{border-radius:24px 6px 24px 6px;transform:rotate(-1deg)}.tile-b{border-radius:6px 24px 6px 24px;transform:rotate(1deg)}.tile-c{border-radius:50% 8px 50% 8px / 30% 8px 30% 8px;transform:rotate(-1deg)}.tile-d{border-radius:12px 40px 12px 40px;transform:rotate(1deg)}.tile-a:hover,.tile-b:hover,.tile-c:hover,.tile-d:hover{transform:rotate(0)}.band-lead{font-size:18px;font-weight:600;color:var(--accent);line-height:1.45}.band-body{font-size:14px;line-height:1.6;margin-top:5px}.status-badge{font:700 10px ui-sans-serif,system-ui,sans-serif;padding:2px 7px;border-radius:20px;vertical-align:middle;margin-left:6px;letter-spacing:.3px}.status-bad{background:#f3d9d9;color:#8b2500;border:1px solid #c99}.status-warn{background:#f6e9c8;color:#7a5c00;border:1px solid #d8b84f}
 .band-card-wrapper{position:relative}.more-row{cursor:pointer;margin-top:10px;padding:9px;text-align:center;border:1px solid var(--border);border-radius:4px;color:var(--accent);font:700 12px ui-sans-serif,system-ui,sans-serif;background:var(--highlight)}
 .metrics-table{font-variant-numeric:tabular-nums}.metrics-table tbody tr:nth-child(even){background:rgba(237,228,211,.42)}.metrics-table tbody tr:hover{background:var(--highlight)}.metrics-table th{position:sticky;top:49px;z-index:1}.listeners{min-width:180px}.bar-track{height:7px;margin-top:5px;background:#dfd2bd;border-radius:9px;overflow:hidden}.bar{height:100%;background:linear-gradient(90deg,#8b5a13,var(--gold),#d8b84f);border-radius:9px}.medal{font-size:18px;margin-right:5px}
-.band-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:26px}.band-card-wrapper.wide{grid-column:span 2}.band-card{border-radius:2px;border-top:4px solid var(--accent);background:rgba(250,246,239,.94)}.band-header{gap:18px;padding:18px}.band-header img{width:140px;height:140px;border:5px solid var(--cream);outline:1px solid var(--border);box-shadow:0 4px 12px rgba(61,43,31,.18)}.band-header .name,.band-name{font-size:20px;font-weight:bold;line-height:1.2;color:#2f2118}.band-header .metrics,.band-header .count{font-size:12px;color:#4b382b}.band-summary{font-size:15px;line-height:1.6;color:#33251c;padding:0 18px 16px}.post-item{font-size:13.5px;line-height:1.55;color:#3b2a20}.post-date{font-size:11px;color:#594637;font-weight:bold}.more-row{font-size:12px}.band-card-wrapper.reverse .band-header{flex-direction:row-reverse;text-align:right}.band-card-wrapper.reverse .band-header>div{flex:1}.agenda-month{font-size:23px}.cal-cell{min-height:126px;padding:8px}.cal-event{font-size:11px;padding:7px 6px;line-height:1.4}.cal-day{font-size:16px}.event-badge{font-size:10px}.metrics-table th{font-size:13px}.metrics-table td{font-size:14px;padding:12px 10px}.metrics-table .band-name{font-size:15px}.metrics-table .listeners strong{font-size:14px}
+.band-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:26px}.band-card-wrapper.wide{grid-column:span 2}.band-card{border-radius:2px;border-top:4px solid var(--accent);background:rgba(250,246,239,.94)}.band-header{gap:18px;padding:18px}.band-header img{width:140px;height:140px;border:5px solid var(--cream);outline:1px solid var(--border);box-shadow:0 4px 12px rgba(61,43,31,.18)}.band-header .name,.band-name{font-size:20px;font-weight:bold;line-height:1.2;color:#2f2118}.band-header .metrics,.band-header .count{font-size:12px;color:#4b382b}
+.hist-link{margin-top:4px}.hist-link a{font-size:12.5px;color:var(--accent);text-decoration:none;border-bottom:1px dotted var(--gold)}.hist-link a:hover{color:var(--gold)}.band-summary{font-size:15px;line-height:1.6;color:#33251c;padding:0 18px 16px}.post-item{font-size:13.5px;line-height:1.55;color:#3b2a20}.post-date{font-size:11px;color:#594637;font-weight:bold}.more-row{font-size:12px}.band-card-wrapper.reverse .band-header{flex-direction:row-reverse;text-align:right}.band-card-wrapper.reverse .band-header>div{flex:1}.agenda-month{font-size:23px}.cal-cell{min-height:126px;padding:8px}.cal-event{font-size:11px;padding:7px 6px;line-height:1.4}.cal-day{font-size:16px}.event-badge{font-size:10px}.metrics-table th{font-size:13px}.metrics-table td{font-size:14px;padding:12px 10px}.metrics-table .band-name{font-size:15px}.metrics-table .listeners strong{font-size:14px}
  @media(max-width:700px){.gordo-grid{grid-template-columns:1fr 1fr;gap:12px}.hl-card img{height:180px}.band-grid{grid-template-columns:1fr}.band-card-wrapper.wide{grid-column:auto}.band-header img{width:110px;height:110px}.band-card-wrapper.reverse .band-header{flex-direction:row;text-align:left}.cal-cell{min-height:96px;padding:5px 3px}.cal-event{font-size:11px;padding:5px 2px}.metrics-table th,.metrics-table td{padding:9px 6px}.listeners{min-width:115px}}
 '''
 
@@ -102,10 +103,11 @@ def clean_caption(text):
     replacements = [
         (r'&\s*#039\s*;', "'"), (r'&\s*#8217\s*;', "'"),
         (r'&\s*#39\s*;', "'"), (r'&\s*amp\s*;', '&'),
-        (r'&\s*quot\s*;', '"'),
+        (r'&\s*quot\s*;', '"'), (r'&\s*nbsp\s*;', ''),
     ]
-    for pat, repl in replacements:
-        text = re.sub(pat, repl, text, flags=re.I)
+    for _ in range(2):
+        for pat, repl in replacements:
+            text = re.sub(pat, repl, text, flags=re.I)
     return re.sub(r'\s+', ' ', text).strip()
 
 
@@ -120,6 +122,15 @@ def eid(name):
     dia = {'ä': 'a', 'ë': 'e', 'ï': 'i', 'ö': 'o', 'ü': 'u', 'ÿ': 'y', 'è': 'e'}
     out = ''.join(dia.get(ch, ch) for ch in s)
     return re.sub(r'[^a-z0-9áéíóúñ]+', '-', out).strip('-')
+
+
+def hslug(name):
+    # Slug para archivos de ficha histórica (ASCII, coincide con build_band_historias).
+    s = name.lower().strip()
+    dia = {'ä': 'a', 'ë': 'e', 'ï': 'i', 'ö': 'o', 'ü': 'u', 'ÿ': 'y', 'è': 'e',
+           'á': 'a', 'é': 'e', 'í': 'i', 'ó': 'o', 'ú': 'u', 'ñ': 'n'}
+    out = ''.join(str(dia.get(ch, ch)) for ch in s)
+    return re.sub(r'[^a-z0-9]+', '-', out).strip('-')
 
 
 def svg_data(name, size=220):
@@ -479,7 +490,8 @@ nav_parts = ['<nav class="section-nav">',
              '<a href="#bandas">⚔️ Bandas</a><span>·</span>']
 if len(news) >= 2:
     nav_parts.append('<a href="#radar">📰 Radar</a><span>·</span>')
-nav_parts.append('<a href="#metricas">📊 Métricas</a></nav>')
+nav_parts.append('<a href="#metricas">📊 Métricas</a><span>·</span>')
+nav_parts.append('<a href="../historias/index.html">📜 Historias</a></nav>')
 parts.append(''.join(nav_parts))
 
 parts.append('<main class="container">')
@@ -490,7 +502,8 @@ parts.append('<div class="toc-grid">')
 for i, band in enumerate(band_names, 1):
     parts.append(f'<div class="toc-card"><a href="#b-{eid(band)}">'
                  f'<img src="{logo_b64(band)}" alt="Logo {esc(band)}">'
-                 f'<span class="toc-num">#{i:02d}</span>{esc(band)}</a></div>')
+                 f'<span class="toc-num">#{i:02d}</span>{esc(band)}</a>'
+                 f'<a class="toc-hist" href="../historias/{hslug(band)}.html" target="_blank" rel="noopener">📜</a></div>')
 parts.append('</div></section>')
 
 # 4. Lo Gordo
@@ -508,8 +521,9 @@ if highlights:
         ph = ('ph-xl', 'ph-lg', 'ph-md', 'ph-lg', 'ph-md', 'ph-xl')[index % 6]
         parts.append(
             f'<article class="hl-card"><img class="{tile} {ph}" src="{img}" alt="Foto {esc(h["band"])}">'
-            f'<div class="hl-body"><div class="hl-band">{h.get("emoji", "🔥")} {esc(h["band"])}</div>'
-            f'<div class="hl-text">{esc(text)}</div></div></article>')
+             f'<div class="hl-body"><div class="hl-band">{h.get("emoji", "🔥")} {esc(h["band"])}</div>'
+             f'<div class="hl-text">{esc(text)}</div>'
+             f'<a class="hist-inline" href="../historias/{hslug(h.get("band", ""))}.html" target="_blank" rel="noopener">📜 Historia completa</a></div></article>')
     parts.append('</div>')
 else:
     parts.append('<p class="empty-state">No hubo publicaciones que cumplieran los criterios.</p>')
@@ -535,7 +549,7 @@ for cell_index in range(start_offset + last_day):
             link = r['source_url'] or '#'
             kind = event_class(r['event_type'])
             ev_html.append(f'<div class="cal-event event-{kind}"><span class="event-badge">{event_icon(r["event_type"])} {esc(kind)}</span>'
-                           f'<strong>{esc(r["band_name"])}</strong><br>'
+                           f'<strong><a href="../historias/{hslug(r["band_name"])}.html" target="_blank" rel="noopener">{esc(r["band_name"])}</a></strong><br>'
                            f'<a href="{esc(link)}" target="_blank" rel="noopener">{esc(label)} 🔗</a></div>')
         parts.append(f'<div class="cal-cell"><div class="cal-day">{day_num}</div>{"".join(ev_html)}</div>')
     if cell_index % 7 == 6:
@@ -558,7 +572,7 @@ for offset in range(1, 4):
         label = compact_event_label(r)
         link = r['source_url'] or '#'
         parts.append(f'<div class="agenda-line event-{kind}"><span class="event-badge">{event_icon(r["event_type"])} {esc(kind)}</span>'
-                     f'<span><strong>{esc(day)} {esc(MONTH_NAMES[later.month - 1])}</strong> — {esc(r["band_name"])}'
+                     f'<span><strong>{esc(day)} {esc(MONTH_NAMES[later.month - 1])}</strong> — <a href="../historias/{hslug(r["band_name"])}.html" target="_blank" rel="noopener">{esc(r["band_name"])}</a>'
                      f' <span class="agenda-detail">({esc(label)})</span></span>'
                      f' <a href="{esc(link)}" target="_blank" rel="noopener">🔗</a></div>')
     parts.append('</div>')
@@ -589,7 +603,8 @@ for band_index, band in enumerate(band_names):
                  f'<div class="band-card"><div class="band-header">'
                  f'<img class="{tile}" src="{best_photo_b64(band)}" alt="Foto {esc(band)}">'
                  f'<div><div class="name">{esc(band)}{status_badge(band)}</div>{metric_html}'
-                 f'<div class="count">{len(rows)} publicaciones</div></div></div>'
+                 f'<div class="count">{len(rows)} publicaciones</div>'
+                 f'<div class="hist-link"><a href="../historias/{hslug(band)}.html" target="_blank" rel="noopener">📜 Historia completa</a></div></div></div>'
                  f'<div class="band-summary">{summary_html}</div>')
     for p in rows:
         cap = clean_caption(p['caption'])
@@ -633,7 +648,7 @@ for i, band in enumerate(metric_bands, 1):
     value = parse_metric(now)
     width = max(0, min(100, round(value / metric_max * 100))) if value >= 0 else 0
     medal = {1: '🥇', 2: '🥈', 3: '🥉'}.get(i, '')
-    parts.append(f'<tr><td class="rank">{medal}<span>{i:02d}</span></td><td class="band-name">{esc(band)}</td>'
+    parts.append(f'<tr><td class="rank">{medal}<span>{i:02d}</span></td><td class="band-name"><a class="hist-inline" href="../historias/{hslug(band)}.html" target="_blank" rel="noopener">{esc(band)}</a></td>'
                  f'<td class="listeners"><strong>{esc(now)}</strong><div class="bar-track"><div class="bar" style="width:{width}%"></div></div></td><td style="color:var(--muted)">{esc(q2)}</td>'
                  f'<td><span class="{esc(cls)}">{esc(arrow)}</span></td></tr>')
 parts.append('</tbody></table></section>')

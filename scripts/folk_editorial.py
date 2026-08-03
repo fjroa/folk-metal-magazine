@@ -80,12 +80,45 @@ def filter_facts(facts, captions_text):
         return facts
     return [f for f in facts if 'retirada' not in f and 'despedida' not in f]
 
+def band_known_releases(band):
+    """{titulo_lower: anio} de lanzamientos YA conocidos (brief histórico).
+    Permite al extractor distinguir novedad real vs promoción de algo antiguo
+    (ej: «Junto a Ti» es de 2025; en 2026 lo nuevo fue el videoclip, no la canción)."""
+    known = {}
+    p = Path('/home/roa/github/folk-metal-magazine') / 'data' / 'bands.json'
+    if not p.exists():
+        p = Path('/home/roa/github/folk-metal-magazine') / 'data' / 'band_briefs.json'
+    if p.exists():
+        try:
+            brief = (json.loads(p.read_text(encoding='utf-8')) or {}).get(band, {}) or {}
+        except Exception:
+            brief = {}
+        def _add(text, anio):
+            if not text:
+                return
+            text = str(text).strip()
+            known[text.lower()] = anio
+            # Además, los nombres entre comillas/ángulos dentro del texto
+            # (notas tipo 'Adelanto: «Junto a Ti» (2025)') son títulos.
+            for m in re.finditer(r'["“«]([^"”»]{3,60})["”»]', text):
+                _add(m.group(1).strip(), anio)
+        for d in (brief.get('discografia') or []):
+            _add(d.get('titulo'), d.get('anio'))
+            _add(d.get('nota'), d.get('anio'))
+        for h in (brief.get('hitos') or []):
+            _add(h.get('texto'), h.get('fecha'))
+    return known
+
+
 def extract_facts(band, rows):
     all_text = ' '.join(clean(r['caption']) for r in rows).lower()
     facts = []
-    # Lanzamientos: nombres entre comillas con contexto musical
-    names = []
-    for m in re.finditer(r'["“«\'‘]([^"”»\'’]{3,60})["”»\'’]', all_text):
+    # Lanzamientos: nombres entre comillas dobles, angulares o latinas con
+    # contexto musical. ANTI-ANACRONISMO (v17): si el nombre ya está en el
+    # brief histórico (ej. «Junto a Ti», 2025), NO es lanzamiento nuevo.
+    known = band_known_releases(band)
+    names, known_hits, video_hits = [], [], []
+    for m in re.finditer(r'["“«]([^"”»]{3,60})["”»]', all_text):
         cand = m.group(1).strip()
         ctx = all_text[max(0, m.start() - 60):m.end() + 60]
         if not MUSIC_CTX.search(ctx):
@@ -94,7 +127,13 @@ def extract_facts(band, rows):
             continue
         if cand.lower() in ('vltreia', 'sobre el mar mmxxvi', 'sobre el mar'):
             cand = 'Sobre el Mar MMXXVI'
-        names.append(cand)
+        if cand.lower() in known:
+            if re.search(r'videoclip|vídeo|video|clip', ctx):
+                video_hits.append(cand)
+            else:
+                known_hits.append(cand)
+        else:
+            names.append(cand)
     # dedup: mantener la variante más larga si hay subcadenas
     dedup = []
     for n in sorted(names, key=len, reverse=True):
@@ -103,6 +142,10 @@ def extract_facts(band, rows):
     names = dedup[:3]
     if names:
         facts.append('Publicó o adelantó ' + '; '.join(f'«{n}»' for n in names) + '.')
+    if video_hits:
+        facts.append('Grabó o publicó el videoclip de ' + '; '.join(f'«{n}»' for n in video_hits[:2]) + '.')
+    if known_hits and not names:
+        facts.append('Mantuvo en promoción material ya publicado: ' + '; '.join(f'«{n}»' for n in known_hits[:2]) + '.')
     # Retirada / despedida (SOLO frases explícitas)
     if RETIRO_EXPLICIT.search(all_text):
         facts.append('Anunció su retirada o despedida de los escenarios.')
@@ -143,6 +186,51 @@ def fallback_summary(band, facts):
     if facts:
         return ' '.join(facts[:3])
     return 'La banda mantuvo actividad en redes durante el periodo, principalmente con contenido visual y promocional. Cada publicación está enlazada a su fuente original para su verificación.'
+
+# ── contexto histórico por banda (estrategia anti-anacronismo, v17) ─────────
+# Cada banda tiene un brief biográfico (data/band_briefs.json) construido desde
+# el vault + Metal Archives + Wikipedia con URL de fuente. Se inyecta al LLM
+# para que sepa QUIÉN es la banda (años de trayectoria, discografía completa,
+# sellos, hitos) y no presente como novedad algo ya publicado (ej: «Junto a Ti»
+# es de 2025 — no se puede decir que Reino de Hades lo "adelanta" en 2026).
+def band_context(band):
+    brief = {}
+    p = Path('/home/roa/github/folk-metal-magazine') / 'data' / 'bands.json'
+    if not p.exists():
+        p = Path('/home/roa/github/folk-metal-magazine') / 'data' / 'band_briefs.json'
+    if p.exists():
+        try:
+            brief = (json.loads(p.read_text(encoding='utf-8')) or {}).get(band, {}) or {}
+        except Exception:
+            brief = {}
+    if not brief:
+        return ''
+    lines = []
+    if brief.get('origen'):
+        lines.append(f'- Origen: {brief["origen"]}')
+    if brief.get('formada'):
+        lines.append(f'- Formada en: {brief["formada"]}')
+    if brief.get('genero'):
+        lines.append(f'- Género: {brief["genero"]}')
+    if brief.get('sello'):
+        lines.append(f'- Sello/discográfica: {brief["sello"]}')
+    discs = brief.get('discografia') or []
+    if discs:
+        d_lines = []
+        for d in discs:
+            anio = d.get('anio') or '?'
+            d_lines.append(f'{d.get("titulo")} ({anio})')
+        lines.append('- Discografía histórica: ' + '; '.join(d_lines[:12]))
+    hitos = brief.get('hitos') or []
+    if hitos:
+        h_lines = []
+        for h in hitos[:8]:
+            h_lines.append(f'{h.get("fecha", "?")}: {h.get("texto", "")}'.strip())
+        lines.append('- Hitos históricos: ' + ' | '.join(h_lines))
+    if not lines:
+        return ''
+    return ('\nCONTEXTO HISTÓRICO DE LA BANDA (datos verificados; NO los presentes '
+            'como novedad de este mes, son historia previa):\n' + '\n'.join(lines) + '\n')
 
 # ── LLM (local primero; OpenRouter como fallback si el local va lento) ──────
 def _or_key():
@@ -200,6 +288,7 @@ def llm_summary(band, facts, rows):
         for r in rows[:6]
     )
     facts_txt = '\n'.join(f'- {f}' for f in facts) if facts else '(sin hechos destacados)'
+    bctx = band_context(band)
     prompt = (
         'Eres redactor de la revista "Folk Metal Magazine", especializada en la escena folk metal española.\n'
         f'Redacta un resumen periodístico de la banda {band} para la edición de {MONTH}.\n'
@@ -209,11 +298,15 @@ def llm_summary(band, facts, rows):
         'funcionará como entradilla destacada.\n'
         '2. Después desarrolla con 1-3 frases de detalle con datos concretos.\n'
         '3. USA ÚNICAMENTE los hechos verificados listados abajo. NO inventes nombres, discos, fechas ni datos.\n'
-        '4. NO añadas nacionalidades, orígenes, ciudades ni datos que no estén en los HECHOS.\n'
+        '4. NO añadas nacionalidades, orígenes, ciudades ni datos que no estén en los HECHOS o en el CONTEXTO HISTÓRICO.\n'
         '5. Tono impersonal de periodista, en español. 2-4 frases en total.\n'
         '6. NO menciones números de publicaciones, métricas, ni "el grupo publicó X posts".\n'
         '7. No empieces con minúscula ni con frases sueltas.\n'
-        f'HECHOS VERIFICADOS:\n{facts_txt}\n\n'
+        '8. ANTI-ANACRONISMO: el CONTEXTO HISTÓRICO contiene datos ya publicados en años anteriores. '
+        'NO los presentes como novedad de este mes: si una canción o disco ya existía antes, '
+        'no digas que la banda "la adelanta ahora" ni "la presenta por primera vez".\n'
+        f'{bctx}'
+        f'HECHOS VERIFICADOS DEL MES:\n{facts_txt}\n\n'
         f'PUBLICACIONES REALES DEL MES (para contexto, no las cites literalmente):\n{post_lines}\n\n'
         'RESUMEN:'
     )
@@ -232,12 +325,16 @@ def llm_blurb(band, caption, post_url, date, facts=None, rows=None):
     captions_text = ' '.join(clean(r['caption']) for r in rows) if rows else clean(caption)
     facts = filter_facts(facts or [], captions_text) + BAND_VERIFIED.get(band, [])
     facts_txt = '\n'.join(f'- {f}' for f in facts) if facts else '(sin hechos adicionales)'
+    bctx = band_context(band)
     prompt = (
         'Eres redactor de "Folk Metal Magazine". Escribe una noticia periodística breve (2-3 frases, español) '
         'sobre lo MÁS relevante de esta banda este mes.\n'
         'REGLAS: usa solo la información del texto y de los hechos listados; tono de periodista; '
         'no inventes datos; no copies el texto literalmente; no uses markdown; no empieces con "La banda española".\n'
+        'ANTI-ANACRONISMO: el CONTEXTO HISTÓRICO contiene datos ya publicados en años anteriores; '
+        'NO los presentes como novedad de este mes.\n'
         f'Banda: {band} | Fecha: {date} | URL: {post_url}\n'
+        f'{bctx}'
         f'HECHOS VERIFICADOS DEL MES:\n{facts_txt}\n\n'
         f'Publicación destacada:\n{clean(caption)[:500]}\n\n'
         'NOTICIA:'

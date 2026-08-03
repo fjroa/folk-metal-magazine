@@ -66,6 +66,32 @@ body{font-variant-numeric:oldstyle-nums} .cover h1{text-shadow:0 4px 18px #16080
  @media(max-width:700px){.gordo-grid{grid-template-columns:1fr 1fr;gap:12px}.hl-card img{height:180px}.band-grid{grid-template-columns:1fr}.band-card-wrapper.wide{grid-column:auto}.band-header img{width:110px;height:110px}.band-card-wrapper.reverse .band-header{flex-direction:row;text-align:left}.cal-cell{min-height:96px;padding:5px 3px}.cal-event{font-size:11px;padding:5px 2px}.metrics-table th,.metrics-table td{padding:9px 6px}.listeners{min-width:115px}}
 '''
 
+# v16.3 — Fix Lo Gordo (banda+texto SIEMPRE visibles) + layout ancho 90% + tipografía mayor.
+# La causa del bug: la imagen heredaba height:100%+flex:0 0 auto de MODERN_CSS y el grid
+# estiraba las tarjetas de la fila → la foto ocupaba todo el alto y empujaba .hl-body fuera
+# (recortado por overflow:hidden). Fix: altura FIJA en la imagen (flex:none) y body con flex:1.
+WIDE_CSS = '''
+body{font-size:16.5px;line-height:1.62}
+.container{width:90%;max-width:1700px;margin:0 auto;padding:0 24px}
+.cover h1{font-size:clamp(44px,9vw,88px)}
+.section-divider h2{font-size:clamp(28px,5vw,48px)}
+.lead{font-size:17px}
+.toc-grid{grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:12px}.toc-card{padding:12px}.toc-card img{width:44px;height:44px}.toc-card a{font-size:14.5px}.toc-num{font-size:11px}
+.gordo-grid{align-items:start}
+.hl-card{display:flex;flex-direction:column;overflow:hidden;background:rgba(250,246,239,.96);box-shadow:0 8px 20px rgba(61,43,31,.12);border:1px solid var(--border);border-radius:10px}
+.hl-card img{display:block;width:100%;height:auto;flex:none;object-fit:cover}
+.hl-card img.ph-xl{height:300px}.hl-card img.ph-lg{height:240px}.hl-card img.ph-md{height:190px}
+.hl-card .hl-body{display:flex;flex-direction:column;flex:1;padding:16px 18px 20px}
+.hl-card .hl-band{font-size:20px;font-weight:bold;color:var(--accent);margin-bottom:6px}
+.hl-card .hl-text{font-size:16.5px;line-height:1.6;color:var(--text)}
+.band-card-wrapper .band-header .name{font-size:23px}
+.band-summary{font-size:16.5px;line-height:1.65}
+.post-item{font-size:15px;line-height:1.6}
+.metrics-table td{font-size:15px;padding:13px 11px}.metrics-table th{font-size:14px}
+.cal-event{font-size:12.5px}.cal-day{font-size:17px}
+@media(max-width:700px){.container{width:94%;padding:0 12px}.hl-card img.ph-xl,.hl-card img.ph-lg,.hl-card img.ph-md{height:170px}.hl-card .hl-band{font-size:17px}.hl-card .hl-text{font-size:15px}}
+'''
+
 
 def esc(x):
     return html.escape(str(x or ''), quote=True)
@@ -425,7 +451,7 @@ def month_label(value):
 metrics = load_metrics(band_names)
 # Lo Gordo: orden conforme a las métricas (oyentes mensuales, M>K>raw).
 highlights.sort(key=lambda h: _hl_metric_key(h, metrics), reverse=True)
-style_text = f'{CSS}{MODERN_CSS}{EDITORIAL_CSS}'.replace('hl-feature', 'legacy-feature').replace('hl-side', 'legacy-side')
+style_text = f'{CSS}{MODERN_CSS}{EDITORIAL_CSS}{WIDE_CSS}'.replace('hl-feature', 'legacy-feature').replace('hl-side', 'legacy-side')
 
 parts = ['<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8">',
          '<meta name="viewport" content="width=device-width,initial-scale=1.0">',

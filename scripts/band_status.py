@@ -2,12 +2,12 @@
 """band_status.py — Estado de actividad de las bandas de la escena.
 
 Criterios (regla del usuario, agosto 2026):
-- ACTIVA      : publicó en el mes en curso o el anterior.
-- SOSPECHOSA  : lleva 1 mes completo sin publicar.
-- INACTIVA    : lleva 2+ meses sin publicar (o anunció retirada/parón).
-  → Las INACTIVAS se marcan para dejar de seguirlas; se quitan de la
-    plantilla titular (Lo Gordo) y su ficha muestra badge. NUNCA se borran
-    sus datos: la DB conserva el histórico.
+- ACTIVA      : publicó en el mes en curso o el anterior, O tiene conciertos futuros.
+- SOSPECHOSA  : sin actividad en redes ni conciertos. ES UNA ADVERTENCIA, no un
+                veredicto: puede ser fallo del script/acumulador, pereza en redes
+                o pausa voluntaria de la banda. NUNCA se marca INACTIVA por esto.
+- INACTIVA    : SOLO cuando hay anuncio explícito de retirada/parón.
+  → El histórico de la DB se conserva siempre; nada se borra.
 
 Salida: media/band_status.json  { band: {status, last_post, months_inactive, note} }
 Uso: python3 scripts/band_status.py [--month YYYY-MM]
@@ -61,12 +61,11 @@ def main():
         elif futuros.get(band, 0) > 0:
             st = 'ACTIVA'
             note = f'activa vía conciertos ({futuros[band]} futuros)'
-        elif months >= 2:
-            st = 'INACTIVA'
-            note = f'{months} meses sin publicar'
         elif months >= 1:
+            # Advertencia, no veredicto: puede ser fallo del script, pereza en
+            # redes o pausa voluntaria. NUNCA INACTIVA sin anuncio explícito.
             st = 'SOSPECHOSA'
-            note = f'{months} mes(es) sin publicar'
+            note = f'{months} mes(es) sin publicar ni conciertos — ¿script, pausa o pereza?'
         else:
             st = 'ACTIVA'
             note = ''
@@ -77,7 +76,11 @@ def main():
     n = {'ACTIVA': 0, 'SOSPECHOSA': 0, 'INACTIVA': 0}
     for v in status.values():
         n[v['status']] += 1
+    total = len(status)
     print(f'band_status: ACTIVA={n["ACTIVA"]} SOSPECHOSA={n["SOSPECHOSA"]} INACTIVA={n["INACTIVA"]} → {OUT}')
+    if total and n['SOSPECHOSA'] / total > 0.4:
+        print('  ⚠️  SOSPECHOSA supera el 40% de la plantilla: probable fallo del '
+              'acumulador/RSS Bridge, no inactividad real de las bandas.')
     for b, v in sorted(status.items()):
         if v['status'] != 'ACTIVA':
             print(f'  {v["status"]:11s} {b} (último {v["last_post"]}) {v["note"]}')

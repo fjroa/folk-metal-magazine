@@ -55,6 +55,15 @@ MODERN_CSS = '''
 footer{margin-top:64px;padding:36px 20px;background:var(--dark);color:#c9a84c}footer a{color:#f5f0e8}@media(max-width:700px){.hl-feature{display:block}.hl-feature img{height:210px;min-height:0}.hl-feature-body{padding:20px}.hl-feature p{font-size:17px}.hl-list{grid-template-columns:1fr}.hl-card{grid-template-columns:105px 1fr}.hl-card img{width:105px;min-height:135px}.cal-cell{min-height:90px}.cal-event{font-size:11px;padding:4px 2px}.cal-event a{display:block}.agenda-line{align-items:flex-start;flex-wrap:wrap}.agenda-detail{display:block}.agenda-line>a{margin-left:0}}
 '''
 
+# Overrides kept separate so the base parchment language remains easy to audit.
+EDITORIAL_CSS = '''
+body{font-variant-numeric:oldstyle-nums} .cover h1{text-shadow:0 4px 18px #160805}
+.hl-list{grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}.hl-card{display:block;border-top:4px solid var(--gold);border-left:0}.hl-card img{width:100%;height:180px;display:block;object-fit:cover}.hl-body{padding:16px}.hl-text .source-link{display:block;margin-top:12px}
+.band-card-wrapper{position:relative}.more-row{cursor:pointer;margin-top:10px;padding:9px;text-align:center;border:1px solid var(--border);border-radius:4px;color:var(--accent);font:700 12px ui-sans-serif,system-ui,sans-serif;background:var(--highlight)}
+.metrics-table{font-variant-numeric:tabular-nums}.metrics-table tbody tr:nth-child(even){background:rgba(237,228,211,.42)}.metrics-table tbody tr:hover{background:var(--highlight)}.metrics-table th{position:sticky;top:49px;z-index:1}.listeners{min-width:180px}.bar-track{height:7px;margin-top:5px;background:#dfd2bd;border-radius:9px;overflow:hidden}.bar{height:100%;background:linear-gradient(90deg,#8b5a13,var(--gold),#d8b84f);border-radius:9px}.medal{font-size:18px;margin-right:5px}
+@media(max-width:700px){.hl-list{grid-template-columns:1fr}.hl-card img{height:180px}.listeners{min-width:115px}.metrics-table th,.metrics-table td{padding:9px 6px}}
+'''
+
 
 def esc(x):
     return html.escape(str(x or ''), quote=True)
@@ -235,11 +244,19 @@ def load_metrics(band_names):
     if src.exists():
         text = src.read_text(errors='ignore')
         pat = re.compile(
-            r'<tr><td class="rank">\d+</td><td class="band-name">(.*?)</td>'
-            r'<td><strong>(.*?)</strong></td>'
+            r'<tr><td class="rank">.*?</td><td class="band-name">(.*?)</td>'
+            r'<td class="listeners"><strong>(.*?)</strong>.*?</td>'
             r'<td style="color:var\(--muted\)">(.*?)</td>'
             r'<td><span class="([^"]+)">(.*?)</span></td></tr>')
-        for band, now, q2, cls, arrow in pat.findall(text):
+        matches = pat.findall(text)
+        if not matches:
+            pat = re.compile(
+                r'<tr><td class="rank">\d+</td><td class="band-name">(.*?)</td>'
+                r'<td><strong>(.*?)</strong></td>'
+                r'<td style="color:var\(--muted\)">(.*?)</td>'
+                r'<td><span class="([^"]+)">(.*?)</span></td></tr>')
+            matches = pat.findall(text)
+        for band, now, q2, cls, arrow in matches:
             metrics[html.unescape(band)] = (html.unescape(now), html.unescape(q2),
                                             html.unescape(arrow), cls)
     if not metrics:
@@ -350,7 +367,7 @@ metrics = load_metrics(band_names)
 parts = ['<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8">',
          '<meta name="viewport" content="width=device-width,initial-scale=1.0">',
          f'<title>Folk Metal Magazine · {month_name} {month_date.year}</title>',
-         f'<style>{CSS}{MODERN_CSS}</style></head><body>']
+         f'<style>{CSS}{MODERN_CSS}{EDITORIAL_CSS}</style></head><body>']
 
 # 1. Portada
 parts.append(
@@ -399,19 +416,17 @@ if highlights:
     parts.append('<div class="hl-feature">'
                  f'<img src="{photo_b64(h.get("band", ""), h.get("shortcode", ""))}" alt="Foto {esc(h.get("band"))}">'
                  f'<div class="hl-feature-body"><div class="hl-band">{esc(h.get("emoji", "🔥"))} {esc(h.get("band"))}</div>'
-                 f'<p>{esc(text)}</p><a class="source-link" href="{esc(link)}" target="_blank" rel="noopener">Leer publicación original 🔗</a></div></div>')
+                 f'<p>{esc(text)}</p></div></div>')
 parts.append('<div class="hl-list">')
 for h in highlights[1:]:
     img = photo_b64(h['band'], h.get('shortcode', ''))
     text = clean_caption(h.get('text') or '')
     if len(text) > 300:
         text = text[:297].rsplit(' ', 1)[0] + '…'
-    link = h.get('post_url') or '#'
     parts.append(
         f'<article class="hl-card"><img src="{img}" alt="Foto {esc(h["band"])}">'
         f'<div class="hl-body"><div class="hl-band">{h.get("emoji", "🔥")} {esc(h["band"])}</div>'
-        f'<div class="hl-text">{esc(text)} '
-        f'<a class="source-link" href="{esc(link)}" target="_blank" rel="noopener">Leer 🔗</a></div></div></article>')
+        f'<div class="hl-text">{esc(text)}</div></div></article>')
 if not highlights:
     parts.append('<p class="empty-state">No hubo publicaciones que cumplieran los criterios.</p>')
 parts.append('</div></section>')
@@ -486,15 +501,16 @@ for band in band_names:
                  f'<div class="band-summary">{esc(summary_txt)}</div>')
     for idx, p in enumerate(rows):
         cap = clean_caption(p['caption'])
-        if len(cap) > 360:
-            cap = cap[:357].rsplit(' ', 1)[0] + '…'
-        klass = 'post-item' + (' collapsed' if idx >= 3 else '')
+        if len(cap) > 300:
+            cap = cap[:297].rsplit(' ', 1)[0] + '…'
+        klass = 'post-item collapsed'
         date = (p['post_date'] or '')[:10]
         link = p['post_url'] or f'https://www.instagram.com/p/{p["shortcode"]}/'
         parts.append(f'<div class="{klass}"><span class="post-date">{esc(date)}</span>{esc(cap)} '
                      f'<span class="post-link"><a href="{esc(link)}" target="_blank" rel="noopener">🔗</a></span></div>')
-    if len(rows) > 3:
-        parts.append(f'<div class="more-row">▼ ver todas ({len(rows)} publicaciones)</div>')
+    if rows:
+        card_id = f'b-{eid(band)}'
+        parts.append(f'<div class="more-row" role="button" tabindex="0" onclick="togglePosts(\'{card_id}\')" onkeydown="if(event.key===\'Enter\'||event.key===\' \')togglePosts(\'{card_id}\')">▼ ver publicaciones ({len(rows)})</div>')
     parts.append('</div></article>')
 parts.append('</div></section>')
 
@@ -517,10 +533,15 @@ parts.append('<p class="lead">Último snapshot disponible del informe anterior; 
 parts.append('<table class="metrics-table"><thead><tr><th>#</th><th>Banda</th><th>Oyentes</th><th>Q2</th><th>Δ</th></tr></thead><tbody>')
 metric_bands = sorted(set(band_names) | set(metrics),
                       key=lambda b: (-parse_metric(metrics.get(b, ('—', '—', '—', 'flat'))[0]), b.casefold()))
+metric_max = max((parse_metric(metrics.get(b, ('—', '—', '—', 'flat'))[0]) for b in metric_bands), default=1)
+metric_max = max(metric_max, 1)
 for i, band in enumerate(metric_bands, 1):
     now, q2, arrow, cls = metrics.get(band, ('—', '—', '→', 'flat'))
-    parts.append(f'<tr><td class="rank">{i:02d}</td><td class="band-name">{esc(band)}</td>'
-                 f'<td><strong>{esc(now)}</strong></td><td style="color:var(--muted)">{esc(q2)}</td>'
+    value = parse_metric(now)
+    width = max(0, min(100, round(value / metric_max * 100))) if value >= 0 else 0
+    medal = {1: '🥇', 2: '🥈', 3: '🥉'}.get(i, '')
+    parts.append(f'<tr><td class="rank">{medal}<span>{i:02d}</span></td><td class="band-name">{esc(band)}</td>'
+                 f'<td class="listeners"><strong>{esc(now)}</strong><div class="bar-track"><div class="bar" style="width:{width}%"></div></div></td><td style="color:var(--muted)">{esc(q2)}</td>'
                  f'<td><span class="{esc(cls)}">{esc(arrow)}</span></td></tr>')
 parts.append('</tbody></table></section>')
 
@@ -530,17 +551,17 @@ parts.append(f'</main><footer><a href="#indice">↑ Volver al índice</a><br><br
              f'{len(posts)} publicaciones de Instagram · {len(news)} noticias RSS mostradas · '
              f'contenido enlazado a sus fuentes originales</footer>')
 
-parts.append('<script>document.querySelectorAll(".more-row").forEach(function(btn){'
-             'btn.addEventListener("click",function(){{'
-             'var card=this.parentElement;'
-             'var hidden=card.querySelectorAll(".post-item.collapsed");'
-             'if(hidden.length){{'
-             'hidden.forEach(function(x){{x.classList.remove("collapsed")}});'
-             'this.textContent="▲ solo destacadas"'
-             '}}else{{'
-             'card.querySelectorAll(".post-item").forEach(function(x,i){{if(i>=3)x.classList.add("collapsed")}});'
-             'this.textContent="▼ ver todas ("+card.querySelectorAll(".post-item").length+" publicaciones)"'
-             '}}})}});</script>')
+parts.append('''<script>
+function togglePosts(cardId) {
+  var card = document.getElementById(cardId);
+  if (!card) return;
+  var posts = card.querySelectorAll('.post-item');
+  var button = card.querySelector('.more-row');
+  var isClosed = posts.length && posts[0].classList.contains('collapsed');
+  posts.forEach(function(post) { post.classList.toggle('collapsed', !isClosed); });
+  if (button) button.textContent = isClosed ? '▲ ocultar publicaciones' : '▼ ver publicaciones (' + posts.length + ')';
+}
+</script>''')
 parts.append('</body></html>')
 
 OUT.write_text(''.join(parts), encoding='utf-8')

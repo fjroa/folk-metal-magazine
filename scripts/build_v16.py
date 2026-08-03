@@ -35,10 +35,24 @@ MONTH_NAMES = ['enero', 'febrero', 'marzo', 'abril', 'mayo', 'junio', 'julio',
 month_date = datetime.strptime(MONTH, '%Y-%m')
 month_name = MONTH_NAMES[month_date.month - 1].capitalize()
 prev_month = (month_date.replace(day=1) - timedelta(days=1)).strftime('%Y-%m')
+next_month_date = (month_date.replace(day=28) + timedelta(days=4)).replace(day=1)
+agenda_end_date = (next_month_date.replace(day=28) + timedelta(days=124)).replace(day=1)
 
 CSS = '''
 :root{scroll-behavior:smooth;--cream:#f5f0e8;--paper:#ede4d3;--dark:#2c1810;--text:#3d2b1f;--accent:#8b2500;--gold:#b8860b;--muted:#8c7b6b;--card:#faf6ef;--border:#d4c5a9;--highlight:#fff8e7}
 *{box-sizing:border-box}body{margin:0;background:#e8dcc8;background-image:url("data:image/svg+xml,%3Csvg width='60' height='60' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.08'/%3E%3C/svg%3E"),linear-gradient(180deg,#ede4d3,#d9ccb5);color:var(--text);font:15px/1.55 Georgia,'Times New Roman',serif}.cover{background:linear-gradient(160deg,#2c1810,#4a2820,#3d1f15,#2c1810);color:var(--gold);text-align:center;padding:80px 20px 60px;position:relative}.cover h1{font-size:clamp(38px,8vw,72px);letter-spacing:5px;margin:0}.cover .sub{color:#c9a84c;font-size:clamp(15px,3vw,22px);font-style:italic;margin:12px}.cover .meta{color:#a09080;font-size:13px;line-height:2}.cover .stats{display:flex;justify-content:center;gap:28px;flex-wrap:wrap;margin:28px 0 0}.cover strong{display:block;font-size:28px;color:var(--gold)}.container{max-width:1000px;margin:0 auto;padding:0 24px}@media(max-width:700px){.container{padding:0 12px}}.section-nav{display:flex;justify-content:center;gap:14px;flex-wrap:wrap;padding:20px 12px 8px;font-size:13px}.section-nav a{color:var(--accent);text-decoration:none}.section-nav a:hover{color:var(--gold)}.section-divider{text-align:center;padding:46px 0 20px}.section-divider h2{font-size:clamp(25px,4vw,40px);color:var(--accent);letter-spacing:2px;border-top:2px solid var(--border);border-bottom:2px solid var(--border);padding:20px;margin:0}.toc-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:7px}.toc-card,.band-card,.hl-card,.news-card{background:var(--card);border:1px solid var(--border);border-radius:4px}.toc-card{padding:9px;text-align:center}.toc-card img{width:32px;height:32px;display:block;margin:0 auto 4px}.toc-card a{color:var(--accent);text-decoration:none;font-size:13px}.toc-num{font-size:10px;color:var(--muted);display:block}.lead{color:var(--muted);font-size:13px;text-align:center;margin:0 auto 18px;max-width:760px}.hl-list{display:grid;gap:9px}.hl-card{display:flex;overflow:hidden}.hl-card img{width:100px;height:92px;object-fit:cover;flex:0 0 auto;background:var(--dark)}.hl-body{padding:10px 14px}.hl-band{color:var(--accent);font-size:14px}.hl-text{font-size:13px;margin-top:4px}.calendar{max-width:960px;margin:auto}.cal-head,.cal-row{display:grid;grid-template-columns:repeat(7,1fr)}.cal-head div{padding:8px;text-align:center;color:var(--gold);font-size:12px;border-bottom:1px solid var(--border)}.cal-cell{min-height:112px;padding:6px;border-right:1px solid var(--border);border-bottom:1px solid var(--border);background:rgba(250,246,239,.55)}.cal-cell:nth-child(7n){border-right:0}.cal-empty{background:rgba(237,228,211,.4)}.cal-day{font-size:12px;color:var(--accent);font-weight:bold}.cal-event{font-size:10px;line-height:1.25;margin-top:5px}.cal-event a{color:var(--accent);text-decoration:none}.band-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(360px,1fr));gap:14px}.band-card-wrapper{position:relative}.top-link{position:absolute;right:9px;top:7px;color:var(--accent);font-size:11px;text-decoration:none;opacity:.5}.band-card{overflow:hidden}.band-header{display:flex;gap:12px;padding:12px;border-bottom:1px solid #f0ebe0;align-items:center}.band-header img{width:74px;height:74px;border-radius:4px}.band-header .name{font-size:17px;color:var(--accent)}.metrics{font-size:11px;color:var(--muted);margin-top:3px}.count{font-size:10px;color:var(--muted)}.band-summary{padding:10px 12px;font-size:12.5px;font-style:italic;border-bottom:1px solid #f0ebe0}.post-item{padding:8px 12px;border-bottom:1px solid #eee5d7;font-size:12px}.post-date{color:var(--gold);font-size:10px;margin-right:8px}.post-link{float:right}.post-link a{color:var(--accent);text-decoration:none;font-size:14px}.collapsed{display:none}.more-row{cursor:pointer;text-align:center;color:var(--accent);font-size:11px;font-style:italic;padding:8px}.more-row:hover{background:var(--highlight)}.news-list{display:grid;gap:7px;max-width:900px;margin:auto}.news-card{padding:9px 12px;font-size:12px}.news-card a{color:var(--accent);text-decoration:none}.news-source{color:var(--muted);font-size:10px}.metrics-table{width:100%;border-collapse:collapse;font-size:12px}.metrics-table th,.metrics-table td{text-align:left;padding:7px 9px;border-bottom:1px solid var(--border)}.metrics-table th{font-size:10px;color:var(--muted);text-transform:uppercase;letter-spacing:1px}.metrics-table tr:hover td{background:var(--highlight)}.up{color:#287a3e}.down{color:#a52c1c}.flat{color:var(--muted)}footer{text-align:center;padding:45px 20px;color:var(--muted);font-size:11px}footer a{color:var(--accent);text-decoration:none}
+'''
+
+MODERN_CSS = '''
+.cover{isolation:isolate;overflow:hidden;padding:clamp(64px,10vw,112px) 20px 72px;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180' viewBox='0 0 180 180'%3E%3Cg fill='none' stroke='%23b8860b' stroke-opacity='.13'%3E%3Cpath d='M0 30h180M0 90h180M0 150h180M30 0v180M90 0v180M150 0v180'/%3E%3C/g%3E%3C/svg%3E"),linear-gradient(135deg,#24100c 0%,#563126 50%,#24100c 100%)}
+.cover:after{content:'✦';position:absolute;inset:18px;border:1px solid rgba(184,134,11,.35);color:rgba(201,168,76,.5);font-size:18px;text-align:left;padding:10px;pointer-events:none}.cover h1{position:relative;font-weight:normal;line-height:.93;text-shadow:0 4px 18px #160805}.cover .sub{letter-spacing:2px}.cover .stats>div{min-width:128px;padding:13px 20px;border:1px solid rgba(184,134,11,.45);border-radius:50px;background:rgba(20,8,5,.35);box-shadow:0 5px 16px rgba(0,0,0,.2)}
+.section-nav{position:sticky;top:0;z-index:5;background:rgba(245,240,232,.94);border-bottom:1px solid var(--border);box-shadow:0 3px 14px rgba(61,43,31,.08);letter-spacing:.4px}.section-nav a{transition:color .2s,transform .2s}.section-nav a:hover{transform:translateY(-1px)}
+.section-divider{padding:58px 0 22px}.section-divider h2{position:relative;border:0;padding:0 0 16px;letter-spacing:3px;text-transform:uppercase}.section-divider h2:after{content:'';display:block;width:100%;height:3px;margin-top:16px;background:linear-gradient(90deg,transparent,var(--gold),transparent);opacity:.7}
+.toc-grid{gap:10px}.toc-card,.band-card,.hl-card,.news-card{box-shadow:0 5px 15px rgba(61,43,31,.08);transition:transform .2s,box-shadow .2s}.toc-card:hover,.band-card:hover,.hl-card:hover,.news-card:hover{transform:translateY(-2px);box-shadow:0 10px 24px rgba(61,43,31,.15)}.toc-card{padding:12px;border-radius:7px}.toc-card a{display:block}.toc-card img{border-radius:50%;object-fit:cover}.lead{max-width:760px;margin:0 auto 24px;text-align:center;font-size:16px;line-height:1.7}.empty-state{padding:28px;text-align:center;color:var(--muted);font-style:italic;background:rgba(250,246,239,.6);border:1px dashed var(--border)}
+.hl-feature{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(280px,1fr);margin:0 0 18px;background:var(--card);border-left:5px solid var(--gold);border-radius:8px;overflow:hidden;box-shadow:0 8px 22px rgba(61,43,31,.13);transition:transform .2s,box-shadow .2s}.hl-feature:hover{transform:translateY(-2px);box-shadow:0 12px 28px rgba(61,43,31,.18)}.hl-feature img{width:100%;height:100%;min-height:270px;object-fit:cover}.hl-feature-body{padding:28px 30px;display:flex;flex-direction:column;justify-content:center}.hl-band{font-family:Georgia,serif;color:var(--accent);font-size:18px;font-weight:bold;letter-spacing:.5px}.hl-feature p{font-size:19px;line-height:1.55;margin:14px 0 22px}.source-link{color:var(--accent);font-size:13px;font-weight:bold;text-decoration:none}.source-link:hover{text-decoration:underline}.hl-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}.hl-card{display:grid;grid-template-columns:120px 1fr;overflow:hidden;border-left:4px solid var(--gold);border-radius:7px}.hl-card img{width:120px;height:100%;min-height:150px;object-fit:cover}.hl-body{padding:16px}.hl-text{margin-top:8px;line-height:1.55}.hl-text .source-link{display:block;margin-top:10px}
+.agenda-month{margin:8px 0 12px;text-align:center;color:var(--accent);font-size:22px;letter-spacing:1px}.calendar{border:1px solid var(--border);border-radius:8px;overflow:hidden;box-shadow:0 6px 18px rgba(61,43,31,.08)}.cal-head{background:var(--dark);color:#f5f0e8;font-weight:bold;letter-spacing:1px}.cal-cell{min-height:112px;background:rgba(250,246,239,.72);border-color:var(--border)}.cal-cell:nth-child(odd){background:rgba(237,228,211,.5)}.cal-day{color:var(--accent);font-size:15px;font-weight:bold}.cal-event{margin:5px 2px;padding:6px;border-radius:5px;border-left:3px solid var(--gold);background:#fff8e7;line-height:1.3;font-size:12px}.cal-event strong{display:block;margin-top:3px}.cal-event a{color:var(--text);text-decoration:none}.event-badge{display:inline-block;padding:2px 6px;border-radius:20px;font-size:10px;text-transform:uppercase;letter-spacing:.4px;font-weight:bold}.event-festival .event-badge{background:#f2c6a8;color:#7c2b0a}.event-concierto .event-badge{background:#ead6a2;color:#725100}.event-gira .event-badge{background:#c6d8c2;color:#31553a}.agenda-later{margin-top:24px;padding:0 4px 4px;border-top:2px solid var(--gold)}.agenda-later h3{margin:0 -4px 8px;padding:10px 12px;background:linear-gradient(90deg,rgba(184,134,11,.2),transparent);color:var(--accent);letter-spacing:1px}.agenda-line{display:flex;align-items:center;gap:8px;padding:9px 4px;border-bottom:1px solid rgba(212,197,169,.65);transition:background .2s}.agenda-line:hover{background:rgba(255,248,231,.7)}.agenda-line>a{margin-left:auto;text-decoration:none}.agenda-detail{color:var(--muted)}
+.band-grid{gap:20px}.band-card-wrapper .top-link{opacity:.5;transition:opacity .2s}.band-card-wrapper:hover .top-link{opacity:1}.band-card{border-radius:8px}.band-header img{border-radius:8px;object-fit:cover}.post-item{border-bottom-color:rgba(212,197,169,.65);transition:background .2s;padding:10px 6px}.post-item:hover{background:rgba(255,248,231,.65)}.news-list{gap:10px}.news-card{border-left:4px solid var(--accent);border-radius:6px;transition:transform .2s,box-shadow .2s}.news-card a{color:var(--accent);font-size:16px}.metrics-table{box-shadow:0 6px 18px rgba(61,43,31,.08);overflow:hidden;border-radius:7px}.metrics-table tr{transition:background .2s}.metrics-table tbody tr:hover{background:#fff8e7}.metrics-table th{letter-spacing:1px}
+footer{margin-top:64px;padding:36px 20px;background:var(--dark);color:#c9a84c}footer a{color:#f5f0e8}@media(max-width:700px){.hl-feature{display:block}.hl-feature img{height:210px;min-height:0}.hl-feature-body{padding:20px}.hl-feature p{font-size:17px}.hl-list{grid-template-columns:1fr}.hl-card{grid-template-columns:105px 1fr}.hl-card img{width:105px;min-height:135px}.cal-cell{min-height:90px}.cal-event{font-size:11px;padding:4px 2px}.cal-event a{display:block}.agenda-line{align-items:flex-start;flex-wrap:wrap}.agenda-detail{display:block}.agenda-line>a{margin-left:0}}
 '''
 
 
@@ -244,11 +258,28 @@ news = conn.execute(
     '''SELECT source, title, url, published FROM news_posts WHERE published LIKE ?
        ORDER BY published DESC LIMIT 12''',
     (MONTH + '%',)).fetchall()
+# Radar de Medios: solo noticias relevantes a la escena folk metal (no todo
+# el metal general de los 4 feeds). Se filtra por banda de la escena o keywords.
+_SCENE_BANDS = {
+    'saurom', 'mägo de oz', 'lepoka', 'lèpoka', 'celtian', 'salduie', 'dark moor',
+    'celtibeerian', 'dunedain', 'dünedain', 'nidhögg', 'argion', 'lándevir', 'landevir',
+    'reino de hades', 'el reno renardo', 'triskel', 'hadadanza', 'debler', 'daeria',
+    'ekyrian', 'xeria', 'trovadorum', 'sovengar', 'kinnia', 'kaelis', 'khëlleden',
+    'finnway', 'leyendärian', 'legacy of the seas', 'astter', 'aljamia'}
+_SCENE_KW = ('folk metal', 'folk-metal', 'folk', 'celta', 'medieval', 'viking',
+             'pagano', 'bardos', 'trol', 'leyendas del rock', 'rock imperium',
+             'viña rock', 'mithril', 'hadas', 'folk rock')
+
+def _news_relevant(n):
+    t = (n['title'] or '').casefold()
+    return any(b in t for b in _SCENE_BANDS) or any(k in t for k in _SCENE_KW)
+
+news = [n for n in news if _news_relevant(n)][:8]
 concert_rows = conn.execute(
     '''SELECT date, band_name, event_name, event_type, city, venue, source_url
-       FROM concerts WHERE date LIKE ? AND band_name != 'Medio'
+       FROM concerts WHERE date >= ? AND date < ? AND band_name != 'Medio'
        ORDER BY date, band_name''',
-    (MONTH + '%',)).fetchall()
+     (next_month_date.strftime('%Y-%m-%d'), agenda_end_date.strftime('%Y-%m-%d'))).fetchall()
 conn.close()
 
 bands = defaultdict(list)
@@ -268,13 +299,20 @@ summaries_txt = summaries_data.get('summaries', {}) or {}
 highlights = summaries_data.get('highlights', []) if summaries_data else []
 if not highlights:
     highlights = build_highlights_fallback(set(bands), posts)
+# Short or malformed editorial entries make the cards feel empty. Keep the
+# source order: the editorial JSON already ranks the news by relevance.
+highlights = [h for h in highlights
+              if isinstance(h, dict) and clean_caption(h.get('text')) and
+              len(clean_caption(h.get('text'))) >= 40][:6]
 
-# Calendario.
+# Agenda: detailed calendar for next month, compact lists for the following
+# three months. Events outside this window were deliberately not queried.
 events = defaultdict(list)
 for r in concert_rows:
-    events[r['date']].append(r)
-first = month_date.date().replace(day=1)
-last_day = calendar.monthrange(month_date.year, month_date.month)[1]
+    events[(r['date'] or '')[:10]].append(r)
+calendar_month = next_month_date.strftime('%Y-%m')
+first = next_month_date.date().replace(day=1)
+last_day = calendar.monthrange(next_month_date.year, next_month_date.month)[1]
 start_offset = first.weekday()  # lunes-first
 
 
@@ -289,8 +327,22 @@ def event_label(r):
     return ' — '.join(parts) if parts else 'Fecha anunciada'
 
 
+def compact_event_label(r):
+    location = ' — '.join(p for p in (r['city'], r['venue']) if p)
+    return location or r['event_name'] or 'Fecha anunciada'
+
+
 def event_icon(t):
     return {'festival': '🎪', 'gira': '🗺️', 'concierto': '🎸'}.get(t or '', '🎸')
+
+
+def event_class(t):
+    value = (t or 'concierto').lower()
+    return value if value in ('festival', 'gira', 'concierto') else 'concierto'
+
+
+def month_label(value):
+    return MONTH_NAMES[value.month - 1].capitalize() + f' {value.year}'
 
 
 metrics = load_metrics(band_names)
@@ -298,7 +350,7 @@ metrics = load_metrics(band_names)
 parts = ['<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8">',
          '<meta name="viewport" content="width=device-width,initial-scale=1.0">',
          f'<title>Folk Metal Magazine · {month_name} {month_date.year}</title>',
-         f'<style>{CSS}</style></head><body>']
+         f'<style>{CSS}{MODERN_CSS}</style></head><body>']
 
 # 1. Portada
 parts.append(
@@ -313,15 +365,16 @@ parts.append(
     f'<div><strong>{len(news)}</strong> noticias</div>'
     f'</div></header>')
 
-# 2. Nav
-parts.append(
-    '<nav class="section-nav">'
-    '<a href="#indice">Índice</a><span>·</span>'
-    '<a href="#gordo">🔥 Lo Gordo</a><span>·</span>'
-    '<a href="#agenda">📅 Agenda</a><span>·</span>'
-    '<a href="#bandas">⚔️ Bandas</a><span>·</span>'
-    '<a href="#radar">📰 Radar</a><span>·</span>'
-    '<a href="#metricas">📊 Métricas</a></nav>')
+# 2. Nav (Radar solo si hay noticias suficientes)
+nav_parts = ['<nav class="section-nav">',
+             '<a href="#indice">Índice</a><span>·</span>',
+             '<a href="#gordo">🔥 Lo Gordo</a><span>·</span>',
+             '<a href="#agenda">📅 Agenda</a><span>·</span>',
+             '<a href="#bandas">⚔️ Bandas</a><span>·</span>']
+if len(news) >= 2:
+    nav_parts.append('<a href="#radar">📰 Radar</a><span>·</span>')
+nav_parts.append('<a href="#metricas">📊 Métricas</a></nav>')
+parts.append(''.join(nav_parts))
 
 parts.append('<main class="container">')
 
@@ -336,26 +389,37 @@ parts.append('</div></section>')
 
 # 4. Lo Gordo
 parts.append('<section id="gordo"><div class="section-divider"><h2>🔥 Lo Gordo del Mes</h2></div>')
-parts.append('<p class="lead">Selección de publicaciones del periodo con lanzamientos, novedades de formación, '
-             'giras y anuncios relevantes. Cada texto procede de una publicación enlazada.</p>')
+parts.append('<p class="lead">Los hechos más relevantes de la escena: retiradas, lanzamientos, cambios de formación y giras internacionales. Selección editorial basada en las publicaciones oficiales de cada banda.</p>')
+if highlights:
+    h = highlights[0]
+    text = clean_caption(h.get('text'))
+    if len(text) > 500:
+        text = text[:497].rsplit(' ', 1)[0] + '…'
+    link = h.get('post_url') or '#'
+    parts.append('<div class="hl-feature">'
+                 f'<img src="{photo_b64(h.get("band", ""), h.get("shortcode", ""))}" alt="Foto {esc(h.get("band"))}">'
+                 f'<div class="hl-feature-body"><div class="hl-band">{esc(h.get("emoji", "🔥"))} {esc(h.get("band"))}</div>'
+                 f'<p>{esc(text)}</p><a class="source-link" href="{esc(link)}" target="_blank" rel="noopener">Leer publicación original 🔗</a></div></div>')
 parts.append('<div class="hl-list">')
-for h in highlights:
+for h in highlights[1:]:
     img = photo_b64(h['band'], h.get('shortcode', ''))
     text = clean_caption(h.get('text') or '')
-    if len(text) > 360:
-        text = text[:357].rsplit(' ', 1)[0] + '…'
+    if len(text) > 300:
+        text = text[:297].rsplit(' ', 1)[0] + '…'
+    link = h.get('post_url') or '#'
     parts.append(
         f'<article class="hl-card"><img src="{img}" alt="Foto {esc(h["band"])}">'
         f'<div class="hl-body"><div class="hl-band">{h.get("emoji", "🔥")} {esc(h["band"])}</div>'
         f'<div class="hl-text">{esc(text)} '
-        f'<a href="{esc(h["post_url"])}" target="_blank" rel="noopener">🔗</a></div></div></article>')
+        f'<a class="source-link" href="{esc(link)}" target="_blank" rel="noopener">Leer 🔗</a></div></div></article>')
 if not highlights:
-    parts.append('<p class="lead">No hubo publicaciones que cumplieron los criterios de selección.</p>')
+    parts.append('<p class="empty-state">No hubo publicaciones que cumplieran los criterios.</p>')
 parts.append('</div></section>')
 
 # 5. Agenda
 parts.append('<section id="agenda"><div class="section-divider"><h2>📅 Agenda de Conciertos</h2></div>')
-parts.append('<p class="lead">Agenda estructurada a partir de eventos detectados en la base de datos del periodo.</p>')
+parts.append('<p class="lead">Próximas fechas confirmadas de la escena. El calendario detallado corresponde al mes siguiente; los meses posteriores se listan de forma compacta.</p>')
+parts.append(f'<h3 class="agenda-month">{esc(month_label(next_month_date))}</h3>')
 parts.append('<div class="calendar"><div class="cal-head">' +
              ''.join(f'<div>{d}</div>' for d in ['Lu', 'Ma', 'Mi', 'Ju', 'Vi', 'Sá', 'Do']) + '</div>')
 for cell_index in range(start_offset + last_day):
@@ -365,12 +429,14 @@ for cell_index in range(start_offset + last_day):
     if day_num < 1 or day_num > last_day:
         parts.append('<div class="cal-cell cal-empty"></div>')
     else:
-        date_key = f'{MONTH}-{day_num:02d}'
+        date_key = f'{calendar_month}-{day_num:02d}'
         ev_html = []
         for r in events.get(date_key, []):
             label = event_label(r)
             link = r['source_url'] or '#'
-            ev_html.append(f'<div class="cal-event">{event_icon(r["event_type"])} {esc(r["band_name"])}<br>'
+            kind = event_class(r['event_type'])
+            ev_html.append(f'<div class="cal-event event-{kind}"><span class="event-badge">{event_icon(r["event_type"])} {esc(kind)}</span>'
+                           f'<strong>{esc(r["band_name"])}</strong><br>'
                            f'<a href="{esc(link)}" target="_blank" rel="noopener">{esc(label)} 🔗</a></div>')
         parts.append(f'<div class="cal-cell"><div class="cal-day">{day_num}</div>{"".join(ev_html)}</div>')
     if cell_index % 7 == 6:
@@ -379,7 +445,25 @@ if (start_offset + last_day) % 7:
     for _ in range(7 - ((start_offset + last_day) % 7)):
         parts.append('<div class="cal-cell cal-empty"></div>')
     parts.append('</div>')
-parts.append('</div></section>')
+parts.append('</div>')
+for offset in range(1, 4):
+    later = (next_month_date.replace(day=28) + timedelta(days=32 * offset)).replace(day=1)
+    later_key = later.strftime('%Y-%m')
+    later_events = [r for r in concert_rows if (r['date'] or '').startswith(later_key)]
+    if not later_events:
+        continue
+    parts.append(f'<div class="agenda-later"><h3>{esc(month_label(later))}</h3>')
+    for r in later_events:
+        kind = event_class(r['event_type'])
+        day = (r['date'] or '')[8:10].lstrip('0') or '0'
+        label = compact_event_label(r)
+        link = r['source_url'] or '#'
+        parts.append(f'<div class="agenda-line event-{kind}"><span class="event-badge">{event_icon(r["event_type"])} {esc(kind)}</span>'
+                     f'<span><strong>{esc(day)} {esc(MONTH_NAMES[later.month - 1])}</strong> — {esc(r["band_name"])}'
+                     f' <span class="agenda-detail">({esc(label)})</span></span>'
+                     f' <a href="{esc(link)}" target="_blank" rel="noopener">🔗</a></div>')
+    parts.append('</div>')
+parts.append('</section>')
 
 # 6. Todas las Bandas
 parts.append('<section id="bandas"><div class="section-divider"><h2>⚔️ Todas las Bandas</h2></div>')
@@ -414,16 +498,17 @@ for band in band_names:
     parts.append('</div></article>')
 parts.append('</div></section>')
 
-# 7. Radar de Medios
-parts.append('<section id="radar"><div class="section-divider"><h2>📰 Radar de Medios</h2></div>')
-parts.append('<p class="lead">Muestra de artículos RSS incorporados durante el periodo; el acumulador conserva el histórico completo.</p>')
-parts.append('<div class="news-list">')
-for n in news:
-    title = clean_caption(n['title'])
-    parts.append(f'<article class="news-card"><span class="news-source">{esc(n["source"])} · '
-                 f'{esc((n["published"] or "")[:10])}</span><br>'
-                 f'<a href="{esc(n["url"])}" target="_blank" rel="noopener">{esc(title)}</a></article>')
-parts.append('</div></section>')
+# 7. Radar de Medios (solo si hay noticias suficientes de la escena)
+if len(news) >= 2:
+    parts.append('<section id="radar"><div class="section-divider"><h2>📰 Radar de Medios</h2></div>')
+    parts.append('<p class="lead">Noticias de la escena folk metal recogidas de los medios especializados (Hellpress, Metalcry, RafaBasa, The Dark Melody) durante el periodo.</p>')
+    parts.append('<div class="news-list">')
+    for n in news:
+        title = clean_caption(n['title'])
+        parts.append(f'<article class="news-card"><span class="news-source">{esc(n["source"])} · '
+                     f'{esc((n["published"] or "")[:10])}</span><br>'
+                     f'<a href="{esc(n["url"])}" target="_blank" rel="noopener">{esc(title)}</a></article>')
+    parts.append('</div></section>')
 
 # 8. Métricas
 parts.append('<section id="metricas"><div class="section-divider"><h2>📊 Métricas Spotify</h2></div>')

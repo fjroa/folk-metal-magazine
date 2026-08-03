@@ -179,19 +179,29 @@ def llm_summary(band, facts, rows):
         print(f'  [warn] LLM falló para {band}: {e}')
         return fallback_summary(band, facts)
 
-def llm_blurb(band, caption, post_url, date):
+def llm_blurb(band, caption, post_url, date, facts=None):
+    facts_txt = '\n'.join(f'- {f}' for f in facts) if facts else '(sin hechos adicionales)'
     prompt = (
-        'Eres redactor de "Folk Metal Magazine". Escribe un titular-noticia periodístico (2-3 frases, español) '
-        'sobre esta publicación verificada de una banda.\n'
-        'REGLAS: usa solo la información del texto; tono de periodista; no inventes datos; no copies el texto literalmente.\n'
+        'Eres redactor de "Folk Metal Magazine". Escribe una noticia periodística breve (2-3 frases, español) '
+        'sobre lo MÁS relevante de esta banda este mes.\n'
+        'REGLAS: usa solo la información del texto y de los hechos listados; tono de periodista; '
+        'no inventes datos; no copies el texto literalmente; no uses markdown; no empieces con "La banda española".\n'
         f'Banda: {band} | Fecha: {date} | URL: {post_url}\n'
-        f'Publicación:\n{clean(caption)[:600]}\n\n'
+        f'HECHOS VERIFICADOS DEL MES:\n{facts_txt}\n\n'
+        f'Publicación destacada:\n{clean(caption)[:500]}\n\n'
         'NOTICIA:'
     )
     try:
-        return llm(prompt, max_tokens=800, temperature=0.5)
+        txt = llm(prompt, max_tokens=800, temperature=0.5)
+        txt = re.sub(r'\*', '', txt)
+        txt = re.sub(r'\s+', ' ', txt).strip()
+        if len(txt) < 40:
+            raise ValueError('blurb demasiado corto')
+        return txt
     except Exception as e:
-        print(f'  [warn] LLM falló en blurb {band}: {e}')
+        print(f'  [warn] blurb {band} falló ({e}); uso hechos')
+        if facts:
+            return ' '.join(facts[:2])
         return clean(caption)[:220]
 
 # ── highlights: solo eventos grandes (prioridad por keywords) ───────────────
@@ -202,14 +212,14 @@ HIGHLIGHT_SPECS = [
     ('Saurom', '⚔️', [r'nuevo (disco|álbum|single)|adelanto|estren|grabaci|leyendas del rock']),
     ('Celtian', '🎼', [r'disco en directo|desde las raíces|maleficio|adelanto|la riviera']),
     ('Mägo de Oz', '🐉', [r'nuevo (disco|álbum|single)|adelanto|estren|gira internacional|wacken|rock imperium']),
-    ('Lèpoka', '🍺', [r'nuevo (disco|álbum|single)|adelanto|estren|grabaci|leyendas del rock']),
+    ('Lèpoka', '🍺', [r'rebelión animal|preventa|sale en todo el mundo|nuevo (disco|álbum|single)|adelanto|estren|grabaci|leyendas del rock']),
     ('Ekyrian', '🌊', [r'leyendas del rock|nuevo (disco|álbum|single)|adelanto']),
     ('Hadadanza', '🔥', [r'leyendas del rock|nuevo (disco|álbum|single)|adelanto']),
     ('Reino de Hades', '⚒️', [r'nuevo (disco|álbum|single)|adelanto|grabaci|leyendas del rock|festival']),
     ('Salduie', '🏹', [r'nuevo (disco|álbum|single)|adelanto|grabaci|leyendas del rock']),
     ('Kinnia', '⚡', [r'nuevo (disco|álbum|single)|adelanto|grabaci|leyendas del rock']),
     ('Triskel', '🏴', [r'nuevo (disco|álbum|single)|adelanto|grabaci|rock imperium']),
-    ('Celtibeerian', '🛡️', [r'nuevo (disco|álbum|single)|adelanto|grabaci|feffarkhorn']),
+    ('Celtibeerian', '🛡️', [r'leyendas del rock|despedirá|sergio|nuevo (disco|álbum|single)|adelanto|grabaci|feffarkhorn']),
 ]
 
 def main():
@@ -239,7 +249,9 @@ def main():
                 cap = clean(p['caption'])
                 if re.search(kw, cap, re.I):
                     url = p['post_url'] or f'https://www.instagram.com/p/{p["shortcode"]}/'
-                    highlights.append({'band': h_band, 'emoji': emoji, 'text': llm_blurb(h_band, cap, url, p['post_date']),
+                    facts = summaries[h_band]['facts'] if h_band in summaries else []
+                    highlights.append({'band': h_band, 'emoji': emoji,
+                                       'text': llm_blurb(h_band, cap, url, p['post_date'], facts),
                                        'post_url': url, 'shortcode': p['shortcode']})
                     seen.add(h_band)
                     found = True

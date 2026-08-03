@@ -53,8 +53,12 @@ RETIRO_EXPLICIT = re.compile(
     r'nos retiramos|ponemos punto final|se retira de los escenarios|se retira de la banda|'
     r'deja la banda|dejar la banda', re.I)
 # Términos que SIEMPRE requieren respaldo textual en las captions si aparecen en un texto generado.
-RETIRO_CLAIM = re.compile(r'retira\w*|despedida|despedimos|adiós definitivo|deja los escenarios|'
-                          r'cierre de su trayectoria|cierra su etapa|último disco|último álbum', re.I)
+# IMPORTANTE: esto detecta la RETIRADA DE LA BANDA, no cambios de formación. "Despedirá a su
+# guitarrista" (Celtibeerian) NO es retirada de banda y no debe bloquearse.
+RETIRO_CLAIM = re.compile(
+    r'\bse retira\b|anuncia su retirada|retirada de los escenarios|retirada de las tablas|'
+    r'deja los escenarios|dejamos los escenarios|adiós definitivo|nos despedimos de los escenarios|'
+    r'cierre de su trayectoria|cierra su etapa|último disco de la banda|último álbum de la banda', re.I)
 
 # Hechos curados a mano y verificados (nunca los inventa el LLM). Documentar fuente.
 BAND_VERIFIED = {
@@ -105,8 +109,10 @@ def extract_facts(band, rows):
     # Producción
     if re.search(r'grabaci|estudio|producci|grabando|masteriz', all_text):
         facts.append('Está en pleno proceso de grabación o producción de nuevo material.')
-    # Formación
-    if re.search(r'deja la banda|dejar la banda|nuevo guitarrista|nuevo bater|nueva formación|incorpora a|se une a la banda', all_text):
+    # Formación (incluye despedida de un miembro: "despedirá a su guitarrista")
+    if re.search(r'deja la banda|dejar la banda|nuevo guitarrista|nuevo bater|nueva formación|'
+                 r'incorpora a|se une a la banda|despedirá a su|despide a su|se despide de su|'
+                 r'se va de la banda|abandona la banda|nuevo miembro|nuevo componente', all_text):
         facts.append('Hubo movimiento en la formación del grupo.')
     # Festivales / directos (con nombre)
     fest = []
@@ -248,22 +254,22 @@ def llm_blurb(band, caption, post_url, date, facts=None, rows=None):
             return ' '.join(facts[:2])
         return clean(caption)[:220]
 
-# ── highlights: solo eventos grandes (prioridad por keywords) ───────────────
+# ── highlights: prioridad editorial (lo gordo de verdad primero) ────────────
 HIGHLIGHT_SPECS = [
     ('Nidhögg', '💀', [r'se retira|retirada|adiós definitivo|último disco']),
+    ('Celtibeerian', '🛡️', [r'leyendas del rock|despedirá|sergio|nuevo guitarrista|nuevo (disco|álbum|single)|adelanto|grabaci|feffarkhorn']),
+    ('Ekyrian', '🌊', [r'leyendas del rock|20 aniversario|nuevo (disco|álbum|single)|adelanto']),
     ('Argion', '🌊', [r'sobre el mar|vltreia|single|adelanto']),
+    ('Lèpoka', '🍺', [r'rebelión animal|preventa|sale en todo el mundo|nuevo (disco|álbum|single)|adelanto|estren|grabaci|leyendas del rock']),
+    ('Celtian', '🎼', [r'disco en directo|desde las raíces|maleficio|adelanto|la riviera']),
     ('Dark Moor', '💿', [r'doble cd|recopilatorio|edición limitada|25 aniversario|formación especial']),
     ('Saurom', '⚔️', [r'nuevo (disco|álbum|single)|adelanto|estren|grabaci|leyendas del rock']),
-    ('Celtian', '🎼', [r'disco en directo|desde las raíces|maleficio|adelanto|la riviera']),
-    ('Mägo de Oz', '🐉', [r'nuevo (disco|álbum|single)|adelanto|estren|gira internacional|wacken|rock imperium']),
-    ('Lèpoka', '🍺', [r'rebelión animal|preventa|sale en todo el mundo|nuevo (disco|álbum|single)|adelanto|estren|grabaci|leyendas del rock']),
-    ('Ekyrian', '🌊', [r'leyendas del rock|nuevo (disco|álbum|single)|adelanto']),
     ('Hadadanza', '🔥', [r'leyendas del rock|nuevo (disco|álbum|single)|adelanto']),
     ('Reino de Hades', '⚒️', [r'nuevo (disco|álbum|single)|adelanto|grabaci|leyendas del rock|festival']),
+    ('Mägo de Oz', '🐉', [r'nuevo (disco|álbum|single)|adelanto|estren|gira internacional|wacken|rock imperium']),
     ('Salduie', '🏹', [r'nuevo (disco|álbum|single)|adelanto|grabaci|leyendas del rock']),
     ('Kinnia', '⚡', [r'nuevo (disco|álbum|single)|adelanto|grabaci|leyendas del rock']),
     ('Triskel', '🏴', [r'nuevo (disco|álbum|single)|adelanto|grabaci|rock imperium']),
-    ('Celtibeerian', '🛡️', [r'leyendas del rock|despedirá|sergio|nuevo (disco|álbum|single)|adelanto|grabaci|feffarkhorn']),
 ]
 
 def main():

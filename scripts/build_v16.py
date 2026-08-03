@@ -58,10 +58,11 @@ footer{margin-top:64px;padding:36px 20px;background:var(--dark);color:#c9a84c}fo
 # Overrides kept separate so the base parchment language remains easy to audit.
 EDITORIAL_CSS = '''
 body{font-variant-numeric:oldstyle-nums} .cover h1{text-shadow:0 4px 18px #160805}
-.hl-list{grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}.hl-card{display:block;border-top:4px solid var(--gold);border-left:0}.hl-card img{width:100%;height:180px;display:block;object-fit:cover}.hl-body{padding:16px}.hl-text .source-link{display:block;margin-top:12px}
+.gordo-spread{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(280px,.85fr);gap:32px;align-items:start;margin-top:12px}.hl-feature{display:flex;flex-direction:column;border:0;border-top:5px solid var(--gold);border-radius:0;background:rgba(250,246,239,.9);box-shadow:0 10px 24px rgba(61,43,31,.14)}.hl-feature img{width:100%;height:auto;aspect-ratio:4/5;object-fit:cover}.hl-feature-body{padding:20px 22px 24px}.hl-feature .hl-band{font-size:20px}.hl-feature p{font-size:20px;line-height:1.6;margin:12px 0 18px;color:#2f2118}.hl-side{border-top:2px solid var(--accent);padding-top:2px}.hl-side .hl-card{display:grid;grid-template-columns:96px 1fr;gap:0;border:0;border-bottom:1px solid var(--border);border-radius:0;background:transparent;box-shadow:none}.hl-side .hl-card img{width:96px;height:112px;min-height:0;aspect-ratio:1/1.15;object-fit:cover}.hl-side .hl-body{padding:11px 0 11px 14px}.hl-side .hl-band{font-size:16px}.hl-side .hl-text{font-size:15px;line-height:1.45;margin-top:5px;color:#3d2b1f;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}.hl-side .source-link{display:block;margin-top:5px}.hl-strip{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-top:22px;padding-top:14px;border-top:1px solid var(--border)}.hl-mini{display:grid;grid-template-columns:58px 1fr;gap:9px;align-items:start}.hl-mini img{width:58px;height:58px;object-fit:cover;border:2px solid var(--border);padding:2px;background:var(--cream)}.hl-mini .hl-band{font-size:14px}.hl-mini .hl-text{font-size:13px;line-height:1.35;margin-top:3px;display:-webkit-box;-webkit-line-clamp:1;-webkit-box-orient:vertical;overflow:hidden}
 .band-card-wrapper{position:relative}.more-row{cursor:pointer;margin-top:10px;padding:9px;text-align:center;border:1px solid var(--border);border-radius:4px;color:var(--accent);font:700 12px ui-sans-serif,system-ui,sans-serif;background:var(--highlight)}
 .metrics-table{font-variant-numeric:tabular-nums}.metrics-table tbody tr:nth-child(even){background:rgba(237,228,211,.42)}.metrics-table tbody tr:hover{background:var(--highlight)}.metrics-table th{position:sticky;top:49px;z-index:1}.listeners{min-width:180px}.bar-track{height:7px;margin-top:5px;background:#dfd2bd;border-radius:9px;overflow:hidden}.bar{height:100%;background:linear-gradient(90deg,#8b5a13,var(--gold),#d8b84f);border-radius:9px}.medal{font-size:18px;margin-right:5px}
-@media(max-width:700px){.hl-list{grid-template-columns:1fr}.hl-card img{height:180px}.listeners{min-width:115px}.metrics-table th,.metrics-table td{padding:9px 6px}}
+.band-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:26px}.band-card-wrapper.wide{grid-column:span 2}.band-card{border-radius:2px;border-top:4px solid var(--accent);background:rgba(250,246,239,.94)}.band-header{gap:18px;padding:18px}.band-header img{width:116px;height:116px;border:5px solid var(--cream);outline:1px solid var(--border);box-shadow:0 4px 12px rgba(61,43,31,.18)}.band-header .name,.band-name{font-size:20px;font-weight:bold;line-height:1.2;color:#2f2118}.band-header .metrics,.band-header .count{font-size:12px;color:#4b382b}.band-summary{font-size:15px;line-height:1.6;color:#33251c;padding:0 18px 16px}.post-item{font-size:13.5px;line-height:1.55;color:#3b2a20}.post-date{font-size:11px;color:#594637;font-weight:bold}.more-row{font-size:12px}.band-card-wrapper.reverse .band-header{flex-direction:row-reverse;text-align:right}.band-card-wrapper.reverse .band-header>div{flex:1}.agenda-month{font-size:23px}.cal-cell{min-height:126px;padding:8px}.cal-event{font-size:11px;padding:7px 6px;line-height:1.4}.cal-day{font-size:16px}.event-badge{font-size:10px}.metrics-table th{font-size:13px}.metrics-table td{font-size:14px;padding:12px 10px}.metrics-table .band-name{font-size:15px}.metrics-table .listeners strong{font-size:14px}
+@media(max-width:700px){.gordo-spread{display:block}.hl-feature{margin-bottom:24px}.hl-side .hl-card{grid-template-columns:88px 1fr}.hl-side .hl-card img{width:88px;height:100px}.hl-strip{grid-template-columns:1fr 1fr}.band-grid{grid-template-columns:1fr}.band-card-wrapper.wide{grid-column:auto}.band-header img{width:110px;height:110px}.band-card-wrapper.reverse .band-header{flex-direction:row;text-align:left}.cal-cell{min-height:96px;padding:5px 3px}.cal-event{font-size:11px;padding:5px 2px}.metrics-table th,.metrics-table td{padding:9px 6px}.listeners{min-width:115px}}
 '''
 
 
@@ -413,23 +414,33 @@ if highlights:
     if len(text) > 500:
         text = text[:497].rsplit(' ', 1)[0] + '…'
     link = h.get('post_url') or '#'
-    parts.append('<div class="hl-feature">'
+    parts.append('<div class="gordo-spread"><div class="hl-feature">'
                  f'<img src="{photo_b64(h.get("band", ""), h.get("shortcode", ""))}" alt="Foto {esc(h.get("band"))}">'
                  f'<div class="hl-feature-body"><div class="hl-band">{esc(h.get("emoji", "🔥"))} {esc(h.get("band"))}</div>'
-                 f'<p>{esc(text)}</p></div></div>')
-parts.append('<div class="hl-list">')
-for h in highlights[1:]:
-    img = photo_b64(h['band'], h.get('shortcode', ''))
-    text = clean_caption(h.get('text') or '')
-    if len(text) > 300:
-        text = text[:297].rsplit(' ', 1)[0] + '…'
-    parts.append(
-        f'<article class="hl-card"><img src="{img}" alt="Foto {esc(h["band"])}">'
-        f'<div class="hl-body"><div class="hl-band">{h.get("emoji", "🔥")} {esc(h["band"])}</div>'
-        f'<div class="hl-text">{esc(text)}</div></div></article>')
-if not highlights:
+                 f'<p>{esc(text)}</p><a class="source-link" href="{esc(link)}" target="_blank" rel="noopener">Leer publicación original 🔗</a></div></div>'
+                 '<div class="hl-side">')
+    for h in highlights[1:4]:
+        img = photo_b64(h['band'], h.get('shortcode', ''))
+        text = clean_caption(h.get('text') or '')
+        if len(text) > 300:
+            text = text[:297].rsplit(' ', 1)[0] + '…'
+        parts.append(
+            f'<article class="hl-card"><img src="{img}" alt="Foto {esc(h["band"])}">'
+            f'<div class="hl-body"><div class="hl-band">{h.get("emoji", "🔥")} {esc(h["band"])}</div>'
+            f'<div class="hl-text">{esc(text)}</div><a class="source-link" href="{esc(h.get("post_url") or "#")}" target="_blank" rel="noopener">🔗</a></div></article>')
+    parts.append('</div></div>')
+    if len(highlights) > 4:
+        parts.append('<div class="hl-strip">')
+        for h in highlights[4:]:
+            text = clean_caption(h.get('text') or '')
+            if len(text) > 100:
+                text = text[:97].rsplit(' ', 1)[0] + '…'
+            parts.append(f'<article class="hl-mini"><img src="{photo_b64(h["band"], h.get("shortcode", ""))}" alt="Foto {esc(h["band"])}">'
+                         f'<div><div class="hl-band">{h.get("emoji", "🔥")} {esc(h["band"])}</div><div class="hl-text">{esc(text)}</div></div></article>')
+        parts.append('</div>')
+else:
     parts.append('<p class="empty-state">No hubo publicaciones que cumplieran los criterios.</p>')
-parts.append('</div></section>')
+parts.append('</section>')
 
 # 5. Agenda
 parts.append('<section id="agenda"><div class="section-divider"><h2>📅 Agenda de Conciertos</h2></div>')
@@ -483,7 +494,7 @@ parts.append('</section>')
 # 6. Todas las Bandas
 parts.append('<section id="bandas"><div class="section-divider"><h2>⚔️ Todas las Bandas</h2></div>')
 parts.append('<div class="band-grid">')
-for band in band_names:
+for band_index, band in enumerate(band_names):
     rows = bands[band]
     metric = metrics.get(band)
     metric_html = ''
@@ -492,14 +503,17 @@ for band in band_names:
         metric_html = f'<div class="metrics">🎧 {esc(now)} <span class="{esc(cls)}">{esc(arrow)}</span> ' \
                       f'<span class="count">Q2: {esc(q2)}</span></div>'
     summary_txt = summaries_txt.get(band) or rule_summary(band, rows)
-    parts.append(f'<article class="band-card-wrapper" id="b-{eid(band)}">'
+    metric_value = parse_metric(metric[0]) if metric else -1
+    wide = band_index % 5 == 2 and (len(rows) >= 2 or metric_value >= 100000)
+    layout_class = (' wide' if wide else '') + (' reverse' if band_index % 2 else '')
+    parts.append(f'<article class="band-card-wrapper{layout_class}" id="b-{eid(band)}">'
                  f'<a class="top-link" href="#indice">↑ índice</a>'
                  f'<div class="band-card"><div class="band-header">'
                  f'<img src="{best_photo_b64(band)}" alt="Foto {esc(band)}">'
                  f'<div><div class="name">{esc(band)}</div>{metric_html}'
                  f'<div class="count">{len(rows)} publicaciones</div></div></div>'
                  f'<div class="band-summary">{esc(summary_txt)}</div>')
-    for idx, p in enumerate(rows):
+    for p in rows:
         cap = clean_caption(p['caption'])
         if len(cap) > 300:
             cap = cap[:297].rsplit(' ', 1)[0] + '…'

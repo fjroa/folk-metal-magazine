@@ -59,7 +59,7 @@ footer{margin-top:64px;padding:36px 20px;background:var(--dark);color:#c9a84c}fo
 EDITORIAL_CSS = '''
 body{font-variant-numeric:oldstyle-nums} .cover h1{text-shadow:0 4px 18px #160805}
  .gordo-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;margin-top:12px}.gordo-grid .hl-card:first-child{border-top-width:7px}.hl-card{display:flex;flex-direction:column;background:rgba(250,246,239,.94);box-shadow:0 8px 20px rgba(61,43,31,.12)}.hl-card img{width:100%;object-fit:cover}.ph-xl{height:300px}.ph-lg{height:240px}.ph-md{height:190px}.hl-card:hover{transform:translateY(-2px)}.hl-card .hl-band{font-size:17px}.hl-card .hl-text{font-size:15px;line-height:1.55}.hl-card .source-link{display:none}.hl-body{padding:16px}
- .tile-a,.tile-b,.tile-c,.tile-d{transition:transform .2s,border-radius .2s}.tile-a{border-radius:24px 6px 24px 6px;transform:rotate(-1deg)}.tile-b{border-radius:6px 24px 6px 24px;transform:rotate(1deg)}.tile-c{border-radius:50% 8px 50% 8px / 30% 8px 30% 8px;transform:rotate(-1deg)}.tile-d{border-radius:12px 40px 12px 40px;transform:rotate(1deg)}.tile-a:hover,.tile-b:hover,.tile-c:hover,.tile-d:hover{transform:rotate(0)}.band-lead{font-size:18px;font-weight:600;color:var(--accent);line-height:1.45}.band-body{font-size:14px;line-height:1.6;margin-top:5px}
+ .tile-a,.tile-b,.tile-c,.tile-d{transition:transform .2s,border-radius .2s}.tile-a{border-radius:24px 6px 24px 6px;transform:rotate(-1deg)}.tile-b{border-radius:6px 24px 6px 24px;transform:rotate(1deg)}.tile-c{border-radius:50% 8px 50% 8px / 30% 8px 30% 8px;transform:rotate(-1deg)}.tile-d{border-radius:12px 40px 12px 40px;transform:rotate(1deg)}.tile-a:hover,.tile-b:hover,.tile-c:hover,.tile-d:hover{transform:rotate(0)}.band-lead{font-size:18px;font-weight:600;color:var(--accent);line-height:1.45}.band-body{font-size:14px;line-height:1.6;margin-top:5px}.status-badge{font:700 10px ui-sans-serif,system-ui,sans-serif;padding:2px 7px;border-radius:20px;vertical-align:middle;margin-left:6px;letter-spacing:.3px}.status-bad{background:#f3d9d9;color:#8b2500;border:1px solid #c99}.status-warn{background:#f6e9c8;color:#7a5c00;border:1px solid #d8b84f}
 .band-card-wrapper{position:relative}.more-row{cursor:pointer;margin-top:10px;padding:9px;text-align:center;border:1px solid var(--border);border-radius:4px;color:var(--accent);font:700 12px ui-sans-serif,system-ui,sans-serif;background:var(--highlight)}
 .metrics-table{font-variant-numeric:tabular-nums}.metrics-table tbody tr:nth-child(even){background:rgba(237,228,211,.42)}.metrics-table tbody tr:hover{background:var(--highlight)}.metrics-table th{position:sticky;top:49px;z-index:1}.listeners{min-width:180px}.bar-track{height:7px;margin-top:5px;background:#dfd2bd;border-radius:9px;overflow:hidden}.bar{height:100%;background:linear-gradient(90deg,#8b5a13,var(--gold),#d8b84f);border-radius:9px}.medal{font-size:18px;margin-right:5px}
 .band-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:26px}.band-card-wrapper.wide{grid-column:span 2}.band-card{border-radius:2px;border-top:4px solid var(--accent);background:rgba(250,246,239,.94)}.band-header{gap:18px;padding:18px}.band-header img{width:140px;height:140px;border:5px solid var(--cream);outline:1px solid var(--border);box-shadow:0 4px 12px rgba(61,43,31,.18)}.band-header .name,.band-name{font-size:20px;font-weight:bold;line-height:1.2;color:#2f2118}.band-header .metrics,.band-header .count{font-size:12px;color:#4b382b}.band-summary{font-size:15px;line-height:1.6;color:#33251c;padding:0 18px 16px}.post-item{font-size:13.5px;line-height:1.55;color:#3b2a20}.post-date{font-size:11px;color:#594637;font-weight:bold}.more-row{font-size:12px}.band-card-wrapper.reverse .band-header{flex-direction:row-reverse;text-align:right}.band-card-wrapper.reverse .band-header>div{flex:1}.agenda-month{font-size:23px}.cal-cell{min-height:126px;padding:8px}.cal-event{font-size:11px;padding:7px 6px;line-height:1.4}.cal-day{font-size:16px}.event-badge{font-size:10px}.metrics-table th{font-size:13px}.metrics-table td{font-size:14px;padding:12px 10px}.metrics-table .band-name{font-size:15px}.metrics-table .listeners strong{font-size:14px}
@@ -138,6 +138,24 @@ def _rank_for(band, path):
         if item.get('shortcode') == sc or (item.get('shortcode') is None and item.get('file') == path.name):
             return item.get('score', 0.5)
     return 0.5
+
+# Estado de actividad (band_status.py): ACTIVA / SOSPECHOSA / INACTIVA
+_band_status_path = MEDIA / 'band_status.json'
+band_status = {}
+if _band_status_path.exists():
+    try:
+        band_status = json.loads(_band_status_path.read_text(encoding='utf-8'))
+    except Exception:
+        band_status = {}
+
+def status_badge(band):
+    st = band_status.get(band, {}).get('status')
+    if st == 'INACTIVA':
+        note = band_status.get(band, {}).get('note', '')
+        return f' <span class="status-badge status-bad" title="Inactiva: {esc(note)}">⚠️ inactiva</span>'
+    if st == 'SOSPECHOSA':
+        return ' <span class="status-badge status-warn" title="Sin publicaciones este mes">🕰️ sin actividad</span>'
+    return ''
 
 def _photo_candidates(band):
     return sorted((p for p in PHOTOS.glob(f'{safe(band)}_*.jpg') if p.stat().st_size > 5000),
@@ -544,7 +562,7 @@ for band_index, band in enumerate(band_names):
                  f'<a class="top-link" href="#indice">↑ índice</a>'
                  f'<div class="band-card"><div class="band-header">'
                  f'<img class="{tile}" src="{best_photo_b64(band)}" alt="Foto {esc(band)}">'
-                 f'<div><div class="name">{esc(band)}</div>{metric_html}'
+                 f'<div><div class="name">{esc(band)}{status_badge(band)}</div>{metric_html}'
                  f'<div class="count">{len(rows)} publicaciones</div></div></div>'
                  f'<div class="band-summary">{summary_html}</div>')
     for p in rows:

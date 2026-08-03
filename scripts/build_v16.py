@@ -58,11 +58,12 @@ footer{margin-top:64px;padding:36px 20px;background:var(--dark);color:#c9a84c}fo
 # Overrides kept separate so the base parchment language remains easy to audit.
 EDITORIAL_CSS = '''
 body{font-variant-numeric:oldstyle-nums} .cover h1{text-shadow:0 4px 18px #160805}
-.gordo-spread{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(280px,.85fr);gap:32px;align-items:start;margin-top:12px}.hl-feature{display:flex;flex-direction:column;border:0;border-top:5px solid var(--gold);border-radius:0;background:rgba(250,246,239,.9);box-shadow:0 10px 24px rgba(61,43,31,.14)}.hl-feature img{width:100%;height:auto;aspect-ratio:4/5;object-fit:cover}.hl-feature-body{padding:20px 22px 24px}.hl-feature .hl-band{font-size:20px}.hl-feature p{font-size:20px;line-height:1.6;margin:12px 0 18px;color:#2f2118}.hl-side{border-top:2px solid var(--accent);padding-top:2px}.hl-side .hl-card{display:grid;grid-template-columns:96px 1fr;gap:0;border:0;border-bottom:1px solid var(--border);border-radius:0;background:transparent;box-shadow:none}.hl-side .hl-card img{width:96px;height:112px;min-height:0;aspect-ratio:1/1.15;object-fit:cover}.hl-side .hl-body{padding:11px 0 11px 14px}.hl-side .hl-band{font-size:16px}.hl-side .hl-text{font-size:15px;line-height:1.45;margin-top:5px;color:#3d2b1f;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}.hl-side .source-link{display:block;margin-top:5px}.hl-strip{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-top:22px;padding-top:14px;border-top:1px solid var(--border)}.hl-mini{display:grid;grid-template-columns:58px 1fr;gap:9px;align-items:start}.hl-mini img{width:58px;height:58px;object-fit:cover;border:2px solid var(--border);padding:2px;background:var(--cream)}.hl-mini .hl-band{font-size:14px}.hl-mini .hl-text{font-size:13px;line-height:1.35;margin-top:3px;display:-webkit-box;-webkit-line-clamp:1;-webkit-box-orient:vertical;overflow:hidden}
+ .gordo-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;margin-top:12px}.gordo-grid .hl-card:first-child{border-top-width:7px}.hl-card{display:flex;flex-direction:column;background:rgba(250,246,239,.94);box-shadow:0 8px 20px rgba(61,43,31,.12)}.hl-card img{width:100%;height:200px;object-fit:cover}.hl-card:hover{transform:translateY(-2px)}.hl-card .hl-band{font-size:17px}.hl-card .hl-text{font-size:15px;line-height:1.55}.hl-card .source-link{display:none}.hl-body{padding:16px}
+ .tile-a,.tile-b,.tile-c,.tile-d{transition:transform .2s,border-radius .2s}.tile-a{border-radius:24px 6px 24px 6px;transform:rotate(-1deg)}.tile-b{border-radius:6px 24px 6px 24px;transform:rotate(1deg)}.tile-c{border-radius:50% 8px 50% 8px / 30% 8px 30% 8px;transform:rotate(-1deg)}.tile-d{border-radius:12px 40px 12px 40px;transform:rotate(1deg)}.tile-a:hover,.tile-b:hover,.tile-c:hover,.tile-d:hover{transform:rotate(0)}.band-lead{font-size:18px;font-weight:600;color:var(--accent);line-height:1.45}.band-body{font-size:14px;line-height:1.6;margin-top:5px}
 .band-card-wrapper{position:relative}.more-row{cursor:pointer;margin-top:10px;padding:9px;text-align:center;border:1px solid var(--border);border-radius:4px;color:var(--accent);font:700 12px ui-sans-serif,system-ui,sans-serif;background:var(--highlight)}
 .metrics-table{font-variant-numeric:tabular-nums}.metrics-table tbody tr:nth-child(even){background:rgba(237,228,211,.42)}.metrics-table tbody tr:hover{background:var(--highlight)}.metrics-table th{position:sticky;top:49px;z-index:1}.listeners{min-width:180px}.bar-track{height:7px;margin-top:5px;background:#dfd2bd;border-radius:9px;overflow:hidden}.bar{height:100%;background:linear-gradient(90deg,#8b5a13,var(--gold),#d8b84f);border-radius:9px}.medal{font-size:18px;margin-right:5px}
 .band-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:26px}.band-card-wrapper.wide{grid-column:span 2}.band-card{border-radius:2px;border-top:4px solid var(--accent);background:rgba(250,246,239,.94)}.band-header{gap:18px;padding:18px}.band-header img{width:116px;height:116px;border:5px solid var(--cream);outline:1px solid var(--border);box-shadow:0 4px 12px rgba(61,43,31,.18)}.band-header .name,.band-name{font-size:20px;font-weight:bold;line-height:1.2;color:#2f2118}.band-header .metrics,.band-header .count{font-size:12px;color:#4b382b}.band-summary{font-size:15px;line-height:1.6;color:#33251c;padding:0 18px 16px}.post-item{font-size:13.5px;line-height:1.55;color:#3b2a20}.post-date{font-size:11px;color:#594637;font-weight:bold}.more-row{font-size:12px}.band-card-wrapper.reverse .band-header{flex-direction:row-reverse;text-align:right}.band-card-wrapper.reverse .band-header>div{flex:1}.agenda-month{font-size:23px}.cal-cell{min-height:126px;padding:8px}.cal-event{font-size:11px;padding:7px 6px;line-height:1.4}.cal-day{font-size:16px}.event-badge{font-size:10px}.metrics-table th{font-size:13px}.metrics-table td{font-size:14px;padding:12px 10px}.metrics-table .band-name{font-size:15px}.metrics-table .listeners strong{font-size:14px}
-@media(max-width:700px){.gordo-spread{display:block}.hl-feature{margin-bottom:24px}.hl-side .hl-card{grid-template-columns:88px 1fr}.hl-side .hl-card img{width:88px;height:100px}.hl-strip{grid-template-columns:1fr 1fr}.band-grid{grid-template-columns:1fr}.band-card-wrapper.wide{grid-column:auto}.band-header img{width:110px;height:110px}.band-card-wrapper.reverse .band-header{flex-direction:row;text-align:left}.cal-cell{min-height:96px;padding:5px 3px}.cal-event{font-size:11px;padding:5px 2px}.metrics-table th,.metrics-table td{padding:9px 6px}.listeners{min-width:115px}}
+ @media(max-width:700px){.gordo-grid{grid-template-columns:1fr 1fr;gap:12px}.hl-card img{height:180px}.band-grid{grid-template-columns:1fr}.band-card-wrapper.wide{grid-column:auto}.band-header img{width:110px;height:110px}.band-card-wrapper.reverse .band-header{flex-direction:row;text-align:left}.cal-cell{min-height:96px;padding:5px 3px}.cal-event{font-size:11px;padding:5px 2px}.metrics-table th,.metrics-table td{padding:9px 6px}.listeners{min-width:115px}}
 '''
 
 
@@ -164,6 +165,15 @@ def rule_summary(band, rows):
     if len(facts) == 1:
         facts.append('La ficha enlaza cada publicación original para facilitar la comprobación de los datos.')
     return ' '.join(facts[:2])
+
+
+def split_summary(text):
+    """Separate the editorial activity lead from the supporting detail."""
+    text = clean_caption(text)
+    match = re.search(r'\.\s+(?=[A-ZÁÉÍÓÚÑÜ])', text)
+    if not match:
+        return text, ''
+    return text[:match.end() - 1].strip(), text[match.end():].strip()
 
 
 # Highlights con emoji por banda (copiado de folk_editorial HIGHLIGHT_SPECS para el fallback).
@@ -364,11 +374,12 @@ def month_label(value):
 
 
 metrics = load_metrics(band_names)
+style_text = f'{CSS}{MODERN_CSS}{EDITORIAL_CSS}'.replace('hl-feature', 'legacy-feature').replace('hl-side', 'legacy-side')
 
 parts = ['<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8">',
          '<meta name="viewport" content="width=device-width,initial-scale=1.0">',
          f'<title>Folk Metal Magazine · {month_name} {month_date.year}</title>',
-         f'<style>{CSS}{MODERN_CSS}{EDITORIAL_CSS}</style></head><body>']
+          f'<style>{style_text}</style></head><body>']
 
 # 1. Portada
 parts.append(
@@ -409,35 +420,18 @@ parts.append('</div></section>')
 parts.append('<section id="gordo"><div class="section-divider"><h2>🔥 Lo Gordo del Mes</h2></div>')
 parts.append('<p class="lead">Los hechos más relevantes de la escena: retiradas, lanzamientos, cambios de formación y giras internacionales. Selección editorial basada en las publicaciones oficiales de cada banda.</p>')
 if highlights:
-    h = highlights[0]
-    text = clean_caption(h.get('text'))
-    if len(text) > 500:
-        text = text[:497].rsplit(' ', 1)[0] + '…'
-    link = h.get('post_url') or '#'
-    parts.append('<div class="gordo-spread"><div class="hl-feature">'
-                 f'<img src="{photo_b64(h.get("band", ""), h.get("shortcode", ""))}" alt="Foto {esc(h.get("band"))}">'
-                 f'<div class="hl-feature-body"><div class="hl-band">{esc(h.get("emoji", "🔥"))} {esc(h.get("band"))}</div>'
-                 f'<p>{esc(text)}</p><a class="source-link" href="{esc(link)}" target="_blank" rel="noopener">Leer publicación original 🔗</a></div></div>'
-                 '<div class="hl-side">')
-    for h in highlights[1:4]:
-        img = photo_b64(h['band'], h.get('shortcode', ''))
+    parts.append('<div class="gordo-grid">')
+    for index, h in enumerate(highlights):
+        img = photo_b64(h.get('band', ''), h.get('shortcode', ''))
         text = clean_caption(h.get('text') or '')
-        if len(text) > 300:
-            text = text[:297].rsplit(' ', 1)[0] + '…'
+        if len(text) > 360:
+            text = text[:357].rsplit(' ', 1)[0] + '…'
+        tile = ('tile-a', 'tile-b', 'tile-c', 'tile-d')[index % 4]
         parts.append(
-            f'<article class="hl-card"><img src="{img}" alt="Foto {esc(h["band"])}">'
+            f'<article class="hl-card"><img class="{tile}" src="{img}" alt="Foto {esc(h["band"])}">'
             f'<div class="hl-body"><div class="hl-band">{h.get("emoji", "🔥")} {esc(h["band"])}</div>'
-            f'<div class="hl-text">{esc(text)}</div><a class="source-link" href="{esc(h.get("post_url") or "#")}" target="_blank" rel="noopener">🔗</a></div></article>')
-    parts.append('</div></div>')
-    if len(highlights) > 4:
-        parts.append('<div class="hl-strip">')
-        for h in highlights[4:]:
-            text = clean_caption(h.get('text') or '')
-            if len(text) > 100:
-                text = text[:97].rsplit(' ', 1)[0] + '…'
-            parts.append(f'<article class="hl-mini"><img src="{photo_b64(h["band"], h.get("shortcode", ""))}" alt="Foto {esc(h["band"])}">'
-                         f'<div><div class="hl-band">{h.get("emoji", "🔥")} {esc(h["band"])}</div><div class="hl-text">{esc(text)}</div></div></article>')
-        parts.append('</div>')
+            f'<div class="hl-text">{esc(text)}</div></div></article>')
+    parts.append('</div>')
 else:
     parts.append('<p class="empty-state">No hubo publicaciones que cumplieran los criterios.</p>')
 parts.append('</section>')
@@ -506,13 +500,18 @@ for band_index, band in enumerate(band_names):
     metric_value = parse_metric(metric[0]) if metric else -1
     wide = band_index % 5 == 2 and (len(rows) >= 2 or metric_value >= 100000)
     layout_class = (' wide' if wide else '') + (' reverse' if band_index % 2 else '')
+    summary_lead, summary_body = split_summary(summary_txt)
+    tile = 'tile-a' if band_index % 2 == 0 else 'tile-b'
+    summary_html = f'<div class="band-lead">{esc(summary_lead)}</div>'
+    if summary_body:
+        summary_html += f'<div class="band-body">{esc(summary_body)}</div>'
     parts.append(f'<article class="band-card-wrapper{layout_class}" id="b-{eid(band)}">'
                  f'<a class="top-link" href="#indice">↑ índice</a>'
                  f'<div class="band-card"><div class="band-header">'
-                 f'<img src="{best_photo_b64(band)}" alt="Foto {esc(band)}">'
+                 f'<img class="{tile}" src="{best_photo_b64(band)}" alt="Foto {esc(band)}">'
                  f'<div><div class="name">{esc(band)}</div>{metric_html}'
                  f'<div class="count">{len(rows)} publicaciones</div></div></div>'
-                 f'<div class="band-summary">{esc(summary_txt)}</div>')
+                 f'<div class="band-summary">{summary_html}</div>')
     for p in rows:
         cap = clean_caption(p['caption'])
         if len(cap) > 300:
@@ -533,9 +532,10 @@ if len(news) >= 2:
     parts.append('<section id="radar"><div class="section-divider"><h2>📰 Radar de Medios</h2></div>')
     parts.append('<p class="lead">Noticias de la escena folk metal recogidas de los medios especializados (Hellpress, Metalcry, RafaBasa, The Dark Melody) durante el periodo.</p>')
     parts.append('<div class="news-list">')
-    for n in news:
+    for news_index, n in enumerate(news):
         title = clean_caption(n['title'])
-        parts.append(f'<article class="news-card"><span class="news-source">{esc(n["source"])} · '
+        card_class = 'news-card featured' if news_index == 0 else 'news-card'
+        parts.append(f'<article class="{card_class}"><span class="news-source">{esc(n["source"])} · '
                      f'{esc((n["published"] or "")[:10])}</span><br>'
                      f'<a href="{esc(n["url"])}" target="_blank" rel="noopener">{esc(title)}</a></article>')
     parts.append('</div></section>')

@@ -1639,7 +1639,7 @@
    "Fabio Romero — batería"
   ],
   "conexiones": [
-   "Saurom — colaboración y conciertos conjuntos",
+   "Saurom — versión de «Sueños Perdidos» en el tributo Mester de Juglaría (2021); colaboración en «Barbanegra» (Reflejos del Caos); conciertos conjuntos (Jaén, Sala Kharma 2024)",
    "Mägo de Oz — compartieron Feria San Lucas 2025",
    "Sonoris Causa — proyecto paralelo de Francisco Javier Roa"
   ],
@@ -1723,6 +1723,10 @@
    {
     "fecha": "2025-10-12",
     "texto": "Feria de San Lucas (Jaén) compartiendo cartel con Mägo de Oz y Megara — portada en Hora Jaén."
+   },
+   {
+    "fecha": "2021-12-18",
+    "texto": "Participa en «Mester de Juglaría», tributo por el 25º aniversario de Saurom (56 bandas, sello ZALUSTER), con la versión de «Sueños Perdidos»."
    }
   ],
   "historia": "Banda jiennense de heavy metal/folk melódico nacida a finales de 2001. En 2003 grabaron su primera maqueta, «Creación», y en 2008 la segunda, «Las Puertas del Reino». Tras multitud de conciertos y cambios de formación, en 2012 publicaron su primer disco, «Leyendas del Aqueronte». En 2018 llegó «Reflejos del Caos» y en 2023 «Siete Runas», un viaje épico por la mitología nórdica que consolidó su sonido. El 6 de febrero de 2025 un incendio destruyó su local de ensayo; la comunidad respondió con el Reino Fest solidario. En 2025 publicaron el adelanto «Junto a Ti» del cuarto disco, en fase de grabación.",
@@ -1868,6 +1872,54 @@
     "fecha": "2023-01-01",
     "titulo": "REINO DE HADES — Siete Runas (2023)",
     "url": "https://www.malditodigital.com/artista/reino-de-hades"
+   },
+   {
+    "medio": "MariskalRock",
+    "fecha": "2019-11-11",
+    "titulo": "Entrevista a Reino de Hades: \"Nuestras inquietudes nos llevan a seguir experimentando para buscar nuestro sonido\"",
+    "url": "https://mariskalrock.com/actualidad/entrevista-a-reino-de-hades-nuestras-inquietudes-nos-llevan-a-seguir-experimentando-para-buscar-nuestro-sonido/"
+   },
+   {
+    "medio": "MariskalRock",
+    "fecha": "2023-01-01",
+    "titulo": "Entrevista a Reino de Hades: \"Siete Runas captura la esencia de la magia que queremos transmitir\"",
+    "url": "https://mariskalrock.com/actualidad/entrevista-a-reino-de-hades-aunque-dejemos-la-mitologia-griega-de-lado-siete-runas-captura-la-esencia-de-la-magia-que-queremos-trasmitir/"
+   },
+   {
+    "medio": "RafaBasa",
+    "fecha": "2023-03-13",
+    "titulo": "Reino de Hades presenta el videoclip de «Árido Edén», primer adelanto de su próximo álbum",
+    "url": "https://www.rafabasa.com/2023/03/13/sweet-lynch-liv-kristine-reino-de-hades/"
+   },
+   {
+    "medio": "RafaBasa",
+    "fecha": "2023-07-27",
+    "titulo": "Nuevo disco de Reino de Hades (Siete Runas)",
+    "url": "https://www.rafabasa.com/2023/07/27/five-finger-death-punch-marc-hudson-reino-de-hades/"
+   },
+   {
+    "medio": "RafaBasa",
+    "fecha": "2024-06-04",
+    "titulo": "Single de Reino de Hades (tras la gira de Reflejos del Caos)",
+    "url": "https://www.rafabasa.com/2024/06/04/skid-row-juan-de-juanes-reino-de-hades/"
+   },
+   {
+    "medio": "Ideal (Andalucía)",
+    "fecha": "2025-04-01",
+    "titulo": "«Con el incendio pensamos que se acabó, que los sueños se…» — la solidaridad les permitió seguir",
+    "url": "https://www.ideal.es/culturas/jaen/incendio-pensamos-acabo-suenos-van-segundos-20250401184838-nt.html"
+   },
+   {
+    "medio": "Jaén Hoy",
+    "fecha": "2025-02-08",
+    "titulo": "Las llamas devoran instrumentos y el local de ensayo de la banda jiennense Reino de Hades",
+    "url": "https://www.jaenhoy.es/jaen/llamas-devoran-instrumentos-local-ensayo-banda-jiennense-reino-hades_0_2003297832.html"
+   },
+   {
+    "medio": "Saurom · Mester de Juglaría (Bandcamp)",
+    "fecha": "2021-12-18",
+    "titulo": "Reino de Hades — Sueños Perdidos (tributo XXV aniversario de Saurom)",
+    "url": "https://saurom.bandcamp.com/track/reino-de-hades-sue-os-perdidos"
    }
   ],
   "metricas": {
@@ -1885,7 +1937,72 @@
     }
    ]
   },
-  "instagram_seguidores": "1.834 (jun 2026, vault)"
+  "instagram_seguidores": "1.834 (jun 2026, vault)",
+  "criticas": [
+   {
+    "disco": "Leyendas del Aqueronte",
+    "anio": 2012,
+    "medio": "La Mirada Negra",
+    "fecha": "2012",
+    "titulo": "Crítica: Reino de Hades — Leyendas del Aqueronte",
+    "extracto": "La espera y el trabajo previo en la sombra han merecido la pena… sin reinventar nada, hacen las cosas a su manera.",
+    "url": "https://www.lamiradanegra.com/cronica-reino-de-hades-leyendas-del-aqueronte/"
+   },
+   {
+    "disco": "Reflejos del Caos",
+    "anio": 2019,
+    "medio": "MariskalRock",
+    "fecha": "2019-11",
+    "titulo": "Crítica de Reino de Hades: Reflejos del Caos",
+    "extracto": "Diez minutos de metal progresivo para terminar con el listón muy alto. Gran paso adelante el que dan Reino de Hades en un trabajo que merece la pena escuchar y disfrutar.",
+    "url": "https://mariskalrock.com/criticas/critica-reino-hades-reflejos-del-caos/"
+   },
+   {
+    "disco": "Reflejos del Caos",
+    "anio": 2019,
+    "medio": "Metalcry",
+    "fecha": "2020-04",
+    "titulo": "Reino de Hades — Reflejos del Caos",
+    "extracto": "En cada composición se da mucha cancha a cada uno de los siete músicos, sin olvidarse del bajo eléctrico o el violín, los teclados o las dos guitarras.",
+    "url": "https://metalcry.com/discos/reino-de-hades-reflejos-del-caos/"
+   },
+   {
+    "disco": "Reflejos del Caos",
+    "anio": 2019,
+    "medio": "Diario de un Metalhead",
+    "fecha": "2019-11",
+    "titulo": "Reino de Hades: Reflejos del Caos (2019, Maldito Records)",
+    "extracto": "Interesante propuesta la que nos trae Reino de Hades. Han pasado siete años desde la presentación de su primer larga duración y quince desde la creación de la banda.",
+    "url": "https://www.diariodeunmetalhead.com/2019/11/reino-de-hades-reflejos-del-caos-2019.html"
+   },
+   {
+    "disco": "Siete Runas",
+    "anio": 2023,
+    "medio": "MariskalRock",
+    "fecha": "2023",
+    "titulo": "Crítica de Reino de Hades: Siete Runas",
+    "extracto": "Su estilo no llega a desbarrar en ningún momento y además cuentan con una sólida base heavy.",
+    "url": "https://mariskalrock.com/actualidad/critica-de-reino-de-hades-siete-runas/"
+   },
+   {
+    "disco": "Siete Runas",
+    "anio": 2023,
+    "medio": "Hellpress",
+    "fecha": "2024-04",
+    "titulo": "Crítica de «Siete Runas», el disco de Reino de Hades con sonido único",
+    "extracto": "Afrontar esta reseña me ha supuesto un hándicap importante, ya que no soy un gran amante del género… sería estúpido negar que sus ritmos alegres y vivarachos fueron parte de mi ADN musical.",
+    "url": "https://www.hellpress.com/discos/reino-de-hades-siete-runas-critica-disco/"
+   },
+   {
+    "disco": "Siete Runas",
+    "anio": 2023,
+    "medio": "Diario de un Metalhead",
+    "fecha": "2024-01",
+    "titulo": "Reino de Hades: Siete Runas (Maldito Records, 2023)",
+    "extracto": "Sin haber leído su nota de prensa, me llegaron a recordar a primerizos Mägo de Oz.",
+    "url": "https://www.diariodeunmetalhead.com/2024/01/reino-de-hades-siete-runas-maldito.html"
+   }
+  ]
  },
  "Salduie": {
   "origen": "Zaragoza",

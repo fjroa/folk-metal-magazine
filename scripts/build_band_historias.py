@@ -338,6 +338,23 @@ def main():
                 parts.append(f'<li><b>{esc(d["titulo"])}</b> <span class="badge badge-past">{esc(str(anio))}</span>{esc(nota)}</li>')
             parts.append('</ul></div>')
 
+        # 1a. Críticas de discos en medios (prensa especializada)
+        criticas = prof.get('criticas') or []
+        if criticas:
+            parts.append('<div class="card"><h3>📝 Críticas de discos</h3><ul class="clean">')
+            for cr in sorted(criticas, key=lambda x: (str(x.get('disco') or ''), str(x.get('fecha') or ''))):
+                cr_disco = cr.get('disco') or ''
+                cr_medio = cr.get('medio') or ''
+                cr_fecha = str(cr.get('fecha') or '')[:10]
+                cr_url = cr.get('url') or '#'
+                cr_extracto = cr.get('extracto') or ''
+                parts.append(
+                    f'<li><span class="badge badge-news">{esc(cr_medio)}</span> '
+                    f'<b>{esc(cr_disco)}</b> <span class="post-date">({esc(cr_fecha)})</span><br>'
+                    f'<span style="font-size:13px;color:#4b382b">"{esc(cr_extracto)}"</span><br>'
+                    f'<a href="{esc(cr_url)}" target="_blank" rel="noopener" style="font-size:13px">{esc(cr.get("titulo") or cr_url)} 🔗</a></li>')
+            parts.append('</ul></div>')
+
         if prof.get('estudios'):
             parts.append('<div class="card"><h3>🎚️ Estudios</h3><ul class="clean">')
             for e in prof['estudios']:
@@ -564,6 +581,9 @@ def main():
         # Prensa destacada
         for pr in (prof.get('prensa') or []):
             add_fuente(f'Prensa · {pr.get("medio", "")}', pr.get('url'))
+        # Críticas de discos
+        for cr in (prof.get('criticas') or []):
+            add_fuente(f'Crítica · {cr.get("medio", "")} ({cr.get("disco", "")})', cr.get('url'))
         # Conciertos históricos
         for hc in (prof.get('conciertos_historicos') or []):
             add_fuente(f'Concierto · {hc.get("evento", hc.get("fecha", ""))}', hc.get('fuente') or hc.get('source_url'))

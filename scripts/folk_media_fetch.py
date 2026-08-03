@@ -100,9 +100,16 @@ def fetch_logo(band, handle):
     if cdn:
         tmp = LOGOS / f'{safe(band)}.raw'
         if curl(cdn, tmp, timeout=15):
-            subprocess.run(['convert', str(tmp), '-resize', '200x200^', '-gravity', 'center',
+            # Mismo fix que to_jpg: ImageMagick elige decoder por extensión y
+            # '.raw' va al DNG aunque el contenido sea JPEG. Detectamos y
+            # renombramos antes de convertir.
+            ft = subprocess.run(['file', '-b', str(tmp)], capture_output=True, text=True, timeout=10).stdout.lower()
+            ext = '.webp' if 'webp' in ft else ('.png' if 'png' in ft else '.jpg')
+            tmp2 = tmp.with_name(tmp.stem + '_conv' + ext)
+            os.replace(str(tmp), str(tmp2))
+            subprocess.run(['convert', str(tmp2), '-resize', '200x200^', '-gravity', 'center',
                             '-extent', '200x200', str(out)], capture_output=True, timeout=30)
-            tmp.unlink(missing_ok=True)
+            tmp2.unlink(missing_ok=True)
             if out.exists() and out.stat().st_size > 1000:
                 return 'ok'
     return 'fail'

@@ -44,6 +44,38 @@ def clean(text):
 JOKE_BLOCK = ['notice me, senpai', 'catarina', 'buenas noches', 'hasta luego', 'la vida es']
 MUSIC_CTX = re.compile(r'single|álbum|album|disco|estrena|lanzamiento|canción|tema|videoclip|adelanto|cd|vinilo|ep\b', re.I)
 
+# Retirada: SOLO frases explícitas. "último disco" NO es retirada (falso positivo
+# real: Salduie hablaba de una camiseta "que da nombre a un tema de nuestro último
+# disco" y el LLM convirtió eso en "anunció su retirada").
+RETIRO_EXPLICIT = re.compile(
+    r'anuncia su retirada|anunciamos nuestra retirada|anuncia la retirada|'
+    r'deja los escenarios|dejamos los escenarios|adiós definitivo|nos despedimos|'
+    r'nos retiramos|ponemos punto final|se retira de los escenarios|se retira de la banda|'
+    r'deja la banda|dejar la banda', re.I)
+# Términos que SIEMPRE requieren respaldo textual en las captions si aparecen en un texto generado.
+RETIRO_CLAIM = re.compile(r'retira\w*|despedida|despedimos|adiós definitivo|deja los escenarios|'
+                          r'cierre de su trayectoria|cierra su etapa|último disco|último álbum', re.I)
+
+# Hechos curados a mano y verificados (nunca los inventa el LLM). Documentar fuente.
+BAND_VERIFIED = {
+    'Nidhögg': ['Anunció su retirada de los escenarios; su último trabajo es "El Vuelo del Dragön".'],
+}
+
+def retiro_respaldado(captions_text):
+    return bool(RETIRO_EXPLICIT.search(captions_text))
+
+def claim_respaldado(captions_text, band):
+    """True si la retirada tiene respaldo: textual en captions O curada a mano."""
+    if retiro_respaldado(captions_text):
+        return True
+    return any('retirada' in f or 'despedida' in f for f in BAND_VERIFIED.get(band, []))
+
+def filter_facts(facts, captions_text):
+    """Quita hechos de retirada/despedida si las captions no lo respaldan."""
+    if retiro_respaldado(captions_text):
+        return facts
+    return [f for f in facts if 'retirada' not in f and 'despedida' not in f]
+
 def extract_facts(band, rows):
     all_text = ' '.join(clean(r['caption']) for r in rows).lower()
     facts = []
@@ -67,8 +99,8 @@ def extract_facts(band, rows):
     names = dedup[:3]
     if names:
         facts.append('Publicó o adelantó ' + '; '.join(f'«{n}»' for n in names) + '.')
-    # Retirada / despedida
-    if re.search(r'se retira|anuncia su retirada|deja los escenarios|adiós definitivo|último disco|nos despedimos', all_text):
+    # Retirada / despedida (SOLO frases explícitas)
+    if RETIRO_EXPLICIT.search(all_text):
         facts.append('Anunció su retirada o despedida de los escenarios.')
     # Producción
     if re.search(r'grabaci|estudio|producci|grabando|masteriz', all_text):
@@ -155,6 +187,8 @@ def llm(prompt, max_tokens=1200, temperature=0.4):
     raise RuntimeError('sin proveedor LLM disponible')
 
 def llm_summary(band, facts, rows):
+    captions_text = ' '.join(clean(r['caption']) for r in rows)
+    facts = filter_facts(facts, captions_text) + BAND_VERIFIED.get(band, [])
     post_lines = '\n'.join(
         f"- ({r['post_date'][:10]}) {clean(r['caption'])[:220]} [url: {r['post_url'] or 'https://www.instagram.com/p/' + r['shortcode'] + '/'}]"
         for r in rows[:6]
@@ -174,12 +208,19 @@ def llm_summary(band, facts, rows):
         'RESUMEN:'
     )
     try:
-        return llm(prompt)
+        out = llm(prompt)
+        # Verificación anti-alucinación: si el texto menciona retirada/despedida
+        # pero no hay respaldo (textual en captions o curado a mano), descartamos.
+        if RETIRO_CLAIM.search(out) and not claim_respaldado(captions_text, band):
+            raise ValueError('claim de retirada sin respaldo')
+        return out
     except Exception as e:
         print(f'  [warn] LLM falló para {band}: {e}')
         return fallback_summary(band, facts)
 
-def llm_blurb(band, caption, post_url, date, facts=None):
+def llm_blurb(band, caption, post_url, date, facts=None, rows=None):
+    captions_text = ' '.join(clean(r['caption']) for r in rows) if rows else clean(caption)
+    facts = filter_facts(facts or [], captions_text) + BAND_VERIFIED.get(band, [])
     facts_txt = '\n'.join(f'- {f}' for f in facts) if facts else '(sin hechos adicionales)'
     prompt = (
         'Eres redactor de "Folk Metal Magazine". Escribe una noticia periodística breve (2-3 frases, español) '
@@ -197,6 +238,9 @@ def llm_blurb(band, caption, post_url, date, facts=None):
         txt = re.sub(r'\s+', ' ', txt).strip()
         if len(txt) < 40:
             raise ValueError('blurb demasiado corto')
+        # Verificación anti-alucinación (misma que en summary)
+        if RETIRO_CLAIM.search(txt) and not claim_respaldado(captions_text, band):
+            raise ValueError('claim de retirada sin respaldo')
         return txt
     except Exception as e:
         print(f'  [warn] blurb {band} falló ({e}); uso hechos')
@@ -251,7 +295,7 @@ def main():
                     url = p['post_url'] or f'https://www.instagram.com/p/{p["shortcode"]}/'
                     facts = summaries[h_band]['facts'] if h_band in summaries else []
                     highlights.append({'band': h_band, 'emoji': emoji,
-                                       'text': llm_blurb(h_band, cap, url, p['post_date'], facts),
+                                       'text': llm_blurb(h_band, cap, url, p['post_date'], facts, bands[h_band]),
                                        'post_url': url, 'shortcode': p['shortcode']})
                     seen.add(h_band)
                     found = True

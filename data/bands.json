@@ -4484,7 +4484,9 @@
   "metricas": {
    "spotify_popularity": 0,
    "spotify_artist_id": "5ZNxiPcbKgaNcBrERMpqeu",
-   "spotify_uri": "spotify:artist:5ZNxiPcbKgaNcBrERMpqeu"
+   "spotify_uri": "spotify:artist:5ZNxiPcbKgaNcBrERMpqeu",
+   "spotify_oyentes_mes": "3.8M",
+   "spotify_oyentes_nota": "~3.8M oyentes/mes (scrape público, 2026-08-04)"
   }
  },
  "Nidhögg": {
@@ -4522,7 +4524,9 @@
   "metricas": {
    "spotify_popularity": 0,
    "spotify_artist_id": "2q3EeCYfMLPGOz8WDS9dlk",
-   "spotify_uri": "spotify:artist:2q3EeCYfMLPGOz8WDS9dlk"
+   "spotify_uri": "spotify:artist:2q3EeCYfMLPGOz8WDS9dlk",
+   "spotify_oyentes_mes": "398",
+   "spotify_oyentes_nota": "~398 oyentes/mes (scrape público, 2026-08-04)"
   }
  },
  "Reino de Hades": {

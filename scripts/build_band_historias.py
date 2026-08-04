@@ -740,7 +740,7 @@ def update_home_index(generated):
         prof = PROFILES.get(band, {})
         loc = prof.get('origen') or ''
         tiles.append(f'<a class="band-tile" href="historias/{path.name}">'
-                     f'<img src="{best_photo_b64(band)}" alt="Foto {esc(band)}">'
+                     f'<img src="{logo_b64(band)}" alt="Logo {esc(band)}">'
                      f'<h3>{esc(band)}</h3>'
                      f'<p>{esc(loc)}</p>'
                      f'<div class="mini">{np_} posts · {nc} conciertos · {nm} meses</div></a>')

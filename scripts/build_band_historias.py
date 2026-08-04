@@ -338,6 +338,35 @@ def main():
                 parts.append(f'<li><b>{esc(d["titulo"])}</b> <span class="badge badge-past">{esc(str(anio))}</span>{esc(nota)}</li>')
             parts.append('</ul></div>')
 
+        # 1a. Catálogo Spotify verificado (API oficial, con URLs) — si existe
+        sp_disc = (prof.get('metricas') or {}).get('spotify_discografia') or []
+        if sp_disc:
+            parts.append('<div class="card"><h3>🎧 Catálogo en Spotify</h3><ul class="clean">')
+            for a in sorted(sp_disc, key=lambda x: str(x.get('fecha') or ''), reverse=True):
+                a_url = a.get('url') or '#'
+                a_fecha = str(a.get('fecha') or '')[:10]
+                a_tipo = a.get('tipo') or ''
+                a_trk = a.get('total_tracks') or ''
+                trk_html = f' <span class="post-date">{esc(str(a_trk))} temas</span>' if a_trk else ''
+                parts.append(f'<li>{esc(a_fecha)} — <b>{esc(a["titulo"])}</b> '
+                             f'<span class="badge badge-past">{esc(a_tipo)}</span>{trk_html} '
+                             f'<a href="{esc(a_url)}" target="_blank" rel="noopener">🎧</a></li>')
+            parts.append('</ul></div>')
+
+        # 1b. Tracks del álbum principal (Spotify)
+        sp_tracks = (prof.get('metricas') or {}).get('spotify_tracks_album_principal') or []
+        if sp_tracks:
+            parts.append('<div class="card"><h3>🎵 Tracks del álbum principal</h3><ul class="clean">')
+            for t in sorted(sp_tracks, key=lambda x: x.get('numero') or 0):
+                t_url = t.get('url') or '#'
+                dur = t.get('duracion_ms') or 0
+                mins = dur // 60000
+                secs = (dur % 60000) // 1000
+                parts.append(f'<li><span class="post-date">{t.get("numero", "")}.</span> '
+                             f'<b>{esc(t["titulo"])}</b> <span style="color:var(--muted)">({mins}:{secs:02d})</span> '
+                             f'<a href="{esc(t_url)}" target="_blank" rel="noopener">🎧</a></li>')
+            parts.append('</ul></div>')
+
         # 1a. Críticas de discos en medios (prensa especializada)
         criticas = prof.get('criticas') or []
         if criticas:
@@ -421,11 +450,38 @@ def main():
             if m_spotify:
                 parts.append(f'<div class="quick-grid" style="margin:10px 0">'
                              f'<div class="quick"><b>🎧 Spotify</b><span>{esc(m_spotify)} oyentes/mes</span></div>')
+            m_follow = metricas.get('spotify_followers')
+            if m_follow:
+                parts.append(f'<div class="quick"><b>🎧 Seguidores</b><span>{esc(str(m_follow))}</span></div>')
+            m_pop = metricas.get('spotify_popularity')
+            if m_pop is not None:
+                parts.append(f'<div class="quick"><b>🎧 Popularidad</b><span>{esc(str(m_pop))}/100</span></div>')
             m_yt = metricas.get('youtube_suscriptores')
             if m_yt:
                 parts.append(f'<div class="quick"><b>▶️ YouTube</b><span>{esc(m_yt)} suscriptores</span></div>')
-            if m_spotify or m_yt:
+            if m_spotify or m_follow or m_pop or m_yt:
                 parts.append('</div>')
+            # Top tracks de Spotify (API oficial o scrape público)
+            top_tracks = metricas.get('spotify_top_tracks') or []
+            if top_tracks:
+                parts.append('<h3 style="margin:14px 0 8px;font-size:15px">🎵 Canciones más escuchadas (Spotify)</h3>')
+                for i, t in enumerate(top_tracks[:5], 1):
+                    t_url = t.get('url') or '#'
+                    t_pop = t.get('popularity')
+                    t_pc = t.get('playcount')
+                    if t_pc:
+                        # Formato: 147.948
+                        pc_str = f'{int(t_pc):,}'.replace(',', '.')
+                        pc_html = f' <span class="badge badge-news">▶ {esc(pc_str)}</span>'
+                    elif t_pop is not None:
+                        pc_html = f' <span class="badge badge-news">pop {esc(str(t_pop))}</span>'
+                    else:
+                        pc_html = ''
+                    parts.append(f'<div class="tl-post"><span class="post-date">#{i}</span>'
+                                 f'<b>{esc(t.get("titulo", ""))}</b>{pc_html}'
+                                 f' <span style="color:var(--muted)">{esc(t.get("album", ""))}</span>'
+                                 f' <span style="color:var(--muted)">{esc(t.get("duracion", ""))}</span>'
+                                 f' <a href="{esc(t_url)}" target="_blank" rel="noopener">🎧</a></div>')
             for v in (metricas.get('videoclips') or []):
                 vurl = v.get('url') or '#'
                 vvisitas = v.get('visitas') or '—'

@@ -19,7 +19,72 @@
     "fecha": "2026",
     "texto": "Semifinalistas Wacken Metal Battle Spain 2026."
    }
-  ]
+  ],
+  "metricas": {
+   "spotify_popularity": 0,
+   "spotify_artist_id": "09yUkwLM23RYSrORI9xp00",
+   "spotify_uri": "spotify:artist:09yUkwLM23RYSrORI9xp00",
+   "spotify_discografia": [
+    {
+     "titulo": "De la tierra al cielo",
+     "tipo": "single",
+     "fecha": "2026-03-12",
+     "url": "https://open.spotify.com/album/6EKrQv8r52fsZlS4GmlAgQ",
+     "uri": "spotify:album:6EKrQv8r52fsZlS4GmlAgQ",
+     "total_tracks": 6
+    },
+    {
+     "titulo": "Aires",
+     "tipo": "single",
+     "fecha": "2026-02-28",
+     "url": "https://open.spotify.com/album/779lNMzdU5LKGb2idiDCtH",
+     "uri": "spotify:album:779lNMzdU5LKGb2idiDCtH",
+     "total_tracks": 1
+    },
+    {
+     "titulo": "Llama nueva",
+     "tipo": "single",
+     "fecha": "2026-01-14",
+     "url": "https://open.spotify.com/album/7jTmE0xH5WjckeDoTNeyyQ",
+     "uri": "spotify:album:7jTmE0xH5WjckeDoTNeyyQ",
+     "total_tracks": 1
+    },
+    {
+     "titulo": "Bossa",
+     "tipo": "single",
+     "fecha": "2024-10-04",
+     "url": "https://open.spotify.com/album/0jQKkPr1Sv52czFYrtx7Ne",
+     "uri": "spotify:album:0jQKkPr1Sv52czFYrtx7Ne",
+     "total_tracks": 1
+    },
+    {
+     "titulo": "Banderas",
+     "tipo": "single",
+     "fecha": "2024-08-09",
+     "url": "https://open.spotify.com/album/1v70WBSxg57ndi7bSh80kQ",
+     "uri": "spotify:album:1v70WBSxg57ndi7bSh80kQ",
+     "total_tracks": 1
+    },
+    {
+     "titulo": "Por lo mismo",
+     "tipo": "single",
+     "fecha": "2024-03-29",
+     "url": "https://open.spotify.com/album/1lJbB4dzg8e2lEJDhSmjp5",
+     "uri": "spotify:album:1lJbB4dzg8e2lEJDhSmjp5",
+     "total_tracks": 1
+    },
+    {
+     "titulo": "Templo",
+     "tipo": "single",
+     "fecha": "2023-11-03",
+     "url": "https://open.spotify.com/album/6b58duXpz5rJzqgSwy6oUG",
+     "uri": "spotify:album:6b58duXpz5rJzqgSwy6oUG",
+     "total_tracks": 1
+    }
+   ],
+   "spotify_tracks_album_principal": [],
+   "spotify_fecha": "2026-08-04"
+  }
  },
  "Argion": {
   "origen": "Spain",
@@ -110,7 +175,176 @@
     "nota": ""
    }
   ],
-  "hitos": []
+  "hitos": [],
+  "metricas": {
+   "spotify_popularity": 0,
+   "spotify_artist_id": "1K426ILjunbQImRUwpIDHl",
+   "spotify_uri": "spotify:artist:1K426ILjunbQImRUwpIDHl",
+   "spotify_discografia": [
+    {
+     "titulo": "Lux Umbra",
+     "tipo": "album",
+     "fecha": "2023-03-31",
+     "url": "https://open.spotify.com/album/31J7gjqpEonSY9YX8BxpGe",
+     "uri": "spotify:album:31J7gjqpEonSY9YX8BxpGe",
+     "total_tracks": 9
+    },
+    {
+     "titulo": "Tiempo de Héroes",
+     "tipo": "album",
+     "fecha": "2020-04-02",
+     "url": "https://open.spotify.com/album/1bIZaK0IuzGlFpzZ4vZK6p",
+     "uri": "spotify:album:1bIZaK0IuzGlFpzZ4vZK6p",
+     "total_tracks": 10
+    },
+    {
+     "titulo": "Sobre El Mar MMXXVI",
+     "tipo": "single",
+     "fecha": "2026-07-08",
+     "url": "https://open.spotify.com/album/30PqzDu35h9D0VPJEDH8o0",
+     "uri": "spotify:album:30PqzDu35h9D0VPJEDH8o0",
+     "total_tracks": 1
+    },
+    {
+     "titulo": "Renacer Del Héroe",
+     "tipo": "single",
+     "fecha": "2026-06-02",
+     "url": "https://open.spotify.com/album/65wYutqB0H3LSWTMo8Nk9e",
+     "uri": "spotify:album:65wYutqB0H3LSWTMo8Nk9e",
+     "total_tracks": 1
+    },
+    {
+     "titulo": "Junto a Mí",
+     "tipo": "single",
+     "fecha": "2025-11-05",
+     "url": "https://open.spotify.com/album/22303Dlb9jMVTFoF9KmyxR",
+     "uri": "spotify:album:22303Dlb9jMVTFoF9KmyxR",
+     "total_tracks": 1
+    },
+    {
+     "titulo": "Mi Héroe",
+     "tipo": "single",
+     "fecha": "2025-05-14",
+     "url": "https://open.spotify.com/album/7g8Qh7ZwpUgcMfoIM1NVC8",
+     "uri": "spotify:album:7g8Qh7ZwpUgcMfoIM1NVC8",
+     "total_tracks": 1
+    },
+    {
+     "titulo": "El juicio final MMXXIV",
+     "tipo": "single",
+     "fecha": "2024-11-20",
+     "url": "https://open.spotify.com/album/1QKVwz1U6o4LOBFSX20FHC",
+     "uri": "spotify:album:1QKVwz1U6o4LOBFSX20FHC",
+     "total_tracks": 1
+    },
+    {
+     "titulo": "Fuerza y Honor",
+     "tipo": "single",
+     "fecha": "2023-03-15",
+     "url": "https://open.spotify.com/album/7Ifr6FP6piuj7FZshFmpRc",
+     "uri": "spotify:album:7Ifr6FP6piuj7FZshFmpRc",
+     "total_tracks": 1
+    },
+    {
+     "titulo": "Anne Bonny",
+     "tipo": "single",
+     "fecha": "2023-02-22",
+     "url": "https://open.spotify.com/album/7vuHTDly4fxRrYWKLCUXPn",
+     "uri": "spotify:album:7vuHTDly4fxRrYWKLCUXPn",
+     "total_tracks": 1
+    },
+    {
+     "titulo": "La Ciudad Eterna",
+     "tipo": "single",
+     "fecha": "2023-01-25",
+     "url": "https://open.spotify.com/album/4dmuiI3cqmMNPaTZ6rvMFK",
+     "uri": "spotify:album:4dmuiI3cqmMNPaTZ6rvMFK",
+     "total_tracks": 1
+    },
+    {
+     "titulo": "Soldado Errante",
+     "tipo": "single",
+     "fecha": "2020-03-18",
+     "url": "https://open.spotify.com/album/7d8PvW3wERP8wwNdA8Ormw",
+     "uri": "spotify:album:7d8PvW3wERP8wwNdA8Ormw",
+     "total_tracks": 1
+    },
+    {
+     "titulo": "Sobre el Mar",
+     "tipo": "single",
+     "fecha": "2020-02-25",
+     "url": "https://open.spotify.com/album/5lUMuwQLNiPkYIQZpst6pa",
+     "uri": "spotify:album:5lUMuwQLNiPkYIQZpst6pa",
+     "total_tracks": 1
+    }
+   ],
+   "spotify_tracks_album_principal": [
+    {
+     "titulo": "Lux Umbra",
+     "numero": 1,
+     "duracion_ms": 76135,
+     "url": "https://open.spotify.com/track/3TsQQLH1WkfdswBs2TCHQB",
+     "uri": "spotify:track:3TsQQLH1WkfdswBs2TCHQB"
+    },
+    {
+     "titulo": "El Juicio Final",
+     "numero": 2,
+     "duracion_ms": 263131,
+     "url": "https://open.spotify.com/track/3OjVBEw6t6BJShwlq2nNZG",
+     "uri": "spotify:track:3OjVBEw6t6BJShwlq2nNZG"
+    },
+    {
+     "titulo": "La Ciudad Eterna",
+     "numero": 3,
+     "duracion_ms": 243817,
+     "url": "https://open.spotify.com/track/5bi37DPJRv0R2U6LNZzPph",
+     "uri": "spotify:track:5bi37DPJRv0R2U6LNZzPph"
+    },
+    {
+     "titulo": "Hijo del Diablo",
+     "numero": 4,
+     "duracion_ms": 261239,
+     "url": "https://open.spotify.com/track/177V6VAc7pt9sj4ZIxkgZd",
+     "uri": "spotify:track:177V6VAc7pt9sj4ZIxkgZd"
+    },
+    {
+     "titulo": "Anne Bonny",
+     "numero": 5,
+     "duracion_ms": 259000,
+     "url": "https://open.spotify.com/track/5mpoD8PdRbtNFMyrexS0N7",
+     "uri": "spotify:track:5mpoD8PdRbtNFMyrexS0N7"
+    },
+    {
+     "titulo": "La Orden",
+     "numero": 6,
+     "duracion_ms": 316441,
+     "url": "https://open.spotify.com/track/3XNIMTyLWoZMPXucXxtPwX",
+     "uri": "spotify:track:3XNIMTyLWoZMPXucXxtPwX"
+    },
+    {
+     "titulo": "Prisionero del Tiempo",
+     "numero": 7,
+     "duracion_ms": 254338,
+     "url": "https://open.spotify.com/track/1Ht8lUwT2vfMlxGEqKtwQw",
+     "uri": "spotify:track:1Ht8lUwT2vfMlxGEqKtwQw"
+    },
+    {
+     "titulo": "Fuerza y Honor",
+     "numero": 8,
+     "duracion_ms": 250833,
+     "url": "https://open.spotify.com/track/44KkLgCdJeuqQlPOco6rNn",
+     "uri": "spotify:track:44KkLgCdJeuqQlPOco6rNn"
+    },
+    {
+     "titulo": "Un Largo Viaje",
+     "numero": 9,
+     "duracion_ms": 245000,
+     "url": "https://open.spotify.com/track/0I0VcPGC8QJ7tFqRRf1SOo",
+     "uri": "spotify:track:0I0VcPGC8QJ7tFqRRf1SOo"
+    }
+   ],
+   "spotify_fecha": "2026-08-04"
+  }
  },
  "Astter": {
   "origen": "Spain",
@@ -132,7 +366,64 @@
     "fecha": "2026",
     "texto": "Finalistas nacionales Wacken Metal Battle Spain 2026."
    }
-  ]
+  ],
+  "metricas": {
+   "spotify_popularity": 0,
+   "spotify_artist_id": "2Ch4GYMv1onUucKUYI8xOC",
+   "spotify_uri": "spotify:artist:2Ch4GYMv1onUucKUYI8xOC",
+   "spotify_discografia": [
+    {
+     "titulo": "Ni una más",
+     "tipo": "single",
+     "fecha": "2026-03-07",
+     "url": "https://open.spotify.com/album/5ryt9yB666ApOwxjJtuj2J",
+     "uri": "spotify:album:5ryt9yB666ApOwxjJtuj2J",
+     "total_tracks": 3
+    },
+    {
+     "titulo": "Tu Prisión",
+     "tipo": "single",
+     "fecha": "2026-01-30",
+     "url": "https://open.spotify.com/album/5mEOBgGLNGk2l0uMtoFPEG",
+     "uri": "spotify:album:5mEOBgGLNGk2l0uMtoFPEG",
+     "total_tracks": 2
+    },
+    {
+     "titulo": "Miedo",
+     "tipo": "single",
+     "fecha": "2025-10-31",
+     "url": "https://open.spotify.com/album/191mwsrNsKWuQCvc1r1aGd",
+     "uri": "spotify:album:191mwsrNsKWuQCvc1r1aGd",
+     "total_tracks": 1
+    },
+    {
+     "titulo": "Ashes (Cenizas English Version)",
+     "tipo": "single",
+     "fecha": "2025-02-01",
+     "url": "https://open.spotify.com/album/3neuuMil4Hp4P2knAmObNi",
+     "uri": "spotify:album:3neuuMil4Hp4P2knAmObNi",
+     "total_tracks": 1
+    },
+    {
+     "titulo": "Cenizas",
+     "tipo": "single",
+     "fecha": "2023-10-20",
+     "url": "https://open.spotify.com/album/2R7wypMAU7YszwueAZ1IP1",
+     "uri": "spotify:album:2R7wypMAU7YszwueAZ1IP1",
+     "total_tracks": 5
+    },
+    {
+     "titulo": "Mi realidad",
+     "tipo": "single",
+     "fecha": "2023-10-13",
+     "url": "https://open.spotify.com/album/1pRrgb8XaX8Bnr84hPHGTU",
+     "uri": "spotify:album:1pRrgb8XaX8Bnr84hPHGTU",
+     "total_tracks": 1
+    }
+   ],
+   "spotify_tracks_album_principal": [],
+   "spotify_fecha": "2026-08-04"
+  }
  },
  "Celtian": {
   "origen": "Alcalá de Henares, Madrid",
@@ -239,7 +530,191 @@
     "fecha": "2026-07",
     "texto": "«Maleficio De Sangre», revive la magia de La Riviera."
    }
-  ]
+  ],
+  "metricas": {
+   "spotify_popularity": 0,
+   "spotify_artist_id": "0VpsiJTEi0fQsp0SEekO2K",
+   "spotify_uri": "spotify:artist:0VpsiJTEi0fQsp0SEekO2K",
+   "spotify_discografia": [
+    {
+     "titulo": "Secretos de Amor y Muerte",
+     "tipo": "album",
+     "fecha": "2024-04-05",
+     "url": "https://open.spotify.com/album/5BHcpuNqUCnki6ZtQUpAvQ",
+     "uri": "spotify:album:5BHcpuNqUCnki6ZtQUpAvQ",
+     "total_tracks": 13
+    },
+    {
+     "titulo": "Sendas de Leyenda",
+     "tipo": "album",
+     "fecha": "2021-06-25",
+     "url": "https://open.spotify.com/album/6O7lqYXc49HLcnfYHejNDT",
+     "uri": "spotify:album:6O7lqYXc49HLcnfYHejNDT",
+     "total_tracks": 12
+    },
+    {
+     "titulo": "En Tierra de Hadas",
+     "tipo": "album",
+     "fecha": "2019-06-21",
+     "url": "https://open.spotify.com/album/5wWxeCqENq1dfRROk2riDz",
+     "uri": "spotify:album:5wWxeCqENq1dfRROk2riDz",
+     "total_tracks": 9
+    },
+    {
+     "titulo": "The Druid's Awaiting",
+     "tipo": "album",
+     "fecha": "2018-03-01",
+     "url": "https://open.spotify.com/album/5hYzdfz4axtUQvvjaZt51i",
+     "uri": "spotify:album:5hYzdfz4axtUQvvjaZt51i",
+     "total_tracks": 12
+    },
+    {
+     "titulo": "Maleficio de Sangre (En Directo - La Riviera)",
+     "tipo": "single",
+     "fecha": "2026-07-15",
+     "url": "https://open.spotify.com/album/3Wuv3HfV1IlAk8zNMJPC01",
+     "uri": "spotify:album:3Wuv3HfV1IlAk8zNMJPC01",
+     "total_tracks": 1
+    },
+    {
+     "titulo": "Caricia Mordaz",
+     "tipo": "single",
+     "fecha": "2024-03-21",
+     "url": "https://open.spotify.com/album/3RJWr26SShJozAVK6woZqV",
+     "uri": "spotify:album:3RJWr26SShJozAVK6woZqV",
+     "total_tracks": 1
+    },
+    {
+     "titulo": "Serena",
+     "tipo": "single",
+     "fecha": "2024-02-21",
+     "url": "https://open.spotify.com/album/1C6sGhvc2qCKq7hlwBPDhA",
+     "uri": "spotify:album:1C6sGhvc2qCKq7hlwBPDhA",
+     "total_tracks": 1
+    },
+    {
+     "titulo": "Sueños de Cristal",
+     "tipo": "single",
+     "fecha": "2024-01-23",
+     "url": "https://open.spotify.com/album/7aeAf4a9rv5r4T5US8LyCh",
+     "uri": "spotify:album:7aeAf4a9rv5r4T5US8LyCh",
+     "total_tracks": 1
+    },
+    {
+     "titulo": "Maleficio de Sangre",
+     "tipo": "single",
+     "fecha": "2023-12-12",
+     "url": "https://open.spotify.com/album/7d84j8JRA4ABrCmjKvF4Sf",
+     "uri": "spotify:album:7d84j8JRA4ABrCmjKvF4Sf",
+     "total_tracks": 1
+    },
+    {
+     "titulo": "El Hijo del Ayer",
+     "tipo": "single",
+     "fecha": "2021-06-10",
+     "url": "https://open.spotify.com/album/5PL8Is1qFyX3McmED8pn7G",
+     "uri": "spotify:album:5PL8Is1qFyX3McmED8pn7G",
+     "total_tracks": 1
+    },
+    {
+     "titulo": "Magia de Luna",
+     "tipo": "single",
+     "fecha": "2021-04-29",
+     "url": "https://open.spotify.com/album/5x594kjV8YSvEHK7z4JP2K",
+     "uri": "spotify:album:5x594kjV8YSvEHK7z4JP2K",
+     "total_tracks": 1
+    },
+    {
+     "titulo": "Niamh",
+     "tipo": "single",
+     "fecha": "2019-06-11",
+     "url": "https://open.spotify.com/album/1IT60rcF59WBGmZVPUoBoL",
+     "uri": "spotify:album:1IT60rcF59WBGmZVPUoBoL",
+     "total_tracks": 1
+    },
+    {
+     "titulo": "Tu Hechizo",
+     "tipo": "single",
+     "fecha": "2019-05-23",
+     "url": "https://open.spotify.com/album/4Xsf6KToPu6KvWyfin953y",
+     "uri": "spotify:album:4Xsf6KToPu6KvWyfin953y",
+     "total_tracks": 1
+    }
+   ],
+   "spotify_tracks_album_principal": [
+    {
+     "titulo": "La Lira Encantada",
+     "numero": 1,
+     "duracion_ms": 100253,
+     "url": "https://open.spotify.com/track/6AVZ6JCK3B9TXqeu9B2P81",
+     "uri": "spotify:track:6AVZ6JCK3B9TXqeu9B2P81"
+    },
+    {
+     "titulo": "La Profecía",
+     "numero": 2,
+     "duracion_ms": 317653,
+     "url": "https://open.spotify.com/track/4zkrdIchVt1qtlm27uBvpC",
+     "uri": "spotify:track:4zkrdIchVt1qtlm27uBvpC"
+    },
+    {
+     "titulo": "Adalina",
+     "numero": 3,
+     "duracion_ms": 287626,
+     "url": "https://open.spotify.com/track/7vN4QumBIWJjdSSddXgyg2",
+     "uri": "spotify:track:7vN4QumBIWJjdSSddXgyg2"
+    },
+    {
+     "titulo": "Serena",
+     "numero": 4,
+     "duracion_ms": 241866,
+     "url": "https://open.spotify.com/track/2oy2dowbPCIoRJPWaEPVwg",
+     "uri": "spotify:track:2oy2dowbPCIoRJPWaEPVwg"
+    },
+    {
+     "titulo": "Maleficio de Sangre",
+     "numero": 5,
+     "duracion_ms": 259359,
+     "url": "https://open.spotify.com/track/143j1oEcikgOOtJciJV67Z",
+     "uri": "spotify:track:143j1oEcikgOOtJciJV67Z"
+    },
+    {
+     "titulo": "Hasta el Final",
+     "numero": 6,
+     "duracion_ms": 243040,
+     "url": "https://open.spotify.com/track/4XeONR2xKcwT8utkRg6YQv",
+     "uri": "spotify:track:4XeONR2xKcwT8utkRg6YQv"
+    },
+    {
+     "titulo": "Camino en la Tempestad",
+     "numero": 7,
+     "duracion_ms": 295560,
+     "url": "https://open.spotify.com/track/5C56HWXHzxVJ0lmS2xRYTB",
+     "uri": "spotify:track:5C56HWXHzxVJ0lmS2xRYTB"
+    },
+    {
+     "titulo": "No Vuelvas a Llorar",
+     "numero": 8,
+     "duracion_ms": 194120,
+     "url": "https://open.spotify.com/track/52mc0uFYGM3vo5otZuCsJu",
+     "uri": "spotify:track:52mc0uFYGM3vo5otZuCsJu"
+    },
+    {
+     "titulo": "Caricia Mordaz",
+     "numero": 9,
+     "duracion_ms": 310186,
+     "url": "https://open.spotify.com/track/0pgtewyXVPtt0dRG1ZFm9V",
+     "uri": "spotify:track:0pgtewyXVPtt0dRG1ZFm9V"
+    },
+    {
+     "titulo": "Renacer",
+     "numero": 10,
+     "duracion_ms": 237866,
+     "url": "https://open.spotify.com/track/4PEzNuF8ri1JRGW8QuuBuI",
+     "uri": "spotify:track:4PEzNuF8ri1JRGW8QuuBuI"
+    }
+   ],
+   "spotify_fecha": "2026-08-04"
+  }
  },
  "Celtibeerian": {
   "origen": "Ciudad Real",
@@ -286,7 +761,143 @@
     "fecha": "2026",
     "texto": "Confirmados en Leyendas del Rock 2026 y Kilkim Žaibu Festival (Lituania)."
    }
-  ]
+  ],
+  "metricas": {
+   "spotify_popularity": 0,
+   "spotify_artist_id": "6DdV1uJJ5JHD22ad5MyFwk",
+   "spotify_uri": "spotify:artist:6DdV1uJJ5JHD22ad5MyFwk",
+   "spotify_discografia": [
+    {
+     "titulo": "Nertos",
+     "tipo": "album",
+     "fecha": "2023-11-23",
+     "url": "https://open.spotify.com/album/58YMOKneUQ9U8ms3HqFzJ2",
+     "uri": "spotify:album:58YMOKneUQ9U8ms3HqFzJ2",
+     "total_tracks": 11
+    },
+    {
+     "titulo": "Deiwos",
+     "tipo": "album",
+     "fecha": "2017-01-12",
+     "url": "https://open.spotify.com/album/0Y79AVOTkwgedXrDnpPK7g",
+     "uri": "spotify:album:0Y79AVOTkwgedXrDnpPK7g",
+     "total_tracks": 15
+    },
+    {
+     "titulo": "Keltorevolution",
+     "tipo": "album",
+     "fecha": "2014-03-29",
+     "url": "https://open.spotify.com/album/4fW5rUk2aMl7x7is7HIFpT",
+     "uri": "spotify:album:4fW5rUk2aMl7x7is7HIFpT",
+     "total_tracks": 14
+    },
+    {
+     "titulo": "Tirikantam",
+     "tipo": "album",
+     "fecha": "2011-11-23",
+     "url": "https://open.spotify.com/album/0nv56kDV1j0oypKeAuMuHI",
+     "uri": "spotify:album:0nv56kDV1j0oypKeAuMuHI",
+     "total_tracks": 10
+    },
+    {
+     "titulo": "Beerdrinkers on Duty",
+     "tipo": "single",
+     "fecha": "2023-11-03",
+     "url": "https://open.spotify.com/album/7KqF2kocIoUJLO14mrryr0",
+     "uri": "spotify:album:7KqF2kocIoUJLO14mrryr0",
+     "total_tracks": 1
+    },
+    {
+     "titulo": "Rise",
+     "tipo": "single",
+     "fecha": "2022-03-20",
+     "url": "https://open.spotify.com/album/7pUfvDw3NOmiBHx0Kb6mJQ",
+     "uri": "spotify:album:7pUfvDw3NOmiBHx0Kb6mJQ",
+     "total_tracks": 1
+    },
+    {
+     "titulo": "From Soil To Soul",
+     "tipo": "single",
+     "fecha": "2016-01-18",
+     "url": "https://open.spotify.com/album/3rzqUal0XpFmVSq8hZz1TT",
+     "uri": "spotify:album:3rzqUal0XpFmVSq8hZz1TT",
+     "total_tracks": 6
+    }
+   ],
+   "spotify_tracks_album_principal": [
+    {
+     "titulo": "Intro: Nertos Katous",
+     "numero": 1,
+     "duracion_ms": 117447,
+     "url": "https://open.spotify.com/track/1TfKusxMHnfEAMoqlHm52b",
+     "uri": "spotify:track:1TfKusxMHnfEAMoqlHm52b"
+    },
+    {
+     "titulo": "Spread the Fire",
+     "numero": 2,
+     "duracion_ms": 238554,
+     "url": "https://open.spotify.com/track/1uIGMw9j0Lcam7v70LOwwF",
+     "uri": "spotify:track:1uIGMw9j0Lcam7v70LOwwF"
+    },
+    {
+     "titulo": "Beerdrinkers on Duty",
+     "numero": 3,
+     "duracion_ms": 199755,
+     "url": "https://open.spotify.com/track/0HKz1RcghvzkHA5RPaeZdL",
+     "uri": "spotify:track:0HKz1RcghvzkHA5RPaeZdL"
+    },
+    {
+     "titulo": "Face the Beast",
+     "numero": 4,
+     "duracion_ms": 247527,
+     "url": "https://open.spotify.com/track/1hpJG3KZQ1fX8FZ29vfN4m",
+     "uri": "spotify:track:1hpJG3KZQ1fX8FZ29vfN4m"
+    },
+    {
+     "titulo": "The End of the Sun",
+     "numero": 5,
+     "duracion_ms": 207061,
+     "url": "https://open.spotify.com/track/5R07V3INT3cZZJM5BB9vLK",
+     "uri": "spotify:track:5R07V3INT3cZZJM5BB9vLK"
+    },
+    {
+     "titulo": "Stand and Breathe",
+     "numero": 6,
+     "duracion_ms": 268665,
+     "url": "https://open.spotify.com/track/10NhuR3MmSX02NHe9hoXPd",
+     "uri": "spotify:track:10NhuR3MmSX02NHe9hoXPd"
+    },
+    {
+     "titulo": "Old Nº 7",
+     "numero": 7,
+     "duracion_ms": 265309,
+     "url": "https://open.spotify.com/track/46u5LSbmWxJc32MPW9T2LV",
+     "uri": "spotify:track:46u5LSbmWxJc32MPW9T2LV"
+    },
+    {
+     "titulo": "The Last Witch",
+     "numero": 8,
+     "duracion_ms": 303621,
+     "url": "https://open.spotify.com/track/2aTaVLpkF1UWwmqSHfvzRw",
+     "uri": "spotify:track:2aTaVLpkF1UWwmqSHfvzRw"
+    },
+    {
+     "titulo": "Swallow the Moon",
+     "numero": 9,
+     "duracion_ms": 223099,
+     "url": "https://open.spotify.com/track/5xDXIVlqmHJGsHdrz2lLiy",
+     "uri": "spotify:track:5xDXIVlqmHJGsHdrz2lLiy"
+    },
+    {
+     "titulo": "Where the Beer Is",
+     "numero": 10,
+     "duracion_ms": 215837,
+     "url": "https://open.spotify.com/track/3hWW8ipsyNHTd5OLM5EPyQ",
+     "uri": "spotify:track:3hWW8ipsyNHTd5OLM5EPyQ"
+    }
+   ],
+   "spotify_fecha": "2026-08-04"
+  }
  },
  "Daeria": {
   "origen": "Spain",
@@ -376,7 +987,168 @@
     "nota": ""
    }
   ],
-  "hitos": []
+  "hitos": [],
+  "metricas": {
+   "spotify_popularity": 0,
+   "spotify_artist_id": "1Ohy5ahjQyXh0TTPH5WV3Y",
+   "spotify_uri": "spotify:artist:1Ohy5ahjQyXh0TTPH5WV3Y",
+   "spotify_discografia": [
+    {
+     "titulo": "Morfeo",
+     "tipo": "album",
+     "fecha": "2023-05-05",
+     "url": "https://open.spotify.com/album/4JY86GPTAsd4sSuihAJgaC",
+     "uri": "spotify:album:4JY86GPTAsd4sSuihAJgaC",
+     "total_tracks": 9
+    },
+    {
+     "titulo": "Alter",
+     "tipo": "album",
+     "fecha": "2020-02-20",
+     "url": "https://open.spotify.com/album/0EoQaKelKaZlyoQpjC8F3W",
+     "uri": "spotify:album:0EoQaKelKaZlyoQpjC8F3W",
+     "total_tracks": 8
+    },
+    {
+     "titulo": "Fénix",
+     "tipo": "album",
+     "fecha": "2018-09-24",
+     "url": "https://open.spotify.com/album/5c57j8GcmPARYpRFJopBFT",
+     "uri": "spotify:album:5c57j8GcmPARYpRFJopBFT",
+     "total_tracks": 12
+    },
+    {
+     "titulo": "Animal",
+     "tipo": "single",
+     "fecha": "2026-03-05",
+     "url": "https://open.spotify.com/album/7y8onl4mYlstY7m3Kjnhx3",
+     "uri": "spotify:album:7y8onl4mYlstY7m3Kjnhx3",
+     "total_tracks": 3
+    },
+    {
+     "titulo": "Furia",
+     "tipo": "single",
+     "fecha": "2025-12-19",
+     "url": "https://open.spotify.com/album/6EyDvhWTGJqrbvVZ2W3N2g",
+     "uri": "spotify:album:6EyDvhWTGJqrbvVZ2W3N2g",
+     "total_tracks": 2
+    },
+    {
+     "titulo": "Despierta",
+     "tipo": "single",
+     "fecha": "2025-10-10",
+     "url": "https://open.spotify.com/album/2R7IHeBR82DJUfuTTGH7ty",
+     "uri": "spotify:album:2R7IHeBR82DJUfuTTGH7ty",
+     "total_tracks": 1
+    },
+    {
+     "titulo": "Último Aliento",
+     "tipo": "single",
+     "fecha": "2023-04-21",
+     "url": "https://open.spotify.com/album/0vhnYFxsm6GEOUGMRV2FrJ",
+     "uri": "spotify:album:0vhnYFxsm6GEOUGMRV2FrJ",
+     "total_tracks": 1
+    },
+    {
+     "titulo": "Maléfica",
+     "tipo": "single",
+     "fecha": "2023-03-10",
+     "url": "https://open.spotify.com/album/6NRTGxHOzQq1zE57TNYEXa",
+     "uri": "spotify:album:6NRTGxHOzQq1zE57TNYEXa",
+     "total_tracks": 1
+    },
+    {
+     "titulo": "Vive",
+     "tipo": "single",
+     "fecha": "2022-12-23",
+     "url": "https://open.spotify.com/album/0nAlELwm3cn2FAxMT85UhZ",
+     "uri": "spotify:album:0nAlELwm3cn2FAxMT85UhZ",
+     "total_tracks": 1
+    },
+    {
+     "titulo": "Bailarina",
+     "tipo": "single",
+     "fecha": "2020-02-12",
+     "url": "https://open.spotify.com/album/3RUk0DGjxXPRXXvHLQrVQA",
+     "uri": "spotify:album:3RUk0DGjxXPRXXvHLQrVQA",
+     "total_tracks": 1
+    },
+    {
+     "titulo": "Miedo",
+     "tipo": "single",
+     "fecha": "2019-11-29",
+     "url": "https://open.spotify.com/album/7IhXyr6IaHamCLOLkAooDL",
+     "uri": "spotify:album:7IhXyr6IaHamCLOLkAooDL",
+     "total_tracks": 1
+    }
+   ],
+   "spotify_tracks_album_principal": [
+    {
+     "titulo": "El Alquimista",
+     "numero": 1,
+     "duracion_ms": 301538,
+     "url": "https://open.spotify.com/track/2EHbgfmh42TMk0JAi6aYAc",
+     "uri": "spotify:track:2EHbgfmh42TMk0JAi6aYAc"
+    },
+    {
+     "titulo": "Vive",
+     "numero": 2,
+     "duracion_ms": 258750,
+     "url": "https://open.spotify.com/track/1ndlbZN25xolU8ELsN8s03",
+     "uri": "spotify:track:1ndlbZN25xolU8ELsN8s03"
+    },
+    {
+     "titulo": "Cicatrices",
+     "numero": 3,
+     "duracion_ms": 250500,
+     "url": "https://open.spotify.com/track/7Gr4yOBJTqkfiz5CzYFlVW",
+     "uri": "spotify:track:7Gr4yOBJTqkfiz5CzYFlVW"
+    },
+    {
+     "titulo": "Almas",
+     "numero": 4,
+     "duracion_ms": 251478,
+     "url": "https://open.spotify.com/track/5CfV2MrubXhvvBU9lJWtlV",
+     "uri": "spotify:track:5CfV2MrubXhvvBU9lJWtlV"
+    },
+    {
+     "titulo": "Último Aliento",
+     "numero": 5,
+     "duracion_ms": 261627,
+     "url": "https://open.spotify.com/track/0IXBgzeoDIc89Qm91VNN1U",
+     "uri": "spotify:track:0IXBgzeoDIc89Qm91VNN1U"
+    },
+    {
+     "titulo": "Maléfica",
+     "numero": 6,
+     "duracion_ms": 247741,
+     "url": "https://open.spotify.com/track/5BgjNhyabiQb0s6DS39JCD",
+     "uri": "spotify:track:5BgjNhyabiQb0s6DS39JCD"
+    },
+    {
+     "titulo": "La Leyenda De Tanabata",
+     "numero": 7,
+     "duracion_ms": 273097,
+     "url": "https://open.spotify.com/track/0UGnUtCd7I3wLq8vAXgZoE",
+     "uri": "spotify:track:0UGnUtCd7I3wLq8vAXgZoE"
+    },
+    {
+     "titulo": "Morfeo",
+     "numero": 8,
+     "duracion_ms": 300352,
+     "url": "https://open.spotify.com/track/1fBYfnTfgufHzsYIOGAn81",
+     "uri": "spotify:track:1fBYfnTfgufHzsYIOGAn81"
+    },
+    {
+     "titulo": "Amanecer",
+     "numero": 9,
+     "duracion_ms": 269629,
+     "url": "https://open.spotify.com/track/7xtxqepCRw2V38fgZ52vFP",
+     "uri": "spotify:track:7xtxqepCRw2V38fgZ52vFP"
+    }
+   ],
+   "spotify_fecha": "2026-08-04"
+  }
  },
  "Dark Moor": {
   "origen": "Madrid",
@@ -493,7 +1265,171 @@
     "fecha": "2026-07",
     "texto": "Entrevista a Enrik García antes de Leyendas del Rock 2026 (RafaBasa)."
    }
-  ]
+  ],
+  "metricas": {
+   "spotify_popularity": 0,
+   "spotify_artist_id": "0YWKRTzA4kBceGwjywtMkh",
+   "spotify_uri": "spotify:artist:0YWKRTzA4kBceGwjywtMkh",
+   "spotify_discografia": [
+    {
+     "titulo": "20 Anniversary Live in Madrid",
+     "tipo": "album",
+     "fecha": "2018-12-12",
+     "url": "https://open.spotify.com/album/5tA68A9tdDEXrS6ripF1jR",
+     "uri": "spotify:album:5tA68A9tdDEXrS6ripF1jR",
+     "total_tracks": 6
+    },
+    {
+     "titulo": "Origins",
+     "tipo": "album",
+     "fecha": "2018-12-07",
+     "url": "https://open.spotify.com/album/15UUCfmJIYJCquoatNJJd2",
+     "uri": "spotify:album:15UUCfmJIYJCquoatNJJd2",
+     "total_tracks": 11
+    },
+    {
+     "titulo": "Project X",
+     "tipo": "album",
+     "fecha": "2015-11-06",
+     "url": "https://open.spotify.com/album/4N4cRJy9sZmsDebBEAk8zp",
+     "uri": "spotify:album:4N4cRJy9sZmsDebBEAk8zp",
+     "total_tracks": 15
+    },
+    {
+     "titulo": "Ars Musica",
+     "tipo": "album",
+     "fecha": "2013-06-18",
+     "url": "https://open.spotify.com/album/0r7ZbTDpPZvr0x7IxSjxED",
+     "uri": "spotify:album:0r7ZbTDpPZvr0x7IxSjxED",
+     "total_tracks": 13
+    },
+    {
+     "titulo": "Ancestral Romance",
+     "tipo": "album",
+     "fecha": "2010-05-07",
+     "url": "https://open.spotify.com/album/0f1mFsI6R95ZnUQh08xlhL",
+     "uri": "spotify:album:0f1mFsI6R95ZnUQh08xlhL",
+     "total_tracks": 10
+    },
+    {
+     "titulo": "Autumnal",
+     "tipo": "album",
+     "fecha": "2009-05-08",
+     "url": "https://open.spotify.com/album/6Q6wvA2aWpRIxWTK72KxQN",
+     "uri": "spotify:album:6Q6wvA2aWpRIxWTK72KxQN",
+     "total_tracks": 11
+    },
+    {
+     "titulo": "Tarot",
+     "tipo": "album",
+     "fecha": "2007-05-04",
+     "url": "https://open.spotify.com/album/4duOuq14O4AhYAY4sXpr6e",
+     "uri": "spotify:album:4duOuq14O4AhYAY4sXpr6e",
+     "total_tracks": 11
+    },
+    {
+     "titulo": "Beyond the Sea",
+     "tipo": "album",
+     "fecha": "2005",
+     "url": "https://open.spotify.com/album/4cgkEXkBbEHmoU11aCUyc5",
+     "uri": "spotify:album:4cgkEXkBbEHmoU11aCUyc5",
+     "total_tracks": 12
+    },
+    {
+     "titulo": "Shadowland",
+     "tipo": "album",
+     "fecha": "2005",
+     "url": "https://open.spotify.com/album/30jYoPKaqI0fuiHeaeNWQl",
+     "uri": "spotify:album:30jYoPKaqI0fuiHeaeNWQl",
+     "total_tracks": 17
+    },
+    {
+     "titulo": "Between The Light and The Darkness",
+     "tipo": "album",
+     "fecha": "2003",
+     "url": "https://open.spotify.com/album/61mJHhksiCa90xhZrmxqCd",
+     "uri": "spotify:album:61mJHhksiCa90xhZrmxqCd",
+     "total_tracks": 8
+    },
+    {
+     "titulo": "Dark Moor",
+     "tipo": "album",
+     "fecha": "2003",
+     "url": "https://open.spotify.com/album/5krfGUxDT9dTBP94Vgv8NP",
+     "uri": "spotify:album:5krfGUxDT9dTBP94Vgv8NP",
+     "total_tracks": 14
+    },
+    {
+     "titulo": "The Gates of Oblivion",
+     "tipo": "album",
+     "fecha": "2002",
+     "url": "https://open.spotify.com/album/7LaPnYZGPs0Apw5MgYZV0H",
+     "uri": "spotify:album:7LaPnYZGPs0Apw5MgYZV0H",
+     "total_tracks": 15
+    },
+    {
+     "titulo": "The Fall of Melnibone",
+     "tipo": "album",
+     "fecha": "2001",
+     "url": "https://open.spotify.com/album/5IgI65r8sLaOLtfywTcuTv",
+     "uri": "spotify:album:5IgI65r8sLaOLtfywTcuTv",
+     "total_tracks": 5
+    },
+    {
+     "titulo": "The Hall of the Olden Dreams",
+     "tipo": "album",
+     "fecha": "2000",
+     "url": "https://open.spotify.com/album/6Xl2ObL7qQYilcxjbYShjO",
+     "uri": "spotify:album:6Xl2ObL7qQYilcxjbYShjO",
+     "total_tracks": 12
+    }
+   ],
+   "spotify_tracks_album_principal": [
+    {
+     "titulo": "The Chariot - Live",
+     "numero": 1,
+     "duracion_ms": 467060,
+     "url": "https://open.spotify.com/track/781Vy6UESEEjalGNtF9XJ4",
+     "uri": "spotify:track:781Vy6UESEEjalGNtF9XJ4"
+    },
+    {
+     "titulo": "Love from the Stone - Live",
+     "numero": 2,
+     "duracion_ms": 265524,
+     "url": "https://open.spotify.com/track/47Mte3nqNj9FQYc6HffNrd",
+     "uri": "spotify:track:47Mte3nqNj9FQYc6HffNrd"
+    },
+    {
+     "titulo": "Together as Ever - Live",
+     "numero": 3,
+     "duracion_ms": 300432,
+     "url": "https://open.spotify.com/track/2jzQdha9Kiaw66iKwkw6SX",
+     "uri": "spotify:track:2jzQdha9Kiaw66iKwkw6SX"
+    },
+    {
+     "titulo": "Nevermore - Live",
+     "numero": 4,
+     "duracion_ms": 330755,
+     "url": "https://open.spotify.com/track/5utMDFQmsNd97RV3yHPzRf",
+     "uri": "spotify:track:5utMDFQmsNd97RV3yHPzRf"
+    },
+    {
+     "titulo": "Tilt at Windmills - Live",
+     "numero": 5,
+     "duracion_ms": 328299,
+     "url": "https://open.spotify.com/track/4Jp24aN3GBjGw8qSR5JoPr",
+     "uri": "spotify:track:4Jp24aN3GBjGw8qSR5JoPr"
+    },
+    {
+     "titulo": "The Road Again - Live",
+     "numero": 6,
+     "duracion_ms": 424114,
+     "url": "https://open.spotify.com/track/0L3xdpCkJkxGjsXMb0dXgg",
+     "uri": "spotify:track:0L3xdpCkJkxGjsXMb0dXgg"
+    }
+   ],
+   "spotify_fecha": "2026-08-04"
+  }
  },
  "Debler": {
   "origen": "Coslada, Madrid",
@@ -601,7 +1537,159 @@
     "nota": ""
    }
   ],
-  "hitos": []
+  "hitos": [],
+  "metricas": {
+   "spotify_popularity": 0,
+   "spotify_artist_id": "0q62AwUaXIWWFrQEP7LzLF",
+   "spotify_uri": "spotify:artist:0q62AwUaXIWWFrQEP7LzLF",
+   "spotify_discografia": [
+    {
+     "titulo": "Adictium",
+     "tipo": "album",
+     "fecha": "2019-10-11",
+     "url": "https://open.spotify.com/album/5vQVaixoV5WX1cv90uQTKr",
+     "uri": "spotify:album:5vQVaixoV5WX1cv90uQTKr",
+     "total_tracks": 12
+    },
+    {
+     "titulo": "Somnia",
+     "tipo": "album",
+     "fecha": "2017-03-31",
+     "url": "https://open.spotify.com/album/2RLrwCmLItA4ynIjqY1Xdh",
+     "uri": "spotify:album:2RLrwCmLItA4ynIjqY1Xdh",
+     "total_tracks": 10
+    },
+    {
+     "titulo": "Noctem Diaboli",
+     "tipo": "album",
+     "fecha": "2015",
+     "url": "https://open.spotify.com/album/55HUwGAvhyR0lIZ0YuP9dh",
+     "uri": "spotify:album:55HUwGAvhyR0lIZ0YuP9dh",
+     "total_tracks": 10
+    },
+    {
+     "titulo": "Adictium (Special Demo Edition)",
+     "tipo": "single",
+     "fecha": "2020-05-01",
+     "url": "https://open.spotify.com/album/3mZS4F7h7NvRyFILC2GSjD",
+     "uri": "spotify:album:3mZS4F7h7NvRyFILC2GSjD",
+     "total_tracks": 2
+    },
+    {
+     "titulo": "Adictium",
+     "tipo": "single",
+     "fecha": "2019-09-17",
+     "url": "https://open.spotify.com/album/7cczKaRzcmzX9pkCBqnjda",
+     "uri": "spotify:album:7cczKaRzcmzX9pkCBqnjda",
+     "total_tracks": 1
+    },
+    {
+     "titulo": "Recto Hasta el Amanecer",
+     "tipo": "single",
+     "fecha": "2019-09-04",
+     "url": "https://open.spotify.com/album/0ToSneSXc0y733hqxrpP3h",
+     "uri": "spotify:album:0ToSneSXc0y733hqxrpP3h",
+     "total_tracks": 1
+    },
+    {
+     "titulo": "Polvo de Estrellas",
+     "tipo": "single",
+     "fecha": "2019-06-28",
+     "url": "https://open.spotify.com/album/3R7vMdkUlxkV6JU1UMJ1CK",
+     "uri": "spotify:album:3R7vMdkUlxkV6JU1UMJ1CK",
+     "total_tracks": 1
+    },
+    {
+     "titulo": "El Poema de la Lluvia Triste",
+     "tipo": "single",
+     "fecha": "2018-04-13",
+     "url": "https://open.spotify.com/album/00GNObjZkiROR8NHdekIVm",
+     "uri": "spotify:album:00GNObjZkiROR8NHdekIVm",
+     "total_tracks": 1
+    },
+    {
+     "titulo": "Sentencia Final",
+     "tipo": "single",
+     "fecha": "2017-02-23",
+     "url": "https://open.spotify.com/album/2OnLpsIdGJ8jLFl3PvU28i",
+     "uri": "spotify:album:2OnLpsIdGJ8jLFl3PvU28i",
+     "total_tracks": 1
+    }
+   ],
+   "spotify_tracks_album_principal": [
+    {
+     "titulo": "Tempus Fugit",
+     "numero": 1,
+     "duracion_ms": 142840,
+     "url": "https://open.spotify.com/track/7nTP4xAdjoIAgeIOD8EExC",
+     "uri": "spotify:track:7nTP4xAdjoIAgeIOD8EExC"
+    },
+    {
+     "titulo": "Nunca Jamás",
+     "numero": 2,
+     "duracion_ms": 259981,
+     "url": "https://open.spotify.com/track/38fAFSll08fC53kG0gMtST",
+     "uri": "spotify:track:38fAFSll08fC53kG0gMtST"
+    },
+    {
+     "titulo": "Polvo de Estrellas",
+     "numero": 3,
+     "duracion_ms": 249390,
+     "url": "https://open.spotify.com/track/6I5vGJTt7zV0pIDC2wC47N",
+     "uri": "spotify:track:6I5vGJTt7zV0pIDC2wC47N"
+    },
+    {
+     "titulo": "A Esta Ronda Invito Yo",
+     "numero": 4,
+     "duracion_ms": 293602,
+     "url": "https://open.spotify.com/track/4XVKwe6944qOvzApEfZQUi",
+     "uri": "spotify:track:4XVKwe6944qOvzApEfZQUi"
+    },
+    {
+     "titulo": "Adictium",
+     "numero": 5,
+     "duracion_ms": 278815,
+     "url": "https://open.spotify.com/track/0H4EXLZp7PMBugW4g0tWGY",
+     "uri": "spotify:track:0H4EXLZp7PMBugW4g0tWGY"
+    },
+    {
+     "titulo": "Grita Que No",
+     "numero": 6,
+     "duracion_ms": 264451,
+     "url": "https://open.spotify.com/track/2U0oXFtLNJwSp4shABurRB",
+     "uri": "spotify:track:2U0oXFtLNJwSp4shABurRB"
+    },
+    {
+     "titulo": "Me Perderé en Tu Cuerpo",
+     "numero": 7,
+     "duracion_ms": 289241,
+     "url": "https://open.spotify.com/track/6jUhQha62AYD5kUO4grUJg",
+     "uri": "spotify:track:6jUhQha62AYD5kUO4grUJg"
+    },
+    {
+     "titulo": "Recto Hasta el Amanecer",
+     "numero": 8,
+     "duracion_ms": 286945,
+     "url": "https://open.spotify.com/track/3XyOwxuthbS0OUEtBGAqeJ",
+     "uri": "spotify:track:3XyOwxuthbS0OUEtBGAqeJ"
+    },
+    {
+     "titulo": "Violar y Rezar",
+     "numero": 9,
+     "duracion_ms": 263061,
+     "url": "https://open.spotify.com/track/680uTX5xWdjtlwcaF3v9um",
+     "uri": "spotify:track:680uTX5xWdjtlwcaF3v9um"
+    },
+    {
+     "titulo": "Un Mundo Extraño",
+     "numero": 10,
+     "duracion_ms": 210831,
+     "url": "https://open.spotify.com/track/5FDmXG4EYl3HUZj9eHyLMo",
+     "uri": "spotify:track:5FDmXG4EYl3HUZj9eHyLMo"
+    }
+   ],
+   "spotify_fecha": "2026-08-04"
+  }
  },
  "Dünedain": {
   "origen": "Spain",
@@ -703,7 +1791,184 @@
     "nota": ""
    }
   ],
-  "hitos": []
+  "hitos": [],
+  "metricas": {
+   "spotify_popularity": 0,
+   "spotify_artist_id": "02aqpDfp52Ww8mXwbw90uU",
+   "spotify_uri": "spotify:artist:02aqpDfp52Ww8mXwbw90uU",
+   "spotify_discografia": [
+    {
+     "titulo": "Érase",
+     "tipo": "album",
+     "fecha": "2025-11-07",
+     "url": "https://open.spotify.com/album/3odFAECLflQ1pbVlGbxux5",
+     "uri": "spotify:album:3odFAECLflQ1pbVlGbxux5",
+     "total_tracks": 9
+    },
+    {
+     "titulo": "Memento Mori",
+     "tipo": "album",
+     "fecha": "2019-06-16",
+     "url": "https://open.spotify.com/album/5kBPa7zbOGxug4D7R4iHTW",
+     "uri": "spotify:album:5kBPa7zbOGxug4D7R4iHTW",
+     "total_tracks": 9
+    },
+    {
+     "titulo": "Pandemonium",
+     "tipo": "album",
+     "fecha": "2016-10-16",
+     "url": "https://open.spotify.com/album/5xBwaKGaBwI5sJLMuhI62B",
+     "uri": "spotify:album:5xBwaKGaBwI5sJLMuhI62B",
+     "total_tracks": 11
+    },
+    {
+     "titulo": "Mágica",
+     "tipo": "album",
+     "fecha": "2012-04-10",
+     "url": "https://open.spotify.com/album/6a31HjqvtxVjHHwl8hslVJ",
+     "uri": "spotify:album:6a31HjqvtxVjHHwl8hslVJ",
+     "total_tracks": 10
+    },
+    {
+     "titulo": "Buscando el Norte",
+     "tipo": "album",
+     "fecha": "2011-03-12",
+     "url": "https://open.spotify.com/album/72yWYQSlOTlI0Rts8NGVk8",
+     "uri": "spotify:album:72yWYQSlOTlI0Rts8NGVk8",
+     "total_tracks": 14
+    },
+    {
+     "titulo": "La Luz de Mi Oscuridad",
+     "tipo": "album",
+     "fecha": "2007",
+     "url": "https://open.spotify.com/album/2ZpWYCOcHNMf3LiolNS6L1",
+     "uri": "spotify:album:2ZpWYCOcHNMf3LiolNS6L1",
+     "total_tracks": 11
+    },
+    {
+     "titulo": "La Misma Canción",
+     "tipo": "single",
+     "fecha": "2025-08-01",
+     "url": "https://open.spotify.com/album/3PJIhmbaTdQhwaqOnifisK",
+     "uri": "spotify:album:3PJIhmbaTdQhwaqOnifisK",
+     "total_tracks": 1
+    },
+    {
+     "titulo": "Fénix",
+     "tipo": "single",
+     "fecha": "2025-06-20",
+     "url": "https://open.spotify.com/album/3LNlOMCnlhhAnzrKx5f0Uz",
+     "uri": "spotify:album:3LNlOMCnlhhAnzrKx5f0Uz",
+     "total_tracks": 1
+    },
+    {
+     "titulo": "Sangre y gloria EP",
+     "tipo": "single",
+     "fecha": "2016-11-16",
+     "url": "https://open.spotify.com/album/0mrEre9h5DDYs4zDDgD0Nw",
+     "uri": "spotify:album:0mrEre9h5DDYs4zDDgD0Nw",
+     "total_tracks": 5
+    },
+    {
+     "titulo": "Por los Siglos de los Siglos (Versión 2015)",
+     "tipo": "single",
+     "fecha": "2015-03-20",
+     "url": "https://open.spotify.com/album/1V4qvhKEGVsondlFJBDOTu",
+     "uri": "spotify:album:1V4qvhKEGVsondlFJBDOTu",
+     "total_tracks": 1
+    },
+    {
+     "titulo": "Melancolía",
+     "tipo": "single",
+     "fecha": "2014-09-17",
+     "url": "https://open.spotify.com/album/20MHhBGSZ7wdONj5mYRA0n",
+     "uri": "spotify:album:20MHhBGSZ7wdONj5mYRA0n",
+     "total_tracks": 1
+    },
+    {
+     "titulo": "1000 Golpes",
+     "tipo": "single",
+     "fecha": "2013-09-02",
+     "url": "https://open.spotify.com/album/3Fz74R7RAcjyC9YsS2P9GT",
+     "uri": "spotify:album:3Fz74R7RAcjyC9YsS2P9GT",
+     "total_tracks": 1
+    },
+    {
+     "titulo": "Unidos Por El Metal",
+     "tipo": "single",
+     "fecha": "2010-10-25",
+     "url": "https://open.spotify.com/album/1xZapW3T7SBunRa2sEkSYB",
+     "uri": "spotify:album:1xZapW3T7SBunRa2sEkSYB",
+     "total_tracks": 1
+    }
+   ],
+   "spotify_tracks_album_principal": [
+    {
+     "titulo": "Oh Yeah!",
+     "numero": 1,
+     "duracion_ms": 215590,
+     "url": "https://open.spotify.com/track/6rNtvq4OKDdb8W2dH5ROdV",
+     "uri": "spotify:track:6rNtvq4OKDdb8W2dH5ROdV"
+    },
+    {
+     "titulo": "La Misma Canción",
+     "numero": 2,
+     "duracion_ms": 273955,
+     "url": "https://open.spotify.com/track/6bA7fMCKXdaQqwqMkQNhhb",
+     "uri": "spotify:track:6bA7fMCKXdaQqwqMkQNhhb"
+    },
+    {
+     "titulo": "Érase",
+     "numero": 3,
+     "duracion_ms": 304410,
+     "url": "https://open.spotify.com/track/12g9cWFlCyKJANeEz14tTg",
+     "uri": "spotify:track:12g9cWFlCyKJANeEz14tTg"
+    },
+    {
+     "titulo": "Pandora",
+     "numero": 4,
+     "duracion_ms": 346545,
+     "url": "https://open.spotify.com/track/73rKnQqZtuKZOh0ww7Uz5S",
+     "uri": "spotify:track:73rKnQqZtuKZOh0ww7Uz5S"
+    },
+    {
+     "titulo": "Silencio",
+     "numero": 5,
+     "duracion_ms": 332176,
+     "url": "https://open.spotify.com/track/3DShyoyWS8Iup6dzpsGwhc",
+     "uri": "spotify:track:3DShyoyWS8Iup6dzpsGwhc"
+    },
+    {
+     "titulo": "Hilo Rojo",
+     "numero": 6,
+     "duracion_ms": 317189,
+     "url": "https://open.spotify.com/track/4vnTA8c7qouA0IVRqjPuIf",
+     "uri": "spotify:track:4vnTA8c7qouA0IVRqjPuIf"
+    },
+    {
+     "titulo": "La Herida",
+     "numero": 7,
+     "duracion_ms": 242790,
+     "url": "https://open.spotify.com/track/4hleOl5TF004QNiVYyvoOn",
+     "uri": "spotify:track:4hleOl5TF004QNiVYyvoOn"
+    },
+    {
+     "titulo": "Fénix",
+     "numero": 8,
+     "duracion_ms": 308090,
+     "url": "https://open.spotify.com/track/2Lm9zN62abrRXXwcGBJ70A",
+     "uri": "spotify:track:2Lm9zN62abrRXXwcGBJ70A"
+    },
+    {
+     "titulo": "Némesis",
+     "numero": 9,
+     "duracion_ms": 210858,
+     "url": "https://open.spotify.com/track/5GU4JX7PAQTCPNn90b70cD",
+     "uri": "spotify:track:5GU4JX7PAQTCPNn90b70cD"
+    }
+   ],
+   "spotify_fecha": "2026-08-04"
+  }
  },
  "Ekyrian": {
   "origen": "Madrid",
@@ -805,7 +2070,215 @@
     "nota": ""
    }
   ],
-  "hitos": []
+  "hitos": [],
+  "metricas": {
+   "spotify_popularity": 0,
+   "spotify_artist_id": "2dvmZsGsIxDiiZPrEfksbb",
+   "spotify_uri": "spotify:artist:2dvmZsGsIxDiiZPrEfksbb",
+   "spotify_discografia": [
+    {
+     "titulo": "Un Viaje Sinfónico",
+     "tipo": "album",
+     "fecha": "2025-12-15",
+     "url": "https://open.spotify.com/album/09knwR0tEoqUHOSiOAdXLZ",
+     "uri": "spotify:album:09knwR0tEoqUHOSiOAdXLZ",
+     "total_tracks": 21
+    },
+    {
+     "titulo": "Cuentos Junto a la Hoguera",
+     "tipo": "album",
+     "fecha": "2023-09-01",
+     "url": "https://open.spotify.com/album/3A5z5Adxuu3ZxgBLDs7gmU",
+     "uri": "spotify:album:3A5z5Adxuu3ZxgBLDs7gmU",
+     "total_tracks": 11
+    },
+    {
+     "titulo": "Más Allá de la Tempestad",
+     "tipo": "album",
+     "fecha": "2019-08-15",
+     "url": "https://open.spotify.com/album/6JI6jNx22OdOmsDuvRJbOw",
+     "uri": "spotify:album:6JI6jNx22OdOmsDuvRJbOw",
+     "total_tracks": 13
+    },
+    {
+     "titulo": "Memorias del Bosque",
+     "tipo": "album",
+     "fecha": "2016-04-22",
+     "url": "https://open.spotify.com/album/3Y8JmCww6X0pgQjAxmWMso",
+     "uri": "spotify:album:3Y8JmCww6X0pgQjAxmWMso",
+     "total_tracks": 7
+    },
+    {
+     "titulo": "Kaguya (Sinfónica en Directo)",
+     "tipo": "single",
+     "fecha": "2025-11-28",
+     "url": "https://open.spotify.com/album/6k95SbuEFR5SuRZBD8GVqS",
+     "uri": "spotify:album:6k95SbuEFR5SuRZBD8GVqS",
+     "total_tracks": 1
+    },
+    {
+     "titulo": "Alza la Vista (Sinfónica en Directo)",
+     "tipo": "single",
+     "fecha": "2025-11-14",
+     "url": "https://open.spotify.com/album/0t00AAnYRNNnujgaVGEW5i",
+     "uri": "spotify:album:0t00AAnYRNNnujgaVGEW5i",
+     "total_tracks": 1
+    },
+    {
+     "titulo": "La Danza de Los Muertos (Sinfónica en Directo)",
+     "tipo": "single",
+     "fecha": "2025-10-31",
+     "url": "https://open.spotify.com/album/478VgOqw6kCPRhSArwzbDy",
+     "uri": "spotify:album:478VgOqw6kCPRhSArwzbDy",
+     "total_tracks": 1
+    },
+    {
+     "titulo": "Ekyrian (Sinfónica en Directo)",
+     "tipo": "single",
+     "fecha": "2025-10-17",
+     "url": "https://open.spotify.com/album/2unqJvBKxgfKcj2uIxwUw3",
+     "uri": "spotify:album:2unqJvBKxgfKcj2uIxwUw3",
+     "total_tracks": 1
+    },
+    {
+     "titulo": "Angua von Überwald",
+     "tipo": "single",
+     "fecha": "2025-07-15",
+     "url": "https://open.spotify.com/album/7DPPGDMZIuGJ12xcyt06cQ",
+     "uri": "spotify:album:7DPPGDMZIuGJ12xcyt06cQ",
+     "total_tracks": 1
+    },
+    {
+     "titulo": "Colores en el Viento",
+     "tipo": "single",
+     "fecha": "2024-12-12",
+     "url": "https://open.spotify.com/album/5Ax60OlEhZvAW9CgWvnGHf",
+     "uri": "spotify:album:5Ax60OlEhZvAW9CgWvnGHf",
+     "total_tracks": 1
+    },
+    {
+     "titulo": "Ekyrian",
+     "tipo": "single",
+     "fecha": "2023-08-25",
+     "url": "https://open.spotify.com/album/6bU5XK8NU3gdyW9orA44Or",
+     "uri": "spotify:album:6bU5XK8NU3gdyW9orA44Or",
+     "total_tracks": 1
+    },
+    {
+     "titulo": "Kaguya",
+     "tipo": "single",
+     "fecha": "2023-07-13",
+     "url": "https://open.spotify.com/album/1uBB8413BYri8HsS4lc3KU",
+     "uri": "spotify:album:1uBB8413BYri8HsS4lc3KU",
+     "total_tracks": 1
+    },
+    {
+     "titulo": "El Alquimista",
+     "tipo": "single",
+     "fecha": "2023-06-15",
+     "url": "https://open.spotify.com/album/1q79lOwRbGWwEJdhzmPF45",
+     "uri": "spotify:album:1q79lOwRbGWwEJdhzmPF45",
+     "total_tracks": 1
+    },
+    {
+     "titulo": "El Rey Blanco",
+     "tipo": "single",
+     "fecha": "2023-06-08",
+     "url": "https://open.spotify.com/album/63y3Jlnf9tMAfAOwNU5dUE",
+     "uri": "spotify:album:63y3Jlnf9tMAfAOwNU5dUE",
+     "total_tracks": 1
+    },
+    {
+     "titulo": "La Balada de Wilfred el Enano",
+     "tipo": "single",
+     "fecha": "2023-06-01",
+     "url": "https://open.spotify.com/album/6cM9avKwQTv8QWIz6gC813",
+     "uri": "spotify:album:6cM9avKwQTv8QWIz6gC813",
+     "total_tracks": 1
+    },
+    {
+     "titulo": "Estrella sin Luz",
+     "tipo": "single",
+     "fecha": "2021-12-17",
+     "url": "https://open.spotify.com/album/1IfcQHEUIEPUGUu9JWxbks",
+     "uri": "spotify:album:1IfcQHEUIEPUGUu9JWxbks",
+     "total_tracks": 1
+    }
+   ],
+   "spotify_tracks_album_principal": [
+    {
+     "titulo": "¡Tierra a la Vista!",
+     "numero": 1,
+     "duracion_ms": 96648,
+     "url": "https://open.spotify.com/track/3mceCz0Av1XIk9mETND97i",
+     "uri": "spotify:track:3mceCz0Av1XIk9mETND97i"
+    },
+    {
+     "titulo": "Ekyrian - Sinfónica en Directo",
+     "numero": 2,
+     "duracion_ms": 283691,
+     "url": "https://open.spotify.com/track/3avrVFb44U0wccuaXDtrSq",
+     "uri": "spotify:track:3avrVFb44U0wccuaXDtrSq"
+    },
+    {
+     "titulo": "Alza la Vista - Sinfónica en Directo",
+     "numero": 3,
+     "duracion_ms": 301656,
+     "url": "https://open.spotify.com/track/0KpJVs9eHTa0NOhwhjA7Dj",
+     "uri": "spotify:track:0KpJVs9eHTa0NOhwhjA7Dj"
+    },
+    {
+     "titulo": "Angua - Sinfónica en Directo",
+     "numero": 4,
+     "duracion_ms": 323687,
+     "url": "https://open.spotify.com/track/5hDnPvb3KJyu8R7SMm6zK4",
+     "uri": "spotify:track:5hDnPvb3KJyu8R7SMm6zK4"
+    },
+    {
+     "titulo": "Valor - Sinfónica en Directo",
+     "numero": 5,
+     "duracion_ms": 250750,
+     "url": "https://open.spotify.com/track/7yz6mvGQYEv6wrpZUD8Rwk",
+     "uri": "spotify:track:7yz6mvGQYEv6wrpZUD8Rwk"
+    },
+    {
+     "titulo": "Kaguya - Sinfónica en Directo",
+     "numero": 6,
+     "duracion_ms": 387625,
+     "url": "https://open.spotify.com/track/6SfbkQxp7J1l3CwsM3tS3a",
+     "uri": "spotify:track:6SfbkQxp7J1l3CwsM3tS3a"
+    },
+    {
+     "titulo": "La Danza de los Muertos - Sinfónica en Directo",
+     "numero": 7,
+     "duracion_ms": 229500,
+     "url": "https://open.spotify.com/track/05syQEFHtgMKjFcC5mVcIV",
+     "uri": "spotify:track:05syQEFHtgMKjFcC5mVcIV"
+    },
+    {
+     "titulo": "Colores en el Viento - Sinfónica en Directo",
+     "numero": 8,
+     "duracion_ms": 182705,
+     "url": "https://open.spotify.com/track/5z454x5esTgag2dzttBYKB",
+     "uri": "spotify:track:5z454x5esTgag2dzttBYKB"
+    },
+    {
+     "titulo": "El Cuento de la Oscuridad - Sinfónica en Directo",
+     "numero": 9,
+     "duracion_ms": 504297,
+     "url": "https://open.spotify.com/track/0E32mYyvckpe3QQHuleDxm",
+     "uri": "spotify:track:0E32mYyvckpe3QQHuleDxm"
+    },
+    {
+     "titulo": "El Alquimista - Sinfónica en Directo",
+     "numero": 10,
+     "duracion_ms": 259071,
+     "url": "https://open.spotify.com/track/1LzBn90IbYfqIKlBE2DYxX",
+     "uri": "spotify:track:1LzBn90IbYfqIKlBE2DYxX"
+    }
+   ],
+   "spotify_fecha": "2026-08-04"
+  }
  },
  "El Reno Renardo": {
   "origen": "Spain",
@@ -913,7 +2386,295 @@
     "nota": ""
    }
   ],
-  "hitos": []
+  "hitos": [],
+  "metricas": {
+   "spotify_popularity": 0,
+   "spotify_artist_id": "61sCtal02aLMyfxG9bA6yZ",
+   "spotify_uri": "spotify:artist:61sCtal02aLMyfxG9bA6yZ",
+   "spotify_discografia": [
+    {
+     "titulo": "Queso Fresco, Queso Curao",
+     "tipo": "album",
+     "fecha": "2026-02-27",
+     "url": "https://open.spotify.com/album/6BbwwMu4rfthdG0cp40dJZ",
+     "uri": "spotify:album:6BbwwMu4rfthdG0cp40dJZ",
+     "total_tracks": 14
+    },
+    {
+     "titulo": "Regreso al Metalverso",
+     "tipo": "album",
+     "fecha": "2024-01-15",
+     "url": "https://open.spotify.com/album/4Z9xUSyqswXFBD5OtiQdZk",
+     "uri": "spotify:album:4Z9xUSyqswXFBD5OtiQdZk",
+     "total_tracks": 16
+    },
+    {
+     "titulo": "El Mundo Se Va a la Mierda",
+     "tipo": "album",
+     "fecha": "2021-11-19",
+     "url": "https://open.spotify.com/album/2CUAeXYUjHRzUb0jgQD841",
+     "uri": "spotify:album:2CUAeXYUjHRzUb0jgQD841",
+     "total_tracks": 15
+    },
+    {
+     "titulo": "Rarezas Raras",
+     "tipo": "album",
+     "fecha": "2020-07-17",
+     "url": "https://open.spotify.com/album/32kSau1GdyO3R54Kp8iO27",
+     "uri": "spotify:album:32kSau1GdyO3R54Kp8iO27",
+     "total_tracks": 17
+    },
+    {
+     "titulo": "Hostiopatía",
+     "tipo": "album",
+     "fecha": "2018-10-19",
+     "url": "https://open.spotify.com/album/6do6OnE5iYd2S6QkLW4dIh",
+     "uri": "spotify:album:6do6OnE5iYd2S6QkLW4dIh",
+     "total_tracks": 15
+    },
+    {
+     "titulo": "Meriendacena Con Satán",
+     "tipo": "album",
+     "fecha": "2016-04-05",
+     "url": "https://open.spotify.com/album/7pca4bdl85f2nwLVhrgsz8",
+     "uri": "spotify:album:7pca4bdl85f2nwLVhrgsz8",
+     "total_tracks": 16
+    },
+    {
+     "titulo": "Babuinos del Metal",
+     "tipo": "album",
+     "fecha": "2013-01-01",
+     "url": "https://open.spotify.com/album/6mJpxVGYXbXRX7fXyk8DB3",
+     "uri": "spotify:album:6mJpxVGYXbXRX7fXyk8DB3",
+     "total_tracks": 16
+    },
+    {
+     "titulo": "El Improperio Contraataca",
+     "tipo": "album",
+     "fecha": "2010-01-01",
+     "url": "https://open.spotify.com/album/05PsPCgxKWZHfOydnrBIcy",
+     "uri": "spotify:album:05PsPCgxKWZHfOydnrBIcy",
+     "total_tracks": 17
+    },
+    {
+     "titulo": "Y el Reino de la Cagalera de Bisbal",
+     "tipo": "album",
+     "fecha": "2008",
+     "url": "https://open.spotify.com/album/4Ua9O8W495OnwanEE08YkW",
+     "uri": "spotify:album:4Ua9O8W495OnwanEE08YkW",
+     "total_tracks": 17
+    },
+    {
+     "titulo": "El Reno Renardo",
+     "tipo": "album",
+     "fecha": "2007-01-01",
+     "url": "https://open.spotify.com/album/1r4N8BBepAPV9Y9Q6s1NLt",
+     "uri": "spotify:album:1r4N8BBepAPV9Y9Q6s1NLt",
+     "total_tracks": 13
+    },
+    {
+     "titulo": "YISUSCRAIST",
+     "tipo": "single",
+     "fecha": "2026-02-12",
+     "url": "https://open.spotify.com/album/7LjwFeX237AS9QtXSvAn8d",
+     "uri": "spotify:album:7LjwFeX237AS9QtXSvAn8d",
+     "total_tracks": 1
+    },
+    {
+     "titulo": "Sonda Anal",
+     "tipo": "single",
+     "fecha": "2026-01-20",
+     "url": "https://open.spotify.com/album/5ixFeUyld12gspSNa8931W",
+     "uri": "spotify:album:5ixFeUyld12gspSNa8931W",
+     "total_tracks": 1
+    },
+    {
+     "titulo": "Satán Klaus",
+     "tipo": "single",
+     "fecha": "2024-12-19",
+     "url": "https://open.spotify.com/album/29gfsrXCrG7KkbdKXnPtJg",
+     "uri": "spotify:album:29gfsrXCrG7KkbdKXnPtJg",
+     "total_tracks": 1
+    },
+    {
+     "titulo": "Esfinternet",
+     "tipo": "single",
+     "fecha": "2023-12-20",
+     "url": "https://open.spotify.com/album/2TL9VlOBN0eQdk870bvGUh",
+     "uri": "spotify:album:2TL9VlOBN0eQdk870bvGUh",
+     "total_tracks": 1
+    },
+    {
+     "titulo": "I.A: En Un Planeta Subnormal",
+     "tipo": "single",
+     "fecha": "2023-11-28",
+     "url": "https://open.spotify.com/album/0fATI1Giw2mhD6acZ7wg9X",
+     "uri": "spotify:album:0fATI1Giw2mhD6acZ7wg9X",
+     "total_tracks": 1
+    },
+    {
+     "titulo": "12 Campanas",
+     "tipo": "single",
+     "fecha": "2022-12-16",
+     "url": "https://open.spotify.com/album/5KZwyQ7fYlRYJKEUvGe4Xo",
+     "uri": "spotify:album:5KZwyQ7fYlRYJKEUvGe4Xo",
+     "total_tracks": 1
+    },
+    {
+     "titulo": "Lo Puto Peor",
+     "tipo": "single",
+     "fecha": "2021-11-04",
+     "url": "https://open.spotify.com/album/5AyGpXBWkbS3pBViXh4Rbd",
+     "uri": "spotify:album:5AyGpXBWkbS3pBViXh4Rbd",
+     "total_tracks": 1
+    },
+    {
+     "titulo": "Nueva Anormalidad",
+     "tipo": "single",
+     "fecha": "2020-10-13",
+     "url": "https://open.spotify.com/album/2IzynJDs6emho0ywtM9Tan",
+     "uri": "spotify:album:2IzynJDs6emho0ywtM9Tan",
+     "total_tracks": 1
+    },
+    {
+     "titulo": "El Bardo Bastardo (Power Edition)",
+     "tipo": "single",
+     "fecha": "2020-07-03",
+     "url": "https://open.spotify.com/album/1IANae6nDibYDjWtIu4QWQ",
+     "uri": "spotify:album:1IANae6nDibYDjWtIu4QWQ",
+     "total_tracks": 1
+    },
+    {
+     "titulo": "Crecí en los 90",
+     "tipo": "single",
+     "fecha": "2020-06-05",
+     "url": "https://open.spotify.com/album/3mIAxHBWn7V02K1b5wsKB0",
+     "uri": "spotify:album:3mIAxHBWn7V02K1b5wsKB0",
+     "total_tracks": 1
+    },
+    {
+     "titulo": "Sanotes",
+     "tipo": "single",
+     "fecha": "2018-09-13",
+     "url": "https://open.spotify.com/album/654vK3dtjQASBIxcFO1FWk",
+     "uri": "spotify:album:654vK3dtjQASBIxcFO1FWk",
+     "total_tracks": 1
+    },
+    {
+     "titulo": "Villanpsycho",
+     "tipo": "single",
+     "fecha": "2016-12-15",
+     "url": "https://open.spotify.com/album/69IdgsihjL5WLHcopGEBII",
+     "uri": "spotify:album:69IdgsihjL5WLHcopGEBII",
+     "total_tracks": 1
+    },
+    {
+     "titulo": "Meriendacena Medieval",
+     "tipo": "single",
+     "fecha": "2016-03-11",
+     "url": "https://open.spotify.com/album/60YEJxx0GrQePzzIVtPktE",
+     "uri": "spotify:album:60YEJxx0GrQePzzIVtPktE",
+     "total_tracks": 1
+    },
+    {
+     "titulo": "En Navidad - Single",
+     "tipo": "single",
+     "fecha": "2015-10-23",
+     "url": "https://open.spotify.com/album/2KklezILZsjFEvvjlA6naQ",
+     "uri": "spotify:album:2KklezILZsjFEvvjlA6naQ",
+     "total_tracks": 1
+    },
+    {
+     "titulo": "Subnorcracia",
+     "tipo": "single",
+     "fecha": "2011",
+     "url": "https://open.spotify.com/album/3xh40CY3QDmzsGu4LKfJ01",
+     "uri": "spotify:album:3xh40CY3QDmzsGu4LKfJ01",
+     "total_tracks": 1
+    },
+    {
+     "titulo": "El Tamborilerdo - Single",
+     "tipo": "single",
+     "fecha": "2008-01-01",
+     "url": "https://open.spotify.com/album/58fix2t6PUUSrV50mJTmx9",
+     "uri": "spotify:album:58fix2t6PUUSrV50mJTmx9",
+     "total_tracks": 1
+    }
+   ],
+   "spotify_tracks_album_principal": [
+    {
+     "titulo": "Sonda Anal",
+     "numero": 1,
+     "duracion_ms": 374625,
+     "url": "https://open.spotify.com/track/4WLTPvV7dHUzMGe1k7RabX",
+     "uri": "spotify:track:4WLTPvV7dHUzMGe1k7RabX"
+    },
+    {
+     "titulo": "Yisuscraist",
+     "numero": 2,
+     "duracion_ms": 327600,
+     "url": "https://open.spotify.com/track/6fHdkC0p521xLAJgtS3odH",
+     "uri": "spotify:track:6fHdkC0p521xLAJgtS3odH"
+    },
+    {
+     "titulo": "Tonto Del Pueblo",
+     "numero": 3,
+     "duracion_ms": 304588,
+     "url": "https://open.spotify.com/track/4yosoXRwGKiSFTPsA6whkZ",
+     "uri": "spotify:track:4yosoXRwGKiSFTPsA6whkZ"
+    },
+    {
+     "titulo": "La Tarada",
+     "numero": 4,
+     "duracion_ms": 271555,
+     "url": "https://open.spotify.com/track/3NqQaXi6ySaMBLY7pYkCJC",
+     "uri": "spotify:track:3NqQaXi6ySaMBLY7pYkCJC"
+    },
+    {
+     "titulo": "Playa Y Piscina",
+     "numero": 5,
+     "duracion_ms": 326400,
+     "url": "https://open.spotify.com/track/0CPOJYysewJM8jCLXEbAod",
+     "uri": "spotify:track:0CPOJYysewJM8jCLXEbAod"
+    },
+    {
+     "titulo": "Gol",
+     "numero": 6,
+     "duracion_ms": 303692,
+     "url": "https://open.spotify.com/track/78VyDG6Vk1NMiWefIg1dhv",
+     "uri": "spotify:track:78VyDG6Vk1NMiWefIg1dhv"
+    },
+    {
+     "titulo": "Lo Sueltas Por Fin",
+     "numero": 7,
+     "duracion_ms": 285375,
+     "url": "https://open.spotify.com/track/3KAN4RdYZkiQGuLY8ScJtO",
+     "uri": "spotify:track:3KAN4RdYZkiQGuLY8ScJtO"
+    },
+    {
+     "titulo": "No Quiero Ir Al Gym",
+     "numero": 8,
+     "duracion_ms": 294000,
+     "url": "https://open.spotify.com/track/3XgImnfnmnurHuIqUqPwwF",
+     "uri": "spotify:track:3XgImnfnmnurHuIqUqPwwF"
+    },
+    {
+     "titulo": "Ni Una Parada",
+     "numero": 9,
+     "duracion_ms": 219857,
+     "url": "https://open.spotify.com/track/4MIUqDrvMN5AEI7Phjxid6",
+     "uri": "spotify:track:4MIUqDrvMN5AEI7Phjxid6"
+    },
+    {
+     "titulo": "Toroturadores",
+     "numero": 10,
+     "duracion_ms": 204000,
+     "url": "https://open.spotify.com/track/61uIHuerIiAQ02eC7X9Mz8",
+     "uri": "spotify:track:61uIHuerIiAQ02eC7X9Mz8"
+    }
+   ],
+   "spotify_fecha": "2026-08-04"
+  }
  },
  "Finnway": {
   "origen": "La Rioja",
@@ -955,7 +2716,119 @@
     "nota": ""
    }
   ],
-  "hitos": []
+  "hitos": [],
+  "metricas": {
+   "spotify_popularity": 0,
+   "spotify_artist_id": "3LyyeK8fCDm4ymXMiP1XU9",
+   "spotify_uri": "spotify:artist:3LyyeK8fCDm4ymXMiP1XU9",
+   "spotify_discografia": [
+    {
+     "titulo": "La Corte de los Marginados",
+     "tipo": "album",
+     "fecha": "2025-10-08",
+     "url": "https://open.spotify.com/album/1i7WxwHpspZfNj3XOLHk6s",
+     "uri": "spotify:album:1i7WxwHpspZfNj3XOLHk6s",
+     "total_tracks": 10
+    },
+    {
+     "titulo": "Voluntad de Fuego",
+     "tipo": "single",
+     "fecha": "2025-09-11",
+     "url": "https://open.spotify.com/album/2at72AQzQWqjVgOEyegJ3g",
+     "uri": "spotify:album:2at72AQzQWqjVgOEyegJ3g",
+     "total_tracks": 1
+    },
+    {
+     "titulo": "El Vagabundo",
+     "tipo": "single",
+     "fecha": "2025-07-02",
+     "url": "https://open.spotify.com/album/4Yk8deAhYhnZqYZ46MxsTx",
+     "uri": "spotify:album:4Yk8deAhYhnZqYZ46MxsTx",
+     "total_tracks": 1
+    },
+    {
+     "titulo": "Finnway Is The Fine Way",
+     "tipo": "single",
+     "fecha": "2025-05-29",
+     "url": "https://open.spotify.com/album/7urxj26id2XOGmxoS7yRAO",
+     "uri": "spotify:album:7urxj26id2XOGmxoS7yRAO",
+     "total_tracks": 1
+    }
+   ],
+   "spotify_tracks_album_principal": [
+    {
+     "titulo": "Dama de la Fortuna (Intro)",
+     "numero": 1,
+     "duracion_ms": 88160,
+     "url": "https://open.spotify.com/track/1bHsCSgTFpXyVCLp3C4f2a",
+     "uri": "spotify:track:1bHsCSgTFpXyVCLp3C4f2a"
+    },
+    {
+     "titulo": "La Corte de los Marginados",
+     "numero": 2,
+     "duracion_ms": 248773,
+     "url": "https://open.spotify.com/track/6qE7zTarxa8aeRfRKQRw6f",
+     "uri": "spotify:track:6qE7zTarxa8aeRfRKQRw6f"
+    },
+    {
+     "titulo": "El Bribón de Bobby Brown",
+     "numero": 3,
+     "duracion_ms": 174480,
+     "url": "https://open.spotify.com/track/7FHZWfFPjARk8yIkbSljyU",
+     "uri": "spotify:track:7FHZWfFPjARk8yIkbSljyU"
+    },
+    {
+     "titulo": "El Vagabundo",
+     "numero": 4,
+     "duracion_ms": 240053,
+     "url": "https://open.spotify.com/track/0NryrcrsoTzZxPl0ynY723",
+     "uri": "spotify:track:0NryrcrsoTzZxPl0ynY723"
+    },
+    {
+     "titulo": "Düllahan",
+     "numero": 5,
+     "duracion_ms": 224373,
+     "url": "https://open.spotify.com/track/3f3erFWqSm083qbSLprbeD",
+     "uri": "spotify:track:3f3erFWqSm083qbSLprbeD"
+    },
+    {
+     "titulo": "Finnway Is The Fine Way",
+     "numero": 6,
+     "duracion_ms": 265613,
+     "url": "https://open.spotify.com/track/6RLxtvMbDYilhFdUCSB5nu",
+     "uri": "spotify:track:6RLxtvMbDYilhFdUCSB5nu"
+    },
+    {
+     "titulo": "Carta al Más Allá",
+     "numero": 7,
+     "duracion_ms": 333333,
+     "url": "https://open.spotify.com/track/3XYRenGB0MU4KY9w4r8mDk",
+     "uri": "spotify:track:3XYRenGB0MU4KY9w4r8mDk"
+    },
+    {
+     "titulo": "No Hay Rendición",
+     "numero": 8,
+     "duracion_ms": 304000,
+     "url": "https://open.spotify.com/track/47dfCXXtVAZCCG305v4Msu",
+     "uri": "spotify:track:47dfCXXtVAZCCG305v4Msu"
+    },
+    {
+     "titulo": "Voluntad de Fuego",
+     "numero": 9,
+     "duracion_ms": 245506,
+     "url": "https://open.spotify.com/track/1JvtR61kdPM0dNaJfmAXkK",
+     "uri": "spotify:track:1JvtR61kdPM0dNaJfmAXkK"
+    },
+    {
+     "titulo": "Believer",
+     "numero": 10,
+     "duracion_ms": 238346,
+     "url": "https://open.spotify.com/track/5ma8icdUkZj5x5JO9Jn47E",
+     "uri": "spotify:track:5ma8icdUkZj5x5JO9Jn47E"
+    }
+   ],
+   "spotify_fecha": "2026-08-04"
+  }
  },
  "Hadadanza": {
   "origen": "Alicante",
@@ -1000,7 +2873,255 @@
     "fecha": "2026",
     "texto": "5º álbum previsto finales 2026, «el más ambicioso»."
    }
-  ]
+  ],
+  "metricas": {
+   "spotify_popularity": 0,
+   "spotify_artist_id": "5Ur0OkWBfFLPAw4HPl6jcK",
+   "spotify_uri": "spotify:artist:5Ur0OkWBfFLPAw4HPl6jcK",
+   "spotify_discografia": [
+    {
+     "titulo": "Aventura y Leyenda",
+     "tipo": "album",
+     "fecha": "2024-02-09",
+     "url": "https://open.spotify.com/album/3PIaJ9uFLlPnYS94HUVfDQ",
+     "uri": "spotify:album:3PIaJ9uFLlPnYS94HUVfDQ",
+     "total_tracks": 11
+    },
+    {
+     "titulo": "El Circo de los Muertos",
+     "tipo": "album",
+     "fecha": "2022-04-22",
+     "url": "https://open.spotify.com/album/5fUTwfrGt7NDBPtY2fDVMQ",
+     "uri": "spotify:album:5fUTwfrGt7NDBPtY2fDVMQ",
+     "total_tracks": 16
+    },
+    {
+     "titulo": "Juglar",
+     "tipo": "album",
+     "fecha": "2020-09-04",
+     "url": "https://open.spotify.com/album/76ymXDax8G5PeJGwWZQQ8u",
+     "uri": "spotify:album:76ymXDax8G5PeJGwWZQQ8u",
+     "total_tracks": 11
+    },
+    {
+     "titulo": "Bertie Bott",
+     "tipo": "single",
+     "fecha": "2026-05-08",
+     "url": "https://open.spotify.com/album/2Sl0ma7EKDuNcRcfx3PrtU",
+     "uri": "spotify:album:2Sl0ma7EKDuNcRcfx3PrtU",
+     "total_tracks": 1
+    },
+    {
+     "titulo": "Ritualis",
+     "tipo": "single",
+     "fecha": "2026-01-09",
+     "url": "https://open.spotify.com/album/6FEy4Q1s0gZwcWTUK5kuPZ",
+     "uri": "spotify:album:6FEy4Q1s0gZwcWTUK5kuPZ",
+     "total_tracks": 1
+    },
+    {
+     "titulo": "El Callejón del Beso",
+     "tipo": "single",
+     "fecha": "2025-05-27",
+     "url": "https://open.spotify.com/album/514JODcx9XhTJYIah5n86x",
+     "uri": "spotify:album:514JODcx9XhTJYIah5n86x",
+     "total_tracks": 1
+    },
+    {
+     "titulo": "Festival Trovador",
+     "tipo": "single",
+     "fecha": "2025-01-06",
+     "url": "https://open.spotify.com/album/4f2QjnGHprV0DAQLbBjtSJ",
+     "uri": "spotify:album:4f2QjnGHprV0DAQLbBjtSJ",
+     "total_tracks": 1
+    },
+    {
+     "titulo": "¡Corred, insensatos!",
+     "tipo": "single",
+     "fecha": "2024-01-05",
+     "url": "https://open.spotify.com/album/6FvIVSRzo4PAm3PuRdVGjv",
+     "uri": "spotify:album:6FvIVSRzo4PAm3PuRdVGjv",
+     "total_tracks": 1
+    },
+    {
+     "titulo": "Mi Hogar",
+     "tipo": "single",
+     "fecha": "2023-12-15",
+     "url": "https://open.spotify.com/album/5V9Yh2SfLWYoN0GHEKa6Ps",
+     "uri": "spotify:album:5V9Yh2SfLWYoN0GHEKa6Ps",
+     "total_tracks": 1
+    },
+    {
+     "titulo": "Una Aventura Inesperada",
+     "tipo": "single",
+     "fecha": "2023-11-17",
+     "url": "https://open.spotify.com/album/3td5KV3ZUDAdHYdgJq3Uqd",
+     "uri": "spotify:album:3td5KV3ZUDAdHYdgJq3Uqd",
+     "total_tracks": 1
+    },
+    {
+     "titulo": "La Última Función",
+     "tipo": "single",
+     "fecha": "2023-01-05",
+     "url": "https://open.spotify.com/album/33dxDMrL1Y8q5KiQlSoESD",
+     "uri": "spotify:album:33dxDMrL1Y8q5KiQlSoESD",
+     "total_tracks": 1
+    },
+    {
+     "titulo": "La Contorsionista",
+     "tipo": "single",
+     "fecha": "2022-03-25",
+     "url": "https://open.spotify.com/album/0Aw1C6WOGJRjthOwrEMfSG",
+     "uri": "spotify:album:0Aw1C6WOGJRjthOwrEMfSG",
+     "total_tracks": 1
+    },
+    {
+     "titulo": "La Fiesta de los Espíritus",
+     "tipo": "single",
+     "fecha": "2022-03-04",
+     "url": "https://open.spotify.com/album/3KtLFhcjFfMQRIwfGWiyDu",
+     "uri": "spotify:album:3KtLFhcjFfMQRIwfGWiyDu",
+     "total_tracks": 1
+    },
+    {
+     "titulo": "¡Que Empiece la Función!",
+     "tipo": "single",
+     "fecha": "2022-01-07",
+     "url": "https://open.spotify.com/album/46umpUq8MrT2zgQGL0t4Ys",
+     "uri": "spotify:album:46umpUq8MrT2zgQGL0t4Ys",
+     "total_tracks": 1
+    },
+    {
+     "titulo": "El Brebaje",
+     "tipo": "single",
+     "fecha": "2021-09-03",
+     "url": "https://open.spotify.com/album/3X16osNzpscfNxiN0es3JV",
+     "uri": "spotify:album:3X16osNzpscfNxiN0es3JV",
+     "total_tracks": 1
+    },
+    {
+     "titulo": "¡Derry Dol!",
+     "tipo": "single",
+     "fecha": "2021-01-28",
+     "url": "https://open.spotify.com/album/6mpT2Zoi3vVNFAfynYzzVR",
+     "uri": "spotify:album:6mpT2Zoi3vVNFAfynYzzVR",
+     "total_tracks": 1
+    },
+    {
+     "titulo": "La Biblioteca Imaginaria",
+     "tipo": "single",
+     "fecha": "2020-04-06",
+     "url": "https://open.spotify.com/album/3EdAotuCjc1RpiXj3MZR15",
+     "uri": "spotify:album:3EdAotuCjc1RpiXj3MZR15",
+     "total_tracks": 1
+    },
+    {
+     "titulo": "La Posada de León",
+     "tipo": "single",
+     "fecha": "2020-02-13",
+     "url": "https://open.spotify.com/album/27JLMzzKK2ETEOGa1XdFYS",
+     "uri": "spotify:album:27JLMzzKK2ETEOGa1XdFYS",
+     "total_tracks": 1
+    },
+    {
+     "titulo": "Magia e Ilusión",
+     "tipo": "single",
+     "fecha": "2020-02-07",
+     "url": "https://open.spotify.com/album/1jLFUOsnoO9Ha5R2yWtrT3",
+     "uri": "spotify:album:1jLFUOsnoO9Ha5R2yWtrT3",
+     "total_tracks": 1
+    },
+    {
+     "titulo": "Cuenta la Historia",
+     "tipo": "single",
+     "fecha": "2019-01-04",
+     "url": "https://open.spotify.com/album/5mOu3YOKy4JNBkNOzFrSN1",
+     "uri": "spotify:album:5mOu3YOKy4JNBkNOzFrSN1",
+     "total_tracks": 1
+    },
+    {
+     "titulo": "Magia",
+     "tipo": "single",
+     "fecha": "2018-11-01",
+     "url": "https://open.spotify.com/album/55C36LpSPBh7cwQ1tteYzn",
+     "uri": "spotify:album:55C36LpSPBh7cwQ1tteYzn",
+     "total_tracks": 6
+    }
+   ],
+   "spotify_tracks_album_principal": [
+    {
+     "titulo": "Veryandë ar Nyarnáva",
+     "numero": 1,
+     "duracion_ms": 92437,
+     "url": "https://open.spotify.com/track/6SesAyZHQhMeLpE0jUE9EP",
+     "uri": "spotify:track:6SesAyZHQhMeLpE0jUE9EP"
+    },
+    {
+     "titulo": "La Colina",
+     "numero": 2,
+     "duracion_ms": 162562,
+     "url": "https://open.spotify.com/track/2ZZd6J8BpiTLmyMD2jwYea",
+     "uri": "spotify:track:2ZZd6J8BpiTLmyMD2jwYea"
+    },
+    {
+     "titulo": "Una Aventura Inesperada",
+     "numero": 3,
+     "duracion_ms": 294187,
+     "url": "https://open.spotify.com/track/7bfnLU5RFGOW1QsljWk9vD",
+     "uri": "spotify:track:7bfnLU5RFGOW1QsljWk9vD"
+    },
+    {
+     "titulo": "Carnero Asado",
+     "numero": 4,
+     "duracion_ms": 229687,
+     "url": "https://open.spotify.com/track/2JtoaisT5qy0rLbUyE3oGy",
+     "uri": "spotify:track:2JtoaisT5qy0rLbUyE3oGy"
+    },
+    {
+     "titulo": "Rivendel",
+     "numero": 5,
+     "duracion_ms": 290250,
+     "url": "https://open.spotify.com/track/5dyKi55DKH7dYwgWvbU6OH",
+     "uri": "spotify:track:5dyKi55DKH7dYwgWvbU6OH"
+    },
+    {
+     "titulo": "Mi Hogar",
+     "numero": 6,
+     "duracion_ms": 220874,
+     "url": "https://open.spotify.com/track/05hT3n19gBwLFlZLxV7VLN",
+     "uri": "spotify:track:05hT3n19gBwLFlZLxV7VLN"
+    },
+    {
+     "titulo": "La Ciudad de los Trasgos",
+     "numero": 7,
+     "duracion_ms": 263250,
+     "url": "https://open.spotify.com/track/2gzrf7UCoXMyc9277jC2HK",
+     "uri": "spotify:track:2gzrf7UCoXMyc9277jC2HK"
+    },
+    {
+     "titulo": "Acertijos en las Tinieblas",
+     "numero": 8,
+     "duracion_ms": 270750,
+     "url": "https://open.spotify.com/track/2Ia5MOJaBJp34cf6aCzrwx",
+     "uri": "spotify:track:2Ia5MOJaBJp34cf6aCzrwx"
+    },
+    {
+     "titulo": "¡Corred, insensatos!",
+     "numero": 9,
+     "duracion_ms": 214124,
+     "url": "https://open.spotify.com/track/3dWeezyhEAlX1kV7QqoYiN",
+     "uri": "spotify:track:3dWeezyhEAlX1kV7QqoYiN"
+    },
+    {
+     "titulo": "Beorn",
+     "numero": 10,
+     "duracion_ms": 247124,
+     "url": "https://open.spotify.com/track/31xYejd2G7PTk9MoTxdypw",
+     "uri": "spotify:track:31xYejd2G7PTk9MoTxdypw"
+    }
+   ],
+   "spotify_fecha": "2026-08-04"
+  }
  },
  "Kaelis": {
   "origen": "Spain",
@@ -1083,7 +3204,167 @@
     "fecha": "2026-07",
     "texto": "Marcha de Álvaro después de «Stellar Waves» (prensa)."
    }
-  ]
+  ],
+  "metricas": {
+   "spotify_popularity": 0,
+   "spotify_artist_id": "71ySKm4I4qTfl7b15YqFuR",
+   "spotify_uri": "spotify:artist:71ySKm4I4qTfl7b15YqFuR",
+   "spotify_discografia": [
+    {
+     "titulo": "Stellar Waves",
+     "tipo": "album",
+     "fecha": "2026-04-09",
+     "url": "https://open.spotify.com/album/5JXOa6ynaIV3bBKkYanPQz",
+     "uri": "spotify:album:5JXOa6ynaIV3bBKkYanPQz",
+     "total_tracks": 11
+    },
+    {
+     "titulo": "Dark Shadows of Ulderion",
+     "tipo": "single",
+     "fecha": "2026-03-26",
+     "url": "https://open.spotify.com/album/3UJWkBxv6eHFBoeniHh1lw",
+     "uri": "spotify:album:3UJWkBxv6eHFBoeniHh1lw",
+     "total_tracks": 4
+    },
+    {
+     "titulo": "Strength of Sianark",
+     "tipo": "single",
+     "fecha": "2025-05-18",
+     "url": "https://open.spotify.com/album/12ybTt9DR74Au1YoMMwqXd",
+     "uri": "spotify:album:12ybTt9DR74Au1YoMMwqXd",
+     "total_tracks": 1
+    },
+    {
+     "titulo": "Omen",
+     "tipo": "single",
+     "fecha": "2024-12-05",
+     "url": "https://open.spotify.com/album/4E4o6mtgztcQrDm8TYKRYV",
+     "uri": "spotify:album:4E4o6mtgztcQrDm8TYKRYV",
+     "total_tracks": 1
+    },
+    {
+     "titulo": "Rising Empire",
+     "tipo": "single",
+     "fecha": "2024-06-26",
+     "url": "https://open.spotify.com/album/0OBrtddrz3BZQhplluGriL",
+     "uri": "spotify:album:0OBrtddrz3BZQhplluGriL",
+     "total_tracks": 1
+    },
+    {
+     "titulo": "Euphoria",
+     "tipo": "single",
+     "fecha": "2023-03-02",
+     "url": "https://open.spotify.com/album/1Eo5mjup8h02yr85QPpLCv",
+     "uri": "spotify:album:1Eo5mjup8h02yr85QPpLCv",
+     "total_tracks": 1
+    },
+    {
+     "titulo": "Salvation (Live Acoustic)",
+     "tipo": "single",
+     "fecha": "2022-10-07",
+     "url": "https://open.spotify.com/album/7nhlpRm1TcXbIiZxdsAJuV",
+     "uri": "spotify:album:7nhlpRm1TcXbIiZxdsAJuV",
+     "total_tracks": 1
+    },
+    {
+     "titulo": "Far Galaxy (Acoustic)",
+     "tipo": "single",
+     "fecha": "2022-01-07",
+     "url": "https://open.spotify.com/album/2zFXkdM84vpmg2pubeb5eI",
+     "uri": "spotify:album:2zFXkdM84vpmg2pubeb5eI",
+     "total_tracks": 1
+    },
+    {
+     "titulo": "Far Galaxy",
+     "tipo": "single",
+     "fecha": "2021-10-18",
+     "url": "https://open.spotify.com/album/2AHdOIHTDU0W1btcS2M8UT",
+     "uri": "spotify:album:2AHdOIHTDU0W1btcS2M8UT",
+     "total_tracks": 6
+    },
+    {
+     "titulo": "Salvation",
+     "tipo": "single",
+     "fecha": "2021-10-06",
+     "url": "https://open.spotify.com/album/7ARqkcyjCYcU6GJYjenHZ9",
+     "uri": "spotify:album:7ARqkcyjCYcU6GJYjenHZ9",
+     "total_tracks": 1
+    }
+   ],
+   "spotify_tracks_album_principal": [
+    {
+     "titulo": "Intro · Stellar Waves",
+     "numero": 1,
+     "duracion_ms": 145000,
+     "url": "https://open.spotify.com/track/5nau25rfwPpyFNZaxY0zIn",
+     "uri": "spotify:track:5nau25rfwPpyFNZaxY0zIn"
+    },
+    {
+     "titulo": "Rising Empire",
+     "numero": 2,
+     "duracion_ms": 290374,
+     "url": "https://open.spotify.com/track/32UIf3BjCOimXgaGSg5Clw",
+     "uri": "spotify:track:32UIf3BjCOimXgaGSg5Clw"
+    },
+    {
+     "titulo": "Dark Shadows of Ulderion",
+     "numero": 3,
+     "duracion_ms": 186092,
+     "url": "https://open.spotify.com/track/5DYUN7Itc30iIKdpOaJdFa",
+     "uri": "spotify:track:5DYUN7Itc30iIKdpOaJdFa"
+    },
+    {
+     "titulo": "Strength of Sianark",
+     "numero": 4,
+     "duracion_ms": 226573,
+     "url": "https://open.spotify.com/track/5dKRbwrHQIpkWAp5gjVvi6",
+     "uri": "spotify:track:5dKRbwrHQIpkWAp5gjVvi6"
+    },
+    {
+     "titulo": "Atalaya",
+     "numero": 5,
+     "duracion_ms": 268105,
+     "url": "https://open.spotify.com/track/4cMC1kUH57Q4qahgA9c90F",
+     "uri": "spotify:track:4cMC1kUH57Q4qahgA9c90F"
+    },
+    {
+     "titulo": "Omen",
+     "numero": 6,
+     "duracion_ms": 258604,
+     "url": "https://open.spotify.com/track/2wBCNOkYYArYwXJMbEayks",
+     "uri": "spotify:track:2wBCNOkYYArYwXJMbEayks"
+    },
+    {
+     "titulo": "From the Ashes · Phoenix",
+     "numero": 7,
+     "duracion_ms": 308000,
+     "url": "https://open.spotify.com/track/7DdEcjSR2PWBxr3amtANfH",
+     "uri": "spotify:track:7DdEcjSR2PWBxr3amtANfH"
+    },
+    {
+     "titulo": "Under Cosmos Siege",
+     "numero": 8,
+     "duracion_ms": 333276,
+     "url": "https://open.spotify.com/track/2d5fhtme9cJQAJPQOmkFip",
+     "uri": "spotify:track:2d5fhtme9cJQAJPQOmkFip"
+    },
+    {
+     "titulo": "Across the Fire",
+     "numero": 9,
+     "duracion_ms": 279571,
+     "url": "https://open.spotify.com/track/5hpbF5UPBCqYXcg81366yb",
+     "uri": "spotify:track:5hpbF5UPBCqYXcg81366yb"
+    },
+    {
+     "titulo": "Oscillations",
+     "numero": 10,
+     "duracion_ms": 259175,
+     "url": "https://open.spotify.com/track/3vMqc4c1ncXTvkmze4fJIY",
+     "uri": "spotify:track:3vMqc4c1ncXTvkmze4fJIY"
+    }
+   ],
+   "spotify_fecha": "2026-08-04"
+  }
  },
  "Khëlleden": {
   "origen": "Alicante",
@@ -1149,7 +3430,151 @@
     "nota": ""
    }
   ],
-  "hitos": []
+  "hitos": [],
+  "metricas": {
+   "spotify_popularity": 0,
+   "spotify_artist_id": "6pW5OG6TyvFIE5uqHr0WzZ",
+   "spotify_uri": "spotify:artist:6pW5OG6TyvFIE5uqHr0WzZ",
+   "spotify_discografia": [
+    {
+     "titulo": "Entre Pitos Y Flautas",
+     "tipo": "album",
+     "fecha": "2026-05-13",
+     "url": "https://open.spotify.com/album/59ahP3P68HdWPoH7i8uXKW",
+     "uri": "spotify:album:59ahP3P68HdWPoH7i8uXKW",
+     "total_tracks": 10
+    },
+    {
+     "titulo": "Historias Para No Dormir",
+     "tipo": "album",
+     "fecha": "2023-05-13",
+     "url": "https://open.spotify.com/album/4FtZdHm42HmlWoMkidgUVH",
+     "uri": "spotify:album:4FtZdHm42HmlWoMkidgUVH",
+     "total_tracks": 10
+    },
+    {
+     "titulo": "Un Motivo",
+     "tipo": "single",
+     "fecha": "2026-02-12",
+     "url": "https://open.spotify.com/album/67E6i2ptRxon0U827eOTGx",
+     "uri": "spotify:album:67E6i2ptRxon0U827eOTGx",
+     "total_tracks": 1
+    },
+    {
+     "titulo": "Otra Más!",
+     "tipo": "single",
+     "fecha": "2025-09-25",
+     "url": "https://open.spotify.com/album/1XHSezTamfXN02txWsR8oe",
+     "uri": "spotify:album:1XHSezTamfXN02txWsR8oe",
+     "total_tracks": 1
+    },
+    {
+     "titulo": "No En Volem Cap (Que No Estiga Borratxo)",
+     "tipo": "single",
+     "fecha": "2025-03-08",
+     "url": "https://open.spotify.com/album/2Md6Q2laxhW2NbRi6DmcxW",
+     "uri": "spotify:album:2Md6Q2laxhW2NbRi6DmcxW",
+     "total_tracks": 1
+    },
+    {
+     "titulo": "Vente Conmigo (A Vivir)",
+     "tipo": "single",
+     "fecha": "2022-09-17",
+     "url": "https://open.spotify.com/album/1WEaLok9un0IPigWMx5F0j",
+     "uri": "spotify:album:1WEaLok9un0IPigWMx5F0j",
+     "total_tracks": 1
+    },
+    {
+     "titulo": "La Tierra Olvidada",
+     "tipo": "single",
+     "fecha": "2022-04-21",
+     "url": "https://open.spotify.com/album/0OSmlLGZFsFmMwR0BB6aC4",
+     "uri": "spotify:album:0OSmlLGZFsFmMwR0BB6aC4",
+     "total_tracks": 1
+    },
+    {
+     "titulo": "Canción De Galeras",
+     "tipo": "single",
+     "fecha": "2022-01-13",
+     "url": "https://open.spotify.com/album/3pknKfkuBxDYI6YxDbiYL2",
+     "uri": "spotify:album:3pknKfkuBxDYI6YxDbiYL2",
+     "total_tracks": 1
+    }
+   ],
+   "spotify_tracks_album_principal": [
+    {
+     "titulo": "Entre Pitos Y Flautas",
+     "numero": 1,
+     "duracion_ms": 244223,
+     "url": "https://open.spotify.com/track/6HTpdTJdACQyHGLeKm2Sls",
+     "uri": "spotify:track:6HTpdTJdACQyHGLeKm2Sls"
+    },
+    {
+     "titulo": "Brinda Con Esta...",
+     "numero": 2,
+     "duracion_ms": 281584,
+     "url": "https://open.spotify.com/track/4uqDGhmRaBvmUhFCgLor0T",
+     "uri": "spotify:track:4uqDGhmRaBvmUhFCgLor0T"
+    },
+    {
+     "titulo": "Salto Al Vacío",
+     "numero": 3,
+     "duracion_ms": 300593,
+     "url": "https://open.spotify.com/track/1c5FUS7PpOLfxJpAJxFyau",
+     "uri": "spotify:track:1c5FUS7PpOLfxJpAJxFyau"
+    },
+    {
+     "titulo": "Seré Tu Norte",
+     "numero": 4,
+     "duracion_ms": 257718,
+     "url": "https://open.spotify.com/track/5rgiBSdpjR4TBryDqyCIms",
+     "uri": "spotify:track:5rgiBSdpjR4TBryDqyCIms"
+    },
+    {
+     "titulo": "Tu Final",
+     "numero": 5,
+     "duracion_ms": 382854,
+     "url": "https://open.spotify.com/track/5BmxfozTjDKZcWSABtMCoT",
+     "uri": "spotify:track:5BmxfozTjDKZcWSABtMCoT"
+    },
+    {
+     "titulo": "No En Volem Cap (Que No Estiga Borratxo)",
+     "numero": 6,
+     "duracion_ms": 211809,
+     "url": "https://open.spotify.com/track/7sFZRBu03zcIFx8tQ5lFpj",
+     "uri": "spotify:track:7sFZRBu03zcIFx8tQ5lFpj"
+    },
+    {
+     "titulo": "Incompetencia Artificial",
+     "numero": 7,
+     "duracion_ms": 300551,
+     "url": "https://open.spotify.com/track/6lSXUZqruaPdUCCTLMUImw",
+     "uri": "spotify:track:6lSXUZqruaPdUCCTLMUImw"
+    },
+    {
+     "titulo": "Contracorrientes",
+     "numero": 8,
+     "duracion_ms": 382361,
+     "url": "https://open.spotify.com/track/4G1zQ2H0w6dGsbls63r9LD",
+     "uri": "spotify:track:4G1zQ2H0w6dGsbls63r9LD"
+    },
+    {
+     "titulo": "Un Motivo",
+     "numero": 9,
+     "duracion_ms": 358412,
+     "url": "https://open.spotify.com/track/6MCKAmaBrYeIZZQmhE7elt",
+     "uri": "spotify:track:6MCKAmaBrYeIZZQmhE7elt"
+    },
+    {
+     "titulo": "Otra Más!",
+     "numero": 10,
+     "duracion_ms": 263514,
+     "url": "https://open.spotify.com/track/00OjU6Bjt8Lrh1yZpwbC0P",
+     "uri": "spotify:track:00OjU6Bjt8Lrh1yZpwbC0P"
+    }
+   ],
+   "spotify_fecha": "2026-08-04"
+  }
  },
  "Kinnia": {
   "origen": "",
@@ -1164,7 +3589,135 @@
   "estudios": [],
   "fuentes": [],
   "discografia": [],
-  "hitos": []
+  "hitos": [],
+  "metricas": {
+   "spotify_popularity": 0,
+   "spotify_artist_id": "59mwPsBFIga7DewC7YhUIT",
+   "spotify_uri": "spotify:artist:59mwPsBFIga7DewC7YhUIT",
+   "spotify_discografia": [
+    {
+     "titulo": "Drink for the fallen",
+     "tipo": "album",
+     "fecha": "2021-01-01",
+     "url": "https://open.spotify.com/album/6xcDLJJfqLTZVGDo5XvvEW",
+     "uri": "spotify:album:6xcDLJJfqLTZVGDo5XvvEW",
+     "total_tracks": 10
+    },
+    {
+     "titulo": "Kinnia",
+     "tipo": "album",
+     "fecha": "2017-03-14",
+     "url": "https://open.spotify.com/album/5JwgTeGjc16dE2ylSObiYn",
+     "uri": "spotify:album:5JwgTeGjc16dE2ylSObiYn",
+     "total_tracks": 11
+    },
+    {
+     "titulo": "Ostara",
+     "tipo": "single",
+     "fecha": "2026-05-21",
+     "url": "https://open.spotify.com/album/0fgTLnsqlA7nR6qNMjLSSs",
+     "uri": "spotify:album:0fgTLnsqlA7nR6qNMjLSSs",
+     "total_tracks": 1
+    },
+    {
+     "titulo": "In Taberna",
+     "tipo": "single",
+     "fecha": "2026-02-04",
+     "url": "https://open.spotify.com/album/7IlkIS4agndBccX4VCPTOS",
+     "uri": "spotify:album:7IlkIS4agndBccX4VCPTOS",
+     "total_tracks": 1
+    },
+    {
+     "titulo": "Mar Negro",
+     "tipo": "single",
+     "fecha": "2025-12-10",
+     "url": "https://open.spotify.com/album/0Jt6fjKnfwa2pCAfZQjJ4K",
+     "uri": "spotify:album:0Jt6fjKnfwa2pCAfZQjJ4K",
+     "total_tracks": 2
+    },
+    {
+     "titulo": "La Danza Del Cuervo Negro",
+     "tipo": "single",
+     "fecha": "2025-10-02",
+     "url": "https://open.spotify.com/album/7CpMsMpDTSXHtG2GgL1nCB",
+     "uri": "spotify:album:7CpMsMpDTSXHtG2GgL1nCB",
+     "total_tracks": 1
+    }
+   ],
+   "spotify_tracks_album_principal": [
+    {
+     "titulo": "Drink for the fallen",
+     "numero": 1,
+     "duracion_ms": 226044,
+     "url": "https://open.spotify.com/track/0sBOcUqWuJDdcFOWq6IjHU",
+     "uri": "spotify:track:0sBOcUqWuJDdcFOWq6IjHU"
+    },
+    {
+     "titulo": "The road",
+     "numero": 2,
+     "duracion_ms": 214472,
+     "url": "https://open.spotify.com/track/0qsv2DXvNueZD8gccnTqRg",
+     "uri": "spotify:track:0qsv2DXvNueZD8gccnTqRg"
+    },
+    {
+     "titulo": "Grace O' Malley",
+     "numero": 3,
+     "duracion_ms": 273882,
+     "url": "https://open.spotify.com/track/1NV21roz8O06QwVBKjOyXl",
+     "uri": "spotify:track:1NV21roz8O06QwVBKjOyXl"
+    },
+    {
+     "titulo": "Gambling with the dwarves",
+     "numero": 4,
+     "duracion_ms": 243061,
+     "url": "https://open.spotify.com/track/2xj5QTQbe7P7v6wfZrFlWu",
+     "uri": "spotify:track:2xj5QTQbe7P7v6wfZrFlWu"
+    },
+    {
+     "titulo": "Wings of liberty",
+     "numero": 5,
+     "duracion_ms": 318703,
+     "url": "https://open.spotify.com/track/2FaWZ8ew5TaOq9sqwVJ3ug",
+     "uri": "spotify:track:2FaWZ8ew5TaOq9sqwVJ3ug"
+    },
+    {
+     "titulo": "Hypocras!",
+     "numero": 6,
+     "duracion_ms": 242808,
+     "url": "https://open.spotify.com/track/0dEhp8cPjV0DzI3OvWWdJO",
+     "uri": "spotify:track:0dEhp8cPjV0DzI3OvWWdJO"
+    },
+    {
+     "titulo": "The tower",
+     "numero": 7,
+     "duracion_ms": 248208,
+     "url": "https://open.spotify.com/track/270GjQwqJKEjFNdLVFIdp9",
+     "uri": "spotify:track:270GjQwqJKEjFNdLVFIdp9"
+    },
+    {
+     "titulo": "Las hogueras de San Juan",
+     "numero": 8,
+     "duracion_ms": 230622,
+     "url": "https://open.spotify.com/track/5VAFLAMEOCw0bu5D7AisKY",
+     "uri": "spotify:track:5VAFLAMEOCw0bu5D7AisKY"
+    },
+    {
+     "titulo": "The witch's compass",
+     "numero": 9,
+     "duracion_ms": 269023,
+     "url": "https://open.spotify.com/track/6UqXKeE7nmHzqKvdoOhA6g",
+     "uri": "spotify:track:6UqXKeE7nmHzqKvdoOhA6g"
+    },
+    {
+     "titulo": "Step it out Mary",
+     "numero": 10,
+     "duracion_ms": 233411,
+     "url": "https://open.spotify.com/track/0L0YpwINjBODs0nJNhUV2A",
+     "uri": "spotify:track:0L0YpwINjBODs0nJNhUV2A"
+    }
+   ],
+   "spotify_fecha": "2026-08-04"
+  }
  },
  "Legacy of the Seas": {
   "origen": "País Vasco",
@@ -1224,7 +3777,159 @@
     "nota": ""
    }
   ],
-  "hitos": []
+  "hitos": [],
+  "metricas": {
+   "spotify_popularity": 0,
+   "spotify_artist_id": "0VfU5iDeWVTKfvhyos3Sih",
+   "spotify_uri": "spotify:artist:0VfU5iDeWVTKfvhyos3Sih",
+   "spotify_discografia": [
+    {
+     "titulo": "Leyendas de una Eternidad",
+     "tipo": "album",
+     "fecha": "2024-10-04",
+     "url": "https://open.spotify.com/album/2f2fEmQkP6dBwOTNs47so9",
+     "uri": "spotify:album:2f2fEmQkP6dBwOTNs47so9",
+     "total_tracks": 11
+    },
+    {
+     "titulo": "El Regreso de los Dioses",
+     "tipo": "single",
+     "fecha": "2024-09-20",
+     "url": "https://open.spotify.com/album/5ToqyZRjeIH7ygImyBZHrs",
+     "uri": "spotify:album:5ToqyZRjeIH7ygImyBZHrs",
+     "total_tracks": 1
+    },
+    {
+     "titulo": "Proscrito",
+     "tipo": "single",
+     "fecha": "2024-08-16",
+     "url": "https://open.spotify.com/album/1uRe4tbBPxG1cTf20gpcE0",
+     "uri": "spotify:album:1uRe4tbBPxG1cTf20gpcE0",
+     "total_tracks": 1
+    },
+    {
+     "titulo": "Spirit of Ulia",
+     "tipo": "single",
+     "fecha": "2024-06-28",
+     "url": "https://open.spotify.com/album/6AcO3TmC1iItHc7UeA1ux9",
+     "uri": "spotify:album:6AcO3TmC1iItHc7UeA1ux9",
+     "total_tracks": 1
+    },
+    {
+     "titulo": "Nuestra Voz",
+     "tipo": "single",
+     "fecha": "2024-05-17",
+     "url": "https://open.spotify.com/album/2NM1UMsjKzkfCid6YkLTyh",
+     "uri": "spotify:album:2NM1UMsjKzkfCid6YkLTyh",
+     "total_tracks": 1
+    },
+    {
+     "titulo": "Eternidad",
+     "tipo": "single",
+     "fecha": "2023-06-08",
+     "url": "https://open.spotify.com/album/2OuwGQ0RESqKlUhbRBZr8K",
+     "uri": "spotify:album:2OuwGQ0RESqKlUhbRBZr8K",
+     "total_tracks": 5
+    },
+    {
+     "titulo": "The Forest of the Visigoth",
+     "tipo": "single",
+     "fecha": "2023-06-01",
+     "url": "https://open.spotify.com/album/6h7vqxMWa3jpd1vfgBic8J",
+     "uri": "spotify:album:6h7vqxMWa3jpd1vfgBic8J",
+     "total_tracks": 1
+    },
+    {
+     "titulo": "Eternidad (Demo)",
+     "tipo": "single",
+     "fecha": "2023-02-17",
+     "url": "https://open.spotify.com/album/4x1rKYbdFO6g8aMbQzWIHd",
+     "uri": "spotify:album:4x1rKYbdFO6g8aMbQzWIHd",
+     "total_tracks": 2
+    },
+    {
+     "titulo": "Ragnarok",
+     "tipo": "single",
+     "fecha": "2023-01-27",
+     "url": "https://open.spotify.com/album/0CF4YSESKvDAD6JybmNJ0C",
+     "uri": "spotify:album:0CF4YSESKvDAD6JybmNJ0C",
+     "total_tracks": 1
+    }
+   ],
+   "spotify_tracks_album_principal": [
+    {
+     "titulo": "El Rey de todo Mar",
+     "numero": 1,
+     "duracion_ms": 138200,
+     "url": "https://open.spotify.com/track/7m0XPakNLTPF4wqWvvpeO6",
+     "uri": "spotify:track:7m0XPakNLTPF4wqWvvpeO6"
+    },
+    {
+     "titulo": "Zarcanás, el Visigodo",
+     "numero": 2,
+     "duracion_ms": 372857,
+     "url": "https://open.spotify.com/track/1Qah81tfuNoP6WMepkLSeD",
+     "uri": "spotify:track:1Qah81tfuNoP6WMepkLSeD"
+    },
+    {
+     "titulo": "Nuestra Voz",
+     "numero": 3,
+     "duracion_ms": 335750,
+     "url": "https://open.spotify.com/track/2fxRd6L3diVeLUd3Jwd8KH",
+     "uri": "spotify:track:2fxRd6L3diVeLUd3Jwd8KH"
+    },
+    {
+     "titulo": "Spirit of Ulia",
+     "numero": 4,
+     "duracion_ms": 249506,
+     "url": "https://open.spotify.com/track/6RuPlVYXYmEUbcHCkYQljI",
+     "uri": "spotify:track:6RuPlVYXYmEUbcHCkYQljI"
+    },
+    {
+     "titulo": "Los Mares del ayer",
+     "numero": 5,
+     "duracion_ms": 294000,
+     "url": "https://open.spotify.com/track/3FBKmHaZY7K7lZKfhPkghj",
+     "uri": "spotify:track:3FBKmHaZY7K7lZKfhPkghj"
+    },
+    {
+     "titulo": "Proscrito",
+     "numero": 6,
+     "duracion_ms": 330750,
+     "url": "https://open.spotify.com/track/1FCSyEGzN9QOc8Gpi3hpEZ",
+     "uri": "spotify:track:1FCSyEGzN9QOc8Gpi3hpEZ"
+    },
+    {
+     "titulo": "The Forest of the Visigoth",
+     "numero": 7,
+     "duracion_ms": 244000,
+     "url": "https://open.spotify.com/track/58ORlrCFdiZNvvL0sCwyUS",
+     "uri": "spotify:track:58ORlrCFdiZNvvL0sCwyUS"
+    },
+    {
+     "titulo": "El Regreso de los Dioses",
+     "numero": 8,
+     "duracion_ms": 330506,
+     "url": "https://open.spotify.com/track/6SB5u0fGx9MoATPvwUaXg3",
+     "uri": "spotify:track:6SB5u0fGx9MoATPvwUaXg3"
+    },
+    {
+     "titulo": "Ragnarok",
+     "numero": 9,
+     "duracion_ms": 353253,
+     "url": "https://open.spotify.com/track/0oDhhQqvvy2a3LXFQNZCcd",
+     "uri": "spotify:track:0oDhhQqvvy2a3LXFQNZCcd"
+    },
+    {
+     "titulo": "La Noche de las Ánimas",
+     "numero": 10,
+     "duracion_ms": 398506,
+     "url": "https://open.spotify.com/track/4dRGPBPSnfdiQFzeB56TqM",
+     "uri": "spotify:track:4dRGPBPSnfdiQFzeB56TqM"
+    }
+   ],
+   "spotify_fecha": "2026-08-04"
+  }
  },
  "Leyendärian": {
   "origen": "Barcelona",
@@ -1247,7 +3952,183 @@
     "nota": "17 enero 2025, 11 tracks."
    }
   ],
-  "hitos": []
+  "hitos": [],
+  "metricas": {
+   "spotify_popularity": 0,
+   "spotify_artist_id": "7pz5YwBD7VLi8WOUEl8OQl",
+   "spotify_uri": "spotify:artist:7pz5YwBD7VLi8WOUEl8OQl",
+   "spotify_discografia": [
+    {
+     "titulo": "La Forja de una Leyenda",
+     "tipo": "album",
+     "fecha": "2025-01-17",
+     "url": "https://open.spotify.com/album/47VYiPJXiGtJZaRSEGCXQS",
+     "uri": "spotify:album:47VYiPJXiGtJZaRSEGCXQS",
+     "total_tracks": 11
+    },
+    {
+     "titulo": "Juntas para Luchar",
+     "tipo": "single",
+     "fecha": "2025-05-09",
+     "url": "https://open.spotify.com/album/3CKJ9sZuyJP73o8VnhEBbC",
+     "uri": "spotify:album:3CKJ9sZuyJP73o8VnhEBbC",
+     "total_tracks": 1
+    },
+    {
+     "titulo": "Juramento Eterno",
+     "tipo": "single",
+     "fecha": "2024-12-17",
+     "url": "https://open.spotify.com/album/11hDybJgizUwJ9dl2jlb4i",
+     "uri": "spotify:album:11hDybJgizUwJ9dl2jlb4i",
+     "total_tracks": 1
+    },
+    {
+     "titulo": "Nimué",
+     "tipo": "single",
+     "fecha": "2024-06-13",
+     "url": "https://open.spotify.com/album/5gxNYQTbM6oMvjbB4a879h",
+     "uri": "spotify:album:5gxNYQTbM6oMvjbB4a879h",
+     "total_tracks": 1
+    },
+    {
+     "titulo": "La Profecía",
+     "tipo": "single",
+     "fecha": "2024-06-12",
+     "url": "https://open.spotify.com/album/5wA7y2s7rbkb9nYCL610Fl",
+     "uri": "spotify:album:5wA7y2s7rbkb9nYCL610Fl",
+     "total_tracks": 1
+    },
+    {
+     "titulo": "Una Confesión",
+     "tipo": "single",
+     "fecha": "2024-05-16",
+     "url": "https://open.spotify.com/album/48tDt6sfpRlYKvANsgcapv",
+     "uri": "spotify:album:48tDt6sfpRlYKvANsgcapv",
+     "total_tracks": 1
+    },
+    {
+     "titulo": "Guerreros Del Rey",
+     "tipo": "single",
+     "fecha": "2024-04-25",
+     "url": "https://open.spotify.com/album/2D5uMzdqIdOYEJKUBSHrCw",
+     "uri": "spotify:album:2D5uMzdqIdOYEJKUBSHrCw",
+     "total_tracks": 1
+    },
+    {
+     "titulo": "Un Sueño Irreal",
+     "tipo": "single",
+     "fecha": "2024-04-04",
+     "url": "https://open.spotify.com/album/1RlX2GLbO9JtaYimPG4Ozl",
+     "uri": "spotify:album:1RlX2GLbO9JtaYimPG4Ozl",
+     "total_tracks": 1
+    },
+    {
+     "titulo": "Caballero Blanco",
+     "tipo": "single",
+     "fecha": "2024-03-15",
+     "url": "https://open.spotify.com/album/3MbNaenUtB2cNy52itwVIT",
+     "uri": "spotify:album:3MbNaenUtB2cNy52itwVIT",
+     "total_tracks": 1
+    },
+    {
+     "titulo": "Epona",
+     "tipo": "single",
+     "fecha": "2024-02-15",
+     "url": "https://open.spotify.com/album/1gaLAgQyyDD4HRaZpBpVKm",
+     "uri": "spotify:album:1gaLAgQyyDD4HRaZpBpVKm",
+     "total_tracks": 1
+    },
+    {
+     "titulo": "Lujuria y Obsesión",
+     "tipo": "single",
+     "fecha": "2024-01-18",
+     "url": "https://open.spotify.com/album/2eAdhrduIC3Uhlw7EAWVEN",
+     "uri": "spotify:album:2eAdhrduIC3Uhlw7EAWVEN",
+     "total_tracks": 1
+    },
+    {
+     "titulo": "El Hijo Del Pendragón",
+     "tipo": "single",
+     "fecha": "2024-01-09",
+     "url": "https://open.spotify.com/album/4UEx0WQKy6ibjcCbFE0JPv",
+     "uri": "spotify:album:4UEx0WQKy6ibjcCbFE0JPv",
+     "total_tracks": 1
+    }
+   ],
+   "spotify_tracks_album_principal": [
+    {
+     "titulo": "La Profecía",
+     "numero": 1,
+     "duracion_ms": 164874,
+     "url": "https://open.spotify.com/track/12dM9Wu1SFEnlBIeSgYSv9",
+     "uri": "spotify:track:12dM9Wu1SFEnlBIeSgYSv9"
+    },
+    {
+     "titulo": "Nimué",
+     "numero": 2,
+     "duracion_ms": 297285,
+     "url": "https://open.spotify.com/track/5xejCYba1KbmOZgE9zKthU",
+     "uri": "spotify:track:5xejCYba1KbmOZgE9zKthU"
+    },
+    {
+     "titulo": "La Forja de una Leyenda",
+     "numero": 3,
+     "duracion_ms": 253875,
+     "url": "https://open.spotify.com/track/4ujc2uqQXx9iiQF7AXdk1R",
+     "uri": "spotify:track:4ujc2uqQXx9iiQF7AXdk1R"
+    },
+    {
+     "titulo": "Lujuria y Obsesión",
+     "numero": 4,
+     "duracion_ms": 206991,
+     "url": "https://open.spotify.com/track/1K6ETAd1QR6C8VX7st9BNj",
+     "uri": "spotify:track:1K6ETAd1QR6C8VX7st9BNj"
+    },
+    {
+     "titulo": "El Hijo Del Pendragón",
+     "numero": 5,
+     "duracion_ms": 247055,
+     "url": "https://open.spotify.com/track/6BzhbvfuqzFQTy58MtuLKi",
+     "uri": "spotify:track:6BzhbvfuqzFQTy58MtuLKi"
+    },
+    {
+     "titulo": "Caballero Blanco",
+     "numero": 6,
+     "duracion_ms": 346562,
+     "url": "https://open.spotify.com/track/1YKZ6q5dm8PFA4q33r6yJr",
+     "uri": "spotify:track:1YKZ6q5dm8PFA4q33r6yJr"
+    },
+    {
+     "titulo": "Juramento Eterno",
+     "numero": 7,
+     "duracion_ms": 296375,
+     "url": "https://open.spotify.com/track/2lj9K2repfe9endLuahxQa",
+     "uri": "spotify:track:2lj9K2repfe9endLuahxQa"
+    },
+    {
+     "titulo": "Guerreros Del Rey",
+     "numero": 8,
+     "duracion_ms": 249776,
+     "url": "https://open.spotify.com/track/74VjRWvj4RhDqfb2JJtt2e",
+     "uri": "spotify:track:74VjRWvj4RhDqfb2JJtt2e"
+    },
+    {
+     "titulo": "Una Confesión",
+     "numero": 9,
+     "duracion_ms": 300755,
+     "url": "https://open.spotify.com/track/14SkFJ7c2801QH3LRo6lRQ",
+     "uri": "spotify:track:14SkFJ7c2801QH3LRo6lRQ"
+    },
+    {
+     "titulo": "Epona",
+     "numero": 10,
+     "duracion_ms": 218000,
+     "url": "https://open.spotify.com/track/2MlsktmGe7yUBkF72hzi7s",
+     "uri": "spotify:track:2MlsktmGe7yUBkF72hzi7s"
+    }
+   ],
+   "spotify_fecha": "2026-08-04"
+  }
  },
  "Lándevir": {
   "origen": "Elda, Alicante",
@@ -1349,7 +4230,12 @@
     "fecha": "2026",
     "texto": "Gira conjunta con Ars Amandi; confirmados en Leyendas del Rock 2026."
    }
-  ]
+  ],
+  "metricas": {
+   "spotify_popularity": 0,
+   "spotify_artist_id": "2f5bOwDkeAjsSE91O0tdqb",
+   "spotify_uri": "spotify:artist:2f5bOwDkeAjsSE91O0tdqb"
+  }
  },
  "Lèpoka": {
   "origen": "Castellón",
@@ -1462,7 +4348,12 @@
     "fecha": "2026",
     "texto": "Fichaje por Calaverita Records."
    }
-  ]
+  ],
+  "metricas": {
+   "spotify_popularity": 0,
+   "spotify_artist_id": "1UM5OPJuE5dGDgyPSNSAqH",
+   "spotify_uri": "spotify:artist:1UM5OPJuE5dGDgyPSNSAqH"
+  }
  },
  "Mägo de Oz": {
   "origen": "Madrid",
@@ -1585,7 +4476,12 @@
     "fecha": "2023",
     "texto": "Salidas de Patricia Tapia y Zeta; consolidación de Xana Lavey."
    }
-  ]
+  ],
+  "metricas": {
+   "spotify_popularity": 0,
+   "spotify_artist_id": "5ZNxiPcbKgaNcBrERMpqeu",
+   "spotify_uri": "spotify:artist:5ZNxiPcbKgaNcBrERMpqeu"
+  }
  },
  "Nidhögg": {
   "origen": "Chiclana de la Frontera, Cádiz",
@@ -1618,7 +4514,12 @@
     "fecha": "2026",
     "texto": "Anuncio de retirada por motivos internos tras 10 años en los escenarios."
    }
-  ]
+  ],
+  "metricas": {
+   "spotify_popularity": 0,
+   "spotify_artist_id": "2q3EeCYfMLPGOz8WDS9dlk",
+   "spotify_uri": "spotify:artist:2q3EeCYfMLPGOz8WDS9dlk"
+  }
  },
  "Reino de Hades": {
   "origen": "Jaén, Andalucía",
@@ -1923,8 +4824,8 @@
    }
   ],
   "metricas": {
-   "spotify_oyentes_mes": "2.5K",
-   "spotify_oyentes_nota": "~2.5-2.8K oyentes/mes (ago 2026)",
+   "spotify_oyentes_mes": "1.8K",
+   "spotify_oyentes_nota": "1.776 oyentes/mes (scrape público, 2026-08-04)",
    "youtube_suscriptores": null,
    "youtube_nota": "Canal youtube.com/reinodehades (consent wall impide scrapear suscriptores)",
    "videoclips": [
@@ -1934,6 +4835,46 @@
      "visitas": "25K",
      "url": "https://www.youtube.com/watch?v=evMHJKRQKX0",
      "nota": "Primer adelanto del 4º disco; homenaje a la comunidad tras el incendio. Estreno en Maldito Records."
+    }
+   ],
+   "spotify_artist_id": "2cPuCPULrrKqi5guQ0Que7",
+   "spotify_uri": "spotify:artist:2cPuCPULrrKqi5guQ0Que7",
+   "spotify_oyentes_exacto": 1776,
+   "spotify_top_tracks": [
+    {
+     "titulo": "Sueños Perdidos",
+     "playcount": 147948,
+     "duracion": "3:46",
+     "album": "Mester de Juglaría",
+     "url": "https://open.spotify.com/track/5MdcrGpIyGtXtGeGQUICKW"
+    },
+    {
+     "titulo": "Barbanegra",
+     "playcount": 135313,
+     "duracion": "6:39",
+     "album": "Reflejos del Caos",
+     "url": "https://open.spotify.com/search/Barbanegra%20Reino%20de%20Hades"
+    },
+    {
+     "titulo": "La Orden de Calatrava",
+     "playcount": 7759,
+     "duracion": "4:52",
+     "album": "Siete Runas",
+     "url": "https://open.spotify.com/search/La%20Orden%20de%20Calatrava%20Reino"
+    },
+    {
+     "titulo": "Barbanegra - Radio Edit",
+     "playcount": 19916,
+     "duracion": "5:12",
+     "album": "Reflejos del Caos",
+     "url": "https://open.spotify.com/search/Barbanegra%20Radio%20Edit"
+    },
+    {
+     "titulo": "A Través de Ti",
+     "playcount": 11692,
+     "duracion": "4:55",
+     "album": "Reflejos del Caos",
+     "url": "https://open.spotify.com/search/A%20Trav%C3%A9s%20de%20Ti%20Reino"
     }
    ]
   },
@@ -2110,7 +5051,12 @@
     "nota": ""
    }
   ],
-  "hitos": []
+  "hitos": [],
+  "metricas": {
+   "spotify_popularity": 0,
+   "spotify_artist_id": "5bdznkD4EBn0jQk2PYlmSM",
+   "spotify_uri": "spotify:artist:5bdznkD4EBn0jQk2PYlmSM"
+  }
  },
  "Saurom": {
   "origen": "San Fernando, Cádiz",
@@ -2229,7 +5175,12 @@
     "fecha": "2026-07",
     "texto": "Saurom y Ronnie Romero lideran la sexta edición del Molina Rock City."
    }
-  ]
+  ],
+  "metricas": {
+   "spotify_popularity": 0,
+   "spotify_artist_id": "4B2Iosqk1yAbGbx08My1fM",
+   "spotify_uri": "spotify:artist:4B2Iosqk1yAbGbx08My1fM"
+  }
  },
  "Sovengar": {
   "origen": "España",
@@ -2295,7 +5246,12 @@
     "nota": ""
    }
   ],
-  "hitos": []
+  "hitos": [],
+  "metricas": {
+   "spotify_popularity": 0,
+   "spotify_artist_id": "4oNNjwTRGvOmrGCkS9N94L",
+   "spotify_uri": "spotify:artist:4oNNjwTRGvOmrGCkS9N94L"
+  }
  },
  "Triskel": {
   "origen": "Cartagena, Murcia",
@@ -2331,7 +5287,12 @@
     "nota": ""
    }
   ],
-  "hitos": []
+  "hitos": [],
+  "metricas": {
+   "spotify_popularity": 0,
+   "spotify_artist_id": "6JBTLlRtcch06CANcHJkbm",
+   "spotify_uri": "spotify:artist:6JBTLlRtcch06CANcHJkbm"
+  }
  },
  "Trovadorum": {
   "origen": "Cuenca",
@@ -2357,7 +5318,12 @@
     "nota": ""
    }
   ],
-  "hitos": []
+  "hitos": [],
+  "metricas": {
+   "spotify_popularity": 0,
+   "spotify_artist_id": "3SgqFadsQhm2y8s5Qmfswb",
+   "spotify_uri": "spotify:artist:3SgqFadsQhm2y8s5Qmfswb"
+  }
  },
  "Xeria": {
   "origen": "Spain",
@@ -2417,6 +5383,11 @@
     "nota": ""
    }
   ],
-  "hitos": []
+  "hitos": [],
+  "metricas": {
+   "spotify_popularity": 0,
+   "spotify_artist_id": "5hTV8XezsBODo80XjKudQx",
+   "spotify_uri": "spotify:artist:5hTV8XezsBODo80XjKudQx"
+  }
  }
 }

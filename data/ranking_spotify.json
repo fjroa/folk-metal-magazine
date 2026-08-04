@@ -1,0 +1,514 @@
+[
+ {
+  "name": "Mägo de Oz",
+  "id": "5ZNxiPcbKgaNcBrERMpqeu",
+  "query": "Mägo de Oz",
+  "listeners": "3.8M",
+  "en_plantilla": true,
+  "valor": 3800000.0
+ },
+ {
+  "name": "Saurom",
+  "id": "4B2Iosqk1yAbGbx08My1fM",
+  "query": "Saurom",
+  "listeners": "264.7K",
+  "en_plantilla": true,
+  "valor": 264700.0
+ },
+ {
+  "name": "Salduie",
+  "id": "5bdznkD4EBn0jQk2PYlmSM",
+  "query": "Salduie",
+  "listeners": "139.6K",
+  "en_plantilla": true,
+  "valor": 139600.0
+ },
+ {
+  "name": "Celtian",
+  "id": "0VpsiJTEi0fQsp0SEekO2K",
+  "query": "Celtian",
+  "listeners": "132.8K",
+  "en_plantilla": true,
+  "valor": 132800.0
+ },
+ {
+  "name": "Lèpoka",
+  "id": "1UM5OPJuE5dGDgyPSNSAqH",
+  "query": "Lèpoka",
+  "listeners": "94.5K",
+  "en_plantilla": true,
+  "valor": 94500.0
+ },
+ {
+  "name": "Debler",
+  "id": "0q62AwUaXIWWFrQEP7LzLF",
+  "query": "Debler",
+  "listeners": "77.4K",
+  "en_plantilla": true,
+  "valor": 77400.0
+ },
+ {
+  "name": "Dark Moor",
+  "id": "0YWKRTzA4kBceGwjywtMkh",
+  "query": "Dark Moor",
+  "listeners": "70.4K",
+  "en_plantilla": true,
+  "valor": 70400.0
+ },
+ {
+  "name": "Ekyrian",
+  "id": "2dvmZsGsIxDiiZPrEfksbb",
+  "query": "Ekyrian",
+  "listeners": "39.5K",
+  "en_plantilla": true,
+  "valor": 39500.0
+ },
+ {
+  "name": "XERIA",
+  "id": "0qqry49HR1XCCzn7NFHzMN",
+  "query": "Xeria",
+  "listeners": "35K",
+  "en_plantilla": true,
+  "valor": 35000.0
+ },
+ {
+  "name": "Dünedain",
+  "id": "02aqpDfp52Ww8mXwbw90uU",
+  "query": "Dünedain",
+  "listeners": "33.6K",
+  "en_plantilla": true,
+  "valor": 33600.0
+ },
+ {
+  "name": "El Reno Renardo",
+  "id": "61sCtal02aLMyfxG9bA6yZ",
+  "query": "El Reno Renardo",
+  "listeners": "27.8K",
+  "en_plantilla": true,
+  "valor": 27800.0
+ },
+ {
+  "name": "Hadadanza",
+  "id": "5Ur0OkWBfFLPAw4HPl6jcK",
+  "query": "Hadadanza",
+  "listeners": "22.1K",
+  "en_plantilla": true,
+  "valor": 22100.0
+ },
+ {
+  "name": "Daeria",
+  "id": "1Ohy5ahjQyXh0TTPH5WV3Y",
+  "query": "Daeria",
+  "listeners": "18.8K",
+  "en_plantilla": true,
+  "valor": 18800.0
+ },
+ {
+  "name": "Mägo de Oz",
+  "id": "7z42Rmc2Z2EMufIhkogIL4",
+  "query": "Mägo de Oz",
+  "listeners": "18.7K",
+  "en_plantilla": true,
+  "valor": 18700.0
+ },
+ {
+  "name": "Kaelis Ryven",
+  "id": "4te4vjM8OTB6n3u15QvtdD",
+  "query": "Kaelis",
+  "listeners": "18.4K",
+  "en_plantilla": true,
+  "valor": 18400.0
+ },
+ {
+  "name": "Debler Eternia",
+  "id": "0jZBqCceX0I9JTo0ZQJfL3",
+  "query": "Debler",
+  "listeners": "17.6K",
+  "en_plantilla": true,
+  "valor": 17600.0
+ },
+ {
+  "name": "Lándevir",
+  "id": "2f5bOwDkeAjsSE91O0tdqb",
+  "query": "Lándevir",
+  "listeners": "11.9K",
+  "en_plantilla": true,
+  "valor": 11900.0
+ },
+ {
+  "name": "Sovengar",
+  "id": "4oNNjwTRGvOmrGCkS9N94L",
+  "query": "Sovengar",
+  "listeners": "9K",
+  "en_plantilla": true,
+  "valor": 9000.0
+ },
+ {
+  "name": "Kinnia",
+  "id": "59mwPsBFIga7DewC7YhUIT",
+  "query": "Kinnia",
+  "listeners": "8.6K",
+  "en_plantilla": true,
+  "valor": 8600.0
+ },
+ {
+  "name": "Argion",
+  "id": "1K426ILjunbQImRUwpIDHl",
+  "query": "Argion",
+  "listeners": "8K",
+  "en_plantilla": true,
+  "valor": 8000.0
+ },
+ {
+  "name": "Finnway",
+  "id": "3LyyeK8fCDm4ymXMiP1XU9",
+  "query": "Finnway",
+  "listeners": "7.2K",
+  "en_plantilla": true,
+  "valor": 7200.0
+ },
+ {
+  "name": "The Triskells",
+  "id": "1uiqzfefpVp37OVMyrdTkM",
+  "query": "Triskel",
+  "listeners": "4.1K",
+  "en_plantilla": true,
+  "valor": 4100.0
+ },
+ {
+  "name": "Celtibeerian",
+  "id": "6DdV1uJJ5JHD22ad5MyFwk",
+  "query": "Celtibeerian",
+  "listeners": "3.5K",
+  "en_plantilla": true,
+  "valor": 3500.0
+ },
+ {
+  "name": "Saurom Lamderth",
+  "id": "0QeuYmqR1qDth2tUqBwPBO",
+  "query": "Saurom",
+  "listeners": "3.3K",
+  "en_plantilla": true,
+  "valor": 3300.0
+ },
+ {
+  "name": "Kaelis Virel",
+  "id": "7Cbopx8Yk6d4hVlaY9BZNX",
+  "query": "Kaelis",
+  "listeners": "2.9K",
+  "en_plantilla": true,
+  "valor": 2900.0
+ },
+ {
+  "name": "Xeria",
+  "id": "5hTV8XezsBODo80XjKudQx",
+  "query": "Xeria",
+  "listeners": "2.8K",
+  "en_plantilla": true,
+  "valor": 2800.0
+ },
+ {
+  "name": "Saurom",
+  "id": "1FjLB79jPCIl76WpuPUEZL",
+  "query": "Saurom",
+  "listeners": "1.9K",
+  "en_plantilla": true,
+  "valor": 1900.0
+ },
+ {
+  "name": "Reino de Hades",
+  "id": "2cPuCPULrrKqi5guQ0Que7",
+  "query": "Reino de Hades",
+  "listeners": "1.8K",
+  "en_plantilla": true,
+  "valor": 1800.0
+ },
+ {
+  "name": "Khëlleden",
+  "id": "6pW5OG6TyvFIE5uqHr0WzZ",
+  "query": "Khëlleden",
+  "listeners": "1.6K",
+  "en_plantilla": true,
+  "valor": 1600.0
+ },
+ {
+  "name": "Nidhogg",
+  "id": "4bkO4QWnpMCKGdfevM6n64",
+  "query": "Nidhögg",
+  "listeners": "1.5K",
+  "en_plantilla": false,
+  "valor": 1500.0
+ },
+ {
+  "name": "Triskel",
+  "id": "6JBTLlRtcch06CANcHJkbm",
+  "query": "Triskel",
+  "listeners": "1.5K",
+  "en_plantilla": true,
+  "valor": 1500.0
+ },
+ {
+  "name": "Kaelis RD",
+  "id": "5n0d81TLMcjXQOUqJF55Bo",
+  "query": "Kaelis",
+  "listeners": "1.1K",
+  "en_plantilla": true,
+  "valor": 1100.0
+ },
+ {
+  "name": "Lépoka",
+  "id": "2BH6jxo8es0hYXavJzakON",
+  "query": "Lèpoka",
+  "listeners": "820",
+  "en_plantilla": false,
+  "valor": 820.0
+ },
+ {
+  "name": "Nidhogg",
+  "id": "2A9xA1iTWY1c8nw6pWXi8h",
+  "query": "Nidhögg",
+  "listeners": "780",
+  "en_plantilla": false,
+  "valor": 780.0
+ },
+ {
+  "name": "Salduie",
+  "id": "719hjwd3ilXZD7dIVNgIC4",
+  "query": "Salduie",
+  "listeners": "763",
+  "en_plantilla": true,
+  "valor": 763.0
+ },
+ {
+  "name": "Débler",
+  "id": "13FYCLYykfW3bcxNGxqJ2A",
+  "query": "Debler",
+  "listeners": "691",
+  "en_plantilla": false,
+  "valor": 691.0
+ },
+ {
+  "name": "Dünedain",
+  "id": "4KPTxvnkRXsxD9Hi3Dt7U4",
+  "query": "Dünedain",
+  "listeners": "571",
+  "en_plantilla": true,
+  "valor": 571.0
+ },
+ {
+  "name": "Nidhögg",
+  "id": "2q3EeCYfMLPGOz8WDS9dlk",
+  "query": "Nidhögg",
+  "listeners": "399",
+  "en_plantilla": true,
+  "valor": 399.0
+ },
+ {
+  "name": "Celtian",
+  "id": "6HS21dOm2kOmQ6sAyaeLMI",
+  "query": "Celtian",
+  "listeners": "382",
+  "en_plantilla": true,
+  "valor": 382.0
+ },
+ {
+  "name": "Aljamia",
+  "id": "09yUkwLM23RYSrORI9xp00",
+  "query": "Aljamia",
+  "listeners": "290",
+  "en_plantilla": true,
+  "valor": 290.0
+ },
+ {
+  "name": "Leyendärian",
+  "id": "7pz5YwBD7VLi8WOUEl8OQl",
+  "query": "Leyendärian",
+  "listeners": "197",
+  "en_plantilla": true,
+  "valor": 197.0
+ },
+ {
+  "name": "Trovadorum",
+  "id": "3SgqFadsQhm2y8s5Qmfswb",
+  "query": "Trovadorum",
+  "listeners": "69",
+  "en_plantilla": true,
+  "valor": 69.0
+ },
+ {
+  "name": "Astter",
+  "id": "2Ch4GYMv1onUucKUYI8xOC",
+  "query": "Astter",
+  "listeners": "66",
+  "en_plantilla": true,
+  "valor": 66.0
+ },
+ {
+  "name": "Axivil Aljamía",
+  "id": "3YT2N7pacwJxHFncBAwyhr",
+  "query": "Aljamia",
+  "listeners": "64",
+  "en_plantilla": false,
+  "valor": 64.0
+ },
+ {
+  "name": "Aljamía",
+  "id": "3OIvHz6emReyJzWNP8D9h9",
+  "query": "Aljamia",
+  "listeners": "40",
+  "en_plantilla": false,
+  "valor": 40.0
+ },
+ {
+  "name": "Legacy of the Seas",
+  "id": "0VfU5iDeWVTKfvhyos3Sih",
+  "query": "Legacy of the Seas",
+  "listeners": "34",
+  "en_plantilla": true,
+  "valor": 34.0
+ },
+ {
+  "name": "Xeria.0",
+  "id": "3CXEM9Po7af2LQXXumA8qW",
+  "query": "Xeria",
+  "listeners": "9",
+  "en_plantilla": true,
+  "valor": 9.0
+ },
+ {
+  "name": "Finn_way",
+  "id": "2EOccqroAn0y29iEszz0gw",
+  "query": "Finnway",
+  "listeners": "1",
+  "en_plantilla": false,
+  "valor": 1.0
+ },
+ {
+  "name": "Bianka - Astter",
+  "id": "6JROkwG4MzPKiisJkqxWDy",
+  "query": "Astter",
+  "listeners": "0",
+  "en_plantilla": true,
+  "valor": 0.0
+ },
+ {
+  "name": "Astter",
+  "id": "4uoBFol1zyuf65AwvTZQSA",
+  "query": "Astter",
+  "listeners": "0",
+  "en_plantilla": true,
+  "valor": 0.0
+ },
+ {
+  "name": "Gus Celtibeerian",
+  "id": "3GpXkt0NHlUu2pLt9SEyFl",
+  "query": "Celtibeerian",
+  "listeners": "0",
+  "en_plantilla": true,
+  "valor": 0.0
+ },
+ {
+  "name": "Daerian",
+  "id": "6rI2f4mDj4o968tE2ncAQ5",
+  "query": "Daeria",
+  "listeners": "0",
+  "en_plantilla": true,
+  "valor": 0.0
+ },
+ {
+  "name": "Angel Ortiz Daeria",
+  "id": "3kP5h2q0xwaKhgvBnJ6RqP",
+  "query": "Daeria",
+  "listeners": "0",
+  "en_plantilla": true,
+  "valor": 0.0
+ },
+ {
+  "name": "Dark Moor",
+  "id": "3DsB1XF5oZRGK5FWOgaxmG",
+  "query": "Dark Moor",
+  "listeners": "0",
+  "en_plantilla": true,
+  "valor": 0.0
+ },
+ {
+  "name": "Nuria Ekyrian",
+  "id": "1HuSDolRF3PO363WI8qRBs",
+  "query": "Ekyrian",
+  "listeners": "0",
+  "en_plantilla": true,
+  "valor": 0.0
+ },
+ {
+  "name": "Jevo Jevardo (El Reno Renardo)",
+  "id": "5gcHFst302G36kIBxet3ml",
+  "query": "El Reno Renardo",
+  "listeners": "0",
+  "en_plantilla": true,
+  "valor": 0.0
+ },
+ {
+  "name": "Jevo (El Reno Renardo)",
+  "id": "20tJ7oPi4E1GbFo16wIkjo",
+  "query": "El Reno Renardo",
+  "listeners": "0",
+  "en_plantilla": true,
+  "valor": 0.0
+ },
+ {
+  "name": "Lándevir",
+  "id": "4mLE6ZaYRXaeTpCxVfOlZz",
+  "query": "Lándevir",
+  "listeners": "0",
+  "en_plantilla": true,
+  "valor": 0.0
+ },
+ {
+  "name": "José Mancheño (Lándevir)",
+  "id": "3w88KwUvLVqkTkXxHg0w4w",
+  "query": "Lándevir",
+  "listeners": "0",
+  "en_plantilla": true,
+  "valor": 0.0
+ },
+ {
+  "name": "Lépoka",
+  "id": "1zQiBWyYEyX4tSIeBNcLQg",
+  "query": "Lèpoka",
+  "listeners": "0",
+  "en_plantilla": false,
+  "valor": 0.0
+ },
+ {
+  "name": "Mägo de Oz",
+  "id": "6vwNwetOZ7C9iYoDEyFKSz",
+  "query": "Mägo de Oz",
+  "listeners": "0",
+  "en_plantilla": true,
+  "valor": 0.0
+ },
+ {
+  "name": "Sergio Reino de Hades",
+  "id": "4Fu9Eu88rRqIwR1F0Xs8wm",
+  "query": "Reino de Hades",
+  "listeners": "0",
+  "en_plantilla": true,
+  "valor": 0.0
+ },
+ {
+  "name": "Nem Salduie",
+  "id": "5mdpl87hNzmcFIDaRSieDP",
+  "query": "Salduie",
+  "listeners": "0",
+  "en_plantilla": true,
+  "valor": 0.0
+ },
+ {
+  "name": "Triskelia",
+  "id": "0DCOpk0cDLB8NOjsLMfS8t",
+  "query": "Triskel",
+  "listeners": "0",
+  "en_plantilla": true,
+  "valor": 0.0
+ }
+]

@@ -26,6 +26,7 @@ MEDIA = REPO / 'media'
 PHOTOS = MEDIA / 'photos'
 LOGOS = MEDIA / 'logos'
 HISTORIAS = REPO / 'historias'
+INDEX = REPO / 'index.html'
 # Fuente de datos unificada (futuro panel admin): data/bands.json (merge de
 # band_profiles + band_briefs). Fallback a band_profiles si aún no existe.
 _BANDS_PATH = REPO / 'data' / 'bands.json'
@@ -302,7 +303,8 @@ def main():
                      '<a href="#conciertos">🎸 Conciertos</a><span>·</span>'
                      '<a href="#prensa">📰 Prensa</a><span>·</span>'
                      '<a href="#fuentes">📚 Fuentes</a><span>·</span>'
-                     '<a href="../ediciones/">⬅ Volver a la revista</a></nav>')
+                     '<a href="../index.html">⬅ Portada</a><span>·</span>'
+                     '<a href="../ediciones/">Revista mensual</a></nav>')
         parts.append('<main class="container">')
 
         # 1. Datos rápidos
@@ -720,6 +722,60 @@ def main():
     idx.append('</body></html>')
     (HISTORIAS / 'index.html').write_text(''.join(idx), encoding='utf-8')
     print(f'Generated historias/index.html | {len(generated)} fichas → {HISTORIAS}')
+
+    update_home_index(generated)
+
+
+def update_home_index(generated):
+    """Inserta el índice de bandas (grid con logos y detalle) en la portada
+    (index.html raíz). Se regenera en cada publish para que la portada muestre
+    el mismo grid que historias/index.html, enlazando a las fichas."""
+    if not INDEX.exists():
+        return
+    html = INDEX.read_text(encoding='utf-8')
+    marker_start = '<!-- BAND-INDEX:START -->'
+    marker_end = '<!-- BAND-INDEX:END -->'
+    tiles = []
+    for band, path, np_, nc, nn, nm in sorted(generated, key=lambda g: g[0].casefold()):
+        prof = PROFILES.get(band, {})
+        loc = prof.get('origen') or ''
+        tiles.append(f'<a class="band-tile" href="historias/{path.name}">'
+                     f'<img src="{best_photo_b64(band)}" alt="Foto {esc(band)}">'
+                     f'<h3>{esc(band)}</h3>'
+                     f'<p>{esc(loc)}</p>'
+                     f'<div class="mini">{np_} posts · {nc} conciertos · {nm} meses</div></a>')
+    css = ('<style>'
+           '.band-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));'
+           'gap:14px;margin:20px 0}'
+           '.band-tile{background:var(--card);border:1px solid var(--card-border);'
+           'border-radius:10px;padding:16px;text-align:center;box-shadow:0 5px 15px rgba(61,43,31,.08);'
+           'transition:transform .2s,box-shadow .2s;text-decoration:none;color:var(--text);display:block}'
+           '.band-tile:hover{transform:translateY(-3px);box-shadow:0 10px 24px rgba(61,43,31,.15)}'
+           '.band-tile img{width:100px;height:100px;object-fit:cover;border-radius:50%;border:4px solid var(--cream);'
+           'outline:1px solid var(--border);margin-bottom:10px}'
+           '.band-tile h3{margin:6px 0 2px;color:var(--accent);font-size:16px}'
+           '.band-tile p{margin:0;font-size:12.5px;color:var(--muted)}'
+           '.band-tile .mini{font-size:11.5px;color:var(--gold);margin-top:6px}'
+           '</style>')
+    block = (css +
+             '<div class="section-divider"><h2>⚔️ Bandas con ficha</h2></div>\n'
+             '<p style="color:var(--muted);text-align:center;max-width:760px;margin:0 auto 22px">'
+             'Cada banda tiene una ficha histórica completa: actividad mes a mes, conciertos, '
+             'prensa, discografía y datos curados.</p>\n'
+             '<div class="band-grid">' + ''.join(tiles) + '</div>\n'
+             '<p style="text-align:center;margin:18px 0 6px"><a href="historias/index.html" '
+             'style="color:var(--accent)">🗂️ Índice completo de fichas →</a></p>')
+    if marker_start in html and marker_end in html:
+        # Reemplazar el bloque anterior (sin duplicar).
+        pattern = re.compile(re.escape(marker_start) + r'.*?' + re.escape(marker_end), re.S)
+        html = pattern.sub(f'{marker_start}\n{block}\n{marker_end}', html)
+    else:
+        # Insertar antes del footer.
+        anchor = '</footer>'
+        html = html.replace(anchor,
+                            f'{marker_start}\n{block}\n{marker_end}\n{anchor}', 1)
+    INDEX.write_text(html, encoding='utf-8')
+    print(f'  portada index.html actualizada con índice de {len(tiles)} bandas')
 
 
 if __name__ == '__main__':

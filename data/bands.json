@@ -4234,7 +4234,9 @@
   "metricas": {
    "spotify_popularity": 0,
    "spotify_artist_id": "2f5bOwDkeAjsSE91O0tdqb",
-   "spotify_uri": "spotify:artist:2f5bOwDkeAjsSE91O0tdqb"
+   "spotify_uri": "spotify:artist:2f5bOwDkeAjsSE91O0tdqb",
+   "spotify_oyentes_mes": "11.9K",
+   "spotify_oyentes_nota": "~11.9K oyentes/mes (scrape público, 2026-08-04)"
   }
  },
  "Lèpoka": {
@@ -4352,7 +4354,9 @@
   "metricas": {
    "spotify_popularity": 0,
    "spotify_artist_id": "1UM5OPJuE5dGDgyPSNSAqH",
-   "spotify_uri": "spotify:artist:1UM5OPJuE5dGDgyPSNSAqH"
+   "spotify_uri": "spotify:artist:1UM5OPJuE5dGDgyPSNSAqH",
+   "spotify_oyentes_mes": "94.5K",
+   "spotify_oyentes_nota": "~94.5K oyentes/mes (scrape público, 2026-08-04)"
   }
  },
  "Mägo de Oz": {

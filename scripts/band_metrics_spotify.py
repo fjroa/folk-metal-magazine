@@ -40,6 +40,11 @@ CLIENT_SECRET = os.environ.get('SPOTIFY_CLIENT_SECRET', '')
 # IDs de artista ya conocidos (ahorran búsqueda). Se pueden ampliar.
 KNOWN_IDS = {
     'Reino de Hades': '2cPuCPULrrKqi5guQ0Que7',
+    'Dünedain': '02aqpDfp52Ww8mXwbw90uU',
+    'Xeria': '5hTV8XezsBODo80XjKudQx',
+    'Daeria': '1Ohy5ahjQyXh0TTPH5WV3Y',
+    'Celtibeerian': '6DdV1uJJ5JHD22ad5MyFwk',
+    'Triskel': '6JBTLlRtcch06CANcHJkbm',
 }
 
 

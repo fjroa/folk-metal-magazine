@@ -177,6 +177,23 @@ def main():
         r['valor'] = parse(r.get('listeners'))
 
     results.sort(key=lambda x: x['valor'], reverse=True)
+
+    # Dedup: por cada banda de la plantilla (query), quedarse con el artista de
+    # MAYOR oyentes (los homónimos pequeños son ruido: 'Mägo de Oz' 18.7K vs el
+    # real 3.8M; 'Saurom' 1.9K vs 264.7K; 'Saurom Lamderth' es el mismo grupo).
+    # Se conservan también los artistas descubiertos fuera de plantilla.
+    by_query = {}
+    for r in results:
+        if r['en_plantilla'] and r.get('query'):
+            q = r['query']
+            if q not in by_query or r['valor'] > by_query[q]['valor']:
+                by_query[q] = r
+    seen_ids = {r['id'] for r in by_query.values()}
+    deduped = list(by_query.values()) + [r for r in results
+                                         if not r['en_plantilla'] or r['id'] not in seen_ids]
+    deduped.sort(key=lambda x: x['valor'], reverse=True)
+    results = deduped
+
     OUT.write_text(json.dumps(results, ensure_ascii=False, indent=1), encoding='utf-8')
 
     print(f'\n=== RANKING por oyentes mensuales → {OUT} ===')

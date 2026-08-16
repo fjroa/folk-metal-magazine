@@ -358,15 +358,15 @@ def llm_blurb(band, caption, post_url, date, facts=None, rows=None):
 # ── highlights: prioridad editorial (lo gordo de verdad primero) ────────────
 HIGHLIGHT_SPECS = [
     ('Nidhögg', '💀', [r'se retira|retirada|adiós definitivo|último disco']),
-    ('Celtibeerian', '🛡️', [r'leyendas del rock|despedirá|sergio|nuevo guitarrista|nuevo (disco|álbum|single)|adelanto|grabaci|feffarkhorn']),
+    ('Celtibeerian', '🛡️', [r'leyendas del rock|despedirá|sergio|nuevo guitarrista|nuevo (disco|álbum|single)|adelanto|grabaci|feffarkhorn|videoclip|clip']),
     ('Ekyrian', '🌊', [r'leyendas del rock|20 aniversario|nuevo (disco|álbum|single)|adelanto']),
     ('Argion', '🌊', [r'sobre el mar|vltreia|single|adelanto']),
-    ('Lèpoka', '🍺', [r'rebelión animal|preventa|sale en todo el mundo|nuevo (disco|álbum|single)|adelanto|estren|grabaci|leyendas del rock']),
+    ('Lèpoka', '🍺', [r'rebelión animal|preventa|sale en todo el mundo|nuevo (disco|álbum|single)|adelanto|estren|grabaci|leyendas del rock|videoclip|clip']),
     ('Celtian', '🎼', [r'disco en directo|desde las raíces|maleficio|adelanto|la riviera']),
     ('Dark Moor', '💿', [r'doble cd|recopilatorio|edición limitada|25 aniversario|formación especial']),
     ('Saurom', '⚔️', [r'nuevo (disco|álbum|single)|adelanto|estren|grabaci|leyendas del rock']),
     ('Hadadanza', '🔥', [r'leyendas del rock|nuevo (disco|álbum|single)|adelanto']),
-    ('Reino de Hades', '⚒️', [r'nuevo (disco|álbum|single)|adelanto|grabaci|leyendas del rock|festival']),
+    ('Reino de Hades', '⚒️', [r'nuevo (disco|álbum|single)|adelanto|grabaci|leyendas del rock|festival|videoclip|clip']),
     ('Mägo de Oz', '🐉', [r'nuevo (disco|álbum|single)|adelanto|estren|gira internacional|wacken|rock imperium']),
     ('Salduie', '🏹', [r'nuevo (disco|álbum|single)|adelanto|grabaci|leyendas del rock']),
     ('Kinnia', '⚡', [r'nuevo (disco|álbum|single)|adelanto|grabaci|leyendas del rock']),

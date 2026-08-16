@@ -347,9 +347,15 @@ def load_metrics(band_names):
                 r'<td style="color:var\(--muted\)">(.*?)</td>'
                 r'<td><span class="([^"]+)">(.*?)</span></td></tr>')
             matches = pat.findall(text)
-        for band, now, q2, cls, arrow in matches:
-            metrics[html.unescape(band)] = (html.unescape(now), html.unescape(q2),
-                                            html.unescape(arrow), cls)
+        for band_raw, now, q2, cls, arrow in matches:
+            # El nombre de banda puede venir envuelto en un anchor (hist-inline
+            # desde v17.6). Quitar TAGS antes de usar como clave — si no, el
+            # anchor completo se convierte en slug roto
+            # (a-class-hist-inline-href-historias-...-a.html) en la siguiente
+            # edición y el texto visible es el HTML escapado.
+            band = re.sub(r'<[^>]+>', '', band_raw)
+            metrics[html.unescape(band).strip()] = (html.unescape(now), html.unescape(q2),
+                                                    html.unescape(arrow), cls)
     if not metrics:
         metrics = dict(METRIC_DEFAULTS)
     return metrics
@@ -409,9 +415,12 @@ if not highlights:
     highlights = build_highlights_fallback(set(bands), posts)
 # Short or malformed editorial entries make the cards feel empty. Keep the
 # source order: the editorial JSON already ranks the news by relevance.
+# SIN tope fijo de 6: el usuario prioriza la CALIDAD del anuncio (lanzamientos,
+# videoclips, cambios de formación, parones) sobre un número concreto. Solo se
+# filtran entradas cortas/malformadas; puede haber más o menos de 6.
 highlights = [h for h in highlights
               if isinstance(h, dict) and clean_caption(h.get('text')) and
-              len(clean_caption(h.get('text'))) >= 40][:6]
+              len(clean_caption(h.get('text'))) >= 40]
 # Lo Gordo: orden conforme a las métricas (oyentes mensuales, M>K>raw).
 # metrics se carga después (load_metrics); se reordena en el punto de render.
 def _hl_metric_key(h, metrics_map):

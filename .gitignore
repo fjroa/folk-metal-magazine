@@ -1,0 +1,8 @@
+.gitignore
+media/photos/
+media/logos/
+media/*.json
+media/*.log
+__pycache__/
+.pytest_cache/
+*.pyc

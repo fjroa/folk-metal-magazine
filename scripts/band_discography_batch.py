@@ -36,7 +36,7 @@ def main():
         print(f'>>> [{i+1}/{len(todo)}] {band}')
         r = subprocess.run([sys.executable, 'scripts/band_metrics_spotify.py',
                             '--band', band, '--discography'],
-                           cwd=REPO, env=env, capture_output=True, text=True, timeout=300)
+                           cwd=REPO, env=env, capture_output=True, text=True, timeout=600)
         print(r.stdout[-800:] or r.stderr[-300:])
         if i < len(todo) - 1:
             time.sleep(SLEEP)
